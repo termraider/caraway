@@ -1,4 +1,5 @@
-import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=4';
+import { categoryOf } from './category.js?v=5';
+import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=5';
 
 // ---------- state (saved in this browser, optionally synced through a private GitHub gist) ----------
 const LS = 'caraway-state', TOKEN = 'caraway-token', GIST = 'caraway-gist', FILE = 'caraway-tracker-state.json';
@@ -137,7 +138,7 @@ function viewCatalog(app) {
     let list = all.filter((p) => (ui.showGone || !p.discontinued)
       && (!ui.coll || (p.collections || []).includes(ui.coll))
       && (ui.kind === 'all' || (ui.kind === 'bundle') === !!p.bundle)
-      && (!q || lc(p.title + ' ' + (p.productType || '') + ' ' + (p.variants || []).map((v) => v.color || v.title).join(' ') + ' ' + p.handle).includes(q)));
+      && (!q || lc(p.title + ' ' + categoryOf(p) + ' ' + (p.variants || []).map((v) => v.color || v.title).join(' ') + ' ' + p.handle).includes(q)));
     const S = new Map(list.map((p) => [p.handle, productSummary(p)]));
     if (ui.inPref && pref()) list = list.filter((p) => hasColor(p, pref()));
     if (ui.onSale) list = list.filter((p) => S.get(p.handle).off > 0);
@@ -169,7 +170,7 @@ function card(p, s) {
     <div class="flags">${flags}</div>
     <a class="cover" href="#/p/${encodeURIComponent(p.handle)}">${p.image ? `<img loading="lazy" src="${esc(img(p.image, 480))}" alt="">` : ''}</a>
     <div class="tb">
-      <span class="tk">${esc(p.productType || (p.bundle ? 'Bundle' : ''))}</span>
+      <span class="tk">${esc(categoryOf(p))}</span>
       <a class="tn" href="#/p/${encodeURIComponent(p.handle)}">${esc(p.title)}</a>
       ${colors.length > 1 || colors[0] && colors[0] !== 'Default Title' ? `<div class="dots" title="${esc(colors.join(', '))}">${colors.slice(0, 12).map((c) => `<i style="background:${swatch(c)}" class="${ownsAny(p.handle, c) ? 'own' : ''}" title="${esc(c)}${ownsAny(p.handle, c) ? ' (owned)' : ''}"></i>`).join('')}</div>` : ''}
       <div class="tp">
@@ -197,7 +198,7 @@ function viewProduct(app, handle) {
         <div class="row">${p.discontinued ? `<span class="badge b-red">Discontinued${p.discontinuedOn ? ' ' + fmtDate(p.discontinuedOn) : ''}</span>` : ''}${p.bundle ? '<span class="badge b-line">Bundle</span>' : ''}${(p.badges || []).filter((b) => !/^[a-z0-9-]+$/.test(b)).map((b) => `<span class="badge b-line">${esc(b)}</span>`).join('')}</div>
         <h1 style="margin-top:8px">${esc(p.title)}</h1>
         ${viaNotes(p)}
-        <p class="sub">${esc(p.byline || p.productType || '')}${p.rating ? ` · ★ ${p.rating} (${Number(p.reviews || 0).toLocaleString()} reviews)` : ''}</p>
+        <p class="sub">${esc(p.byline || categoryOf(p))}${p.rating ? ` · ★ ${p.rating} (${Number(p.reviews || 0).toLocaleString()} reviews)` : ''}</p>
         <div class="kv">
           <div><span>Price</span><b>${money(s.base)}</b>${s.compareAt > s.base ? ` <span class="strike small">${money(s.compareAt)}</span>` : ''}</div>
           <div><span>With today's sale, alone</span><b class="${s.sale < s.base ? 'gold' : ''}">${money(s.sale)}</b></div>

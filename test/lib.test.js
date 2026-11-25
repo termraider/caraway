@@ -65,3 +65,12 @@ test('bundles map components to standalone products', () => {
   assert.equal(b.items[0].handle, 'fry-pan');
   assert.equal(b.componentValue, 300);
 });
+
+test('categories: Shopify placeholder "Physical" and missing types get a real category', async () => {
+  const { categoryOf } = await import('../category.js');
+  assert.equal(categoryOf({ handle: 'knife-block', productType: 'Physical', collections: ['all'] }), 'Prepware');
+  assert.equal(categoryOf({ handle: 'cookware-organizer', productType: 'Physical' }), 'Cookware');
+  assert.equal(categoryOf({ handle: 'fry-pan', productType: 'Cookware Singles' }), 'Cookware');
+  assert.equal(categoryOf({ handle: 'trash-can', collections: ['all', 'trash-recycling-bins'] }), 'Trash & Recycling');
+  assert.equal(categoryOf({ handle: 'small-stainless-steel-strainer', collections: ['accessories', 'bakeware', 'mixing-bowls-and-strainers'] }), 'Prepware');
+});

@@ -1,4 +1,4 @@
-import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js';
+import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=2';
 
 // ---------- state (saved in this browser, optionally synced through a private GitHub gist) ----------
 const LS = 'caraway-state', TOKEN = 'caraway-token', GIST = 'caraway-gist', FILE = 'caraway-tracker-state.json';

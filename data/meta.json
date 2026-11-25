@@ -1,6 +1,19 @@
 {
  "runs": [
   {
+   "date": "2026-11-25",
+   "at": "2026-11-25T16:09:24.884Z",
+   "seconds": 597,
+   "products": 203,
+   "gone": [
+    "grove-collective-promo",
+    "4pc-mini-airtight-storage-container-set",
+    "4pc-mini-airtight-storage-container-set-gwp"
+   ],
+   "failed": [],
+   "sitemapProducts": 206
+  },
+  {
    "date": "2026-11-24",
    "at": "2026-11-25T03:14:09.843Z",
    "seconds": 589,
@@ -37,9 +50,9 @@
   }
  ],
  "lastRun": {
-  "date": "2026-11-24",
-  "at": "2026-11-25T03:14:09.843Z",
-  "seconds": 589,
+  "date": "2026-11-25",
+  "at": "2026-11-25T16:09:24.884Z",
+  "seconds": 597,
   "products": 203,
   "gone": [
    "grove-collective-promo",

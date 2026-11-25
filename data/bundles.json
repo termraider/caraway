@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24",
+ "updatedAt": "2026-11-25",
  "bundles": {
   "cookware-sets": {
    "handle": "cookware-sets",
@@ -12575,37 +12575,37 @@
       },
       {
        "id": "42248310849618",
-       "color": "gray",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310882386",
-       "color": "marigold",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310915154",
-       "color": "perracotta",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310947922",
-       "color": "navy",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310980690",
-       "color": "sage",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248311013458",
-       "color": "gold",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248311046226",
-       "color": "stainless steel",
+       "color": null,
        "handle": "grill-press"
       }
      ]
@@ -12746,42 +12746,42 @@
       },
       {
        "id": "42248969191506",
-       "color": "navy",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969224274",
-       "color": "slate",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969257042",
-       "color": "gray",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969289810",
-       "color": "perracotta",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969322578",
-       "color": "sage",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969355346",
-       "color": "marigold",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969388114",
-       "color": "iconics black",
+       "color": null,
        "handle": "pie-pan"
       },
       {
        "id": "42248969420882",
-       "color": "iconics white",
+       "color": null,
        "handle": "pie-pan"
       }
      ]
@@ -12802,42 +12802,42 @@
       },
       {
        "id": "42248969486418",
-       "color": "navy",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969519186",
-       "color": "slate",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969551954",
-       "color": "gray",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969584722",
-       "color": "perracotta",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969617490",
-       "color": "sage",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969650258",
-       "color": "marigold",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969683026",
-       "color": "iconics black",
+       "color": null,
        "handle": "pizza-pan"
       },
       {
        "id": "42248969715794",
-       "color": "iconics white",
+       "color": null,
        "handle": "pizza-pan"
       }
      ]
@@ -12858,42 +12858,42 @@
       },
       {
        "id": "42248968601682",
-       "color": "navy",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968634450",
-       "color": "slate",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968667218",
-       "color": "gray",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968699986",
-       "color": "perracotta",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968732754",
-       "color": "sage",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968765522",
-       "color": "marigold",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968798290",
-       "color": "iconics black",
+       "color": null,
        "handle": "fluted-cake-pan"
       },
       {
        "id": "42248968831058",
-       "color": "iconics white",
+       "color": null,
        "handle": "fluted-cake-pan"
       }
      ]
@@ -13205,37 +13205,37 @@
       },
       {
        "id": "42248310849618",
-       "color": "gray",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310882386",
-       "color": "marigold",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310915154",
-       "color": "perracotta",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310947922",
-       "color": "navy",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248310980690",
-       "color": "sage",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248311013458",
-       "color": "gold",
+       "color": null,
        "handle": "grill-press"
       },
       {
        "id": "42248311046226",
-       "color": "stainless steel",
+       "color": null,
        "handle": "grill-press"
       }
      ]
@@ -13256,42 +13256,42 @@
       },
       {
        "id": "42248318648402",
-       "color": "navy",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42248318681170",
-       "color": "gray",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42248318713938",
-       "color": "sage",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42248318746706",
-       "color": "perracotta",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42248318779474",
-       "color": "marigold",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42248318812242",
-       "color": "iconics black",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42248318845010",
-       "color": "iconics white",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       },
       {
        "id": "42277573296210",
-       "color": "stainless steel",
+       "color": null,
        "handle": "mechanical-kitchen-timer"
       }
      ]

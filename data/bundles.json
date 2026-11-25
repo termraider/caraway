@@ -18639,6 +18639,146 @@
    "discontinued": true,
    "items": [],
    "componentValue": 0
+  },
+  "dot-containers": {
+   "handle": "dot-containers",
+   "title": "Dot Container Set of 4",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "fall-reset-bundle": {
+   "handle": "fall-reset-bundle",
+   "title": "Fall Reset Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "family-sized-set": {
+   "handle": "family-sized-set",
+   "title": "Family-Sized Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "festive-feast-duo": {
+   "handle": "festive-feast-duo",
+   "title": "Festive Feast Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "fresh-start-bundle": {
+   "handle": "fresh-start-bundle",
+   "title": "Fresh Start Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "give-back-bundle": {
+   "handle": "give-back-bundle",
+   "title": "Give Back Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "holiday-brunch-bundle": {
+   "handle": "holiday-brunch-bundle",
+   "title": "Holiday Brunch Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "home-chef-bundle": {
+   "handle": "home-chef-bundle",
+   "title": "Home Chef Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "home-mixology-bundle": {
+   "handle": "home-mixology-bundle",
+   "title": "Home Mixology Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "hosting-prep-bundle": {
+   "handle": "hosting-prep-bundle",
+   "title": "Hosting Prep Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "hosting-prep-bundle-walnut": {
+   "handle": "hosting-prep-bundle-walnut",
+   "title": "Hosting Prep Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "kitchen-starter-bundle": {
+   "handle": "kitchen-starter-bundle",
+   "title": "Kitchen Starter Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "large-glass-airtight-container-duo": {
+   "handle": "large-glass-airtight-container-duo",
+   "title": "Large Glass Airtight Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "large-storage-container-duo": {
+   "handle": "large-storage-container-duo",
+   "title": "Large Storage Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "linens-set-duplicate": {
+   "handle": "linens-set-duplicate",
+   "title": "Linens Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "meal-master-bundle": {
+   "handle": "meal-master-bundle",
+   "title": "Meal Master Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "meal-prep-bundle": {
+   "handle": "meal-prep-bundle",
+   "title": "Meal Prep Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "medium-cutting-board-duo": {
+   "handle": "medium-cutting-board-duo",
+   "title": "Medium Cutting Board Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "medium-glass-airtight-container-duo": {
+   "handle": "medium-glass-airtight-container-duo",
+   "title": "Medium Glass Airtight Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "medium-storage-container-duo": {
+   "handle": "medium-storage-container-duo",
+   "title": "Medium Storage Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
   }
  }
 }

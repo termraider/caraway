@@ -105,7 +105,7 @@ function viewCatalog(app) {
   const collCount = {}; for (const p of all) for (const c of p.collections || []) collCount[c] = (collCount[c] || 0) + 1;
   const colls = Object.keys(collCount).filter((c) => collCount[c] >= 3 && c !== 'all').sort();
   app.innerHTML = `
-    <p class="prompt">$ caraway --all</p><h1>Every product and bundle</h1>
+    <p class="eyebrow">The whole Caraway shelf</p><h1>Every product and bundle</h1>
     <p class="sub">${all.filter((p) => !p.discontinued).length} on sale now · ${all.filter((p) => p.discontinued).length} discontinued · prices per color, history since tracking began</p>
     ${saleBanner()}
     <div class="filters">
@@ -174,7 +174,7 @@ function viewProduct(app, handle) {
   const inBundles = bundlesContaining(handle);
   const bundle = D.bundles.bundles && D.bundles.bundles[handle];
   app.innerHTML = `
-    <p class="prompt">$ caraway show ${esc(handle)}</p>
+    <p class="eyebrow"><a href="#/">← Catalog</a></p>
     <div class="detail">
       <div><div class="pic">${p.image ? `<img src="${esc(img(p.image, 900))}" alt="">` : ''}</div></div>
       <div>
@@ -219,7 +219,7 @@ function bundleTable(b, s) {
   return `<section class="sec"><h2>What's included</h2><p class="sub">Parts bought separately: ${money(b.componentValue)} · bundle price ${money(s.base)}${save1 > 0 ? ` · <span class="gold">saves ${money(save1)} before sales</span>` : ''}</p>
     <div class="tablewrap"><table><tr><th>Item</th><th class="num">Qty</th><th class="num">Each</th><th class="num">Total</th></tr>${rows}</table></div></section>`;
 }
-const SERIES_COLORS = ['#7CF29A', '#FFD635', '#6FC3FF', '#FF8A65', '#C792EA', '#B0BEC5'];
+const SERIES_COLORS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)', 'var(--s6)'];
 function drawHistory(el, p) {
   const groups = new Map();
   for (const v of p.variants || []) {
@@ -268,9 +268,9 @@ function drawHistory(el, p) {
   el.innerHTML = `
     <div class="legend">${series.map((s, i) => `<span><i style="background:${SERIES_COLORS[i]}"></i>${esc(s.colors.join(', '))}</span>`).join('')}<span><i style="background:var(--line2)"></i>compare-at</span></div>
     <svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Price history">
-      ${yt.map((v) => `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="#1B2A1E"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">$${Math.round(v)}</text>`).join('')}
+      ${yt.map((v) => `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">$${Math.round(v)}</text>`).join('')}
       ${xt.map((d, i) => `<text x="${x(d)}" y="${H - 6}" text-anchor="${i === 0 ? 'start' : i === 4 ? 'end' : 'middle'}">${new Date(d + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', year: '2-digit', ...(t1 - t0 < 1e10 ? { day: 'numeric' } : {}) })}</text>`).join('')}
-      ${series.map((s) => `<path d="${path(s.runs, 'compareAt')}" fill="none" stroke="#2A4430" stroke-width="1.5" stroke-dasharray="4 3"/>`).join('')}
+      ${series.map((s) => `<path d="${path(s.runs, 'compareAt')}" fill="none" stroke="var(--line2)" stroke-width="1.5" stroke-dasharray="4 3"/>`).join('')}
       ${series.map((s, i) => `<path d="${gaps(s.runs, 'price')}" fill="none" stroke="${SERIES_COLORS[i]}" stroke-width="1.5" stroke-dasharray="2 4" opacity=".7"/>`).join('')}
       ${series.map((s, i) => `<path d="${path(s.runs, 'price')}" fill="none" stroke="${SERIES_COLORS[i]}" stroke-width="2.2"/>`).join('')}
       ${series.map((s, i) => s.runs.map((r) => `<circle cx="${x(r.from)}" cy="${y(r.price)}" r="2.6" fill="${SERIES_COLORS[i]}"><title>${esc(s.colors[0])}: ${money(r.price)} from ${r.from} to ${r.to}</title></circle>`).join('')).join('')}
@@ -295,7 +295,7 @@ function viewSales(app) {
   const groups = (cur.progressBars || []).filter((b) => b.enabled);
   const log = (D.promos.log || []);
   app.innerHTML = `
-    <p class="prompt">$ caraway sales</p><h1>Sales, tiers and free gifts</h1>
+    <p class="eyebrow">Deals</p><h1>Sales, tiers and free gifts</h1>
     <p class="sub">What's running now, and every offer seen since tracking began.</p>
     <section class="sec"><h2>Right now</h2>
       ${cur.holidayEnabled && tp && tp.tiers.length ? `
@@ -362,7 +362,7 @@ function viewKitchen(app) {
   const rows = Object.keys(state.owned).map((k) => { const [h, c] = k.split('|'); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { k, h, c: v ? v.color || v.title : c, p, v }; })
     .sort((a, b) => String(a.p?.title || a.h).localeCompare(String(b.p?.title || b.h)));
   const value = rows.reduce((s, r) => s + (r.v ? Math.max(r.v.price || 0, r.v.compareAt || 0) : 0), 0);
-  app.innerHTML = `<p class="prompt">$ caraway owned</p><h1>My kitchen</h1>
+  app.innerHTML = `<p class="eyebrow">Your shelf</p><h1>My kitchen</h1>
     <p class="sub">${rows.length} items owned, about ${money(value)} at full price. Owned colors are flagged everywhere and left out of suggestions.</p>
     <div class="sec panel"><h3>Add something you own</h3><div id="pick" style="margin-top:10px"></div></div>
     <div class="sec tablewrap"><table><tr><th>Product</th><th>Color</th><th class="num">Price now</th><th></th></tr>
@@ -403,7 +403,7 @@ function solutionHTML(sol, entries, i, extra = '') {
 
 function viewWishlist(app) {
   const groups = [['control', 'Normal sale tiers'], ...Object.keys(D.promos.current?.tierPricing?.segments || {}).map((k) => [k, `"${k}" test offer`])];
-  app.innerHTML = `<p class="prompt">$ caraway wishlist --optimize</p><h1>Wishlist</h1>
+  app.innerHTML = `<p class="eyebrow">Plan an order</p><h1>Wishlist</h1>
     <p class="sub">Add what you want. It finds the cheapest mix of single items and bundles using today's sale tiers, tier-only prices and the free-gift line, or the most you can get for a budget.</p>
     <div class="sec panel"><h3>Add to wishlist</h3><div id="pick" style="margin-top:10px"></div></div>
     <div class="sec tablewrap"><table><tr><th>Item</th><th>Color</th><th class="num">Price</th><th>Leave out of budget</th><th></th></tr>
@@ -467,7 +467,7 @@ function runOptimizer() {
 // ---------- settings / sync ----------
 function viewSettings(app) {
   const token = safeGet(TOKEN);
-  app.innerHTML = `<p class="prompt">$ caraway sync</p><h1>Sync between devices</h1>
+  app.innerHTML = `<p class="eyebrow">Settings</p><h1>Sync between devices</h1>
     <p class="sub">Your owned items, wishlist and coupon codes are saved in this browser. To share them between your phone and computer, connect a GitHub token. They're stored in a private (secret) gist on your GitHub account, not in the public repo.</p>
     <div class="sec panel">
       ${token ? `<p class="green">Connected. ${esc(syncStatus.msg || '')}</p><div class="row"><button class="btn primary" id="syncnow">Sync now</button><button class="btn" id="disc">Disconnect this device</button></div>` : `
@@ -492,7 +492,7 @@ let syncStatus = { cls: '', msg: '' }; let syncTimer = null; let syncing = false
 function setSyncLink() {
   const a = $('#syncLink');
   a.className = 'sync ' + (safeGet(TOKEN) ? syncStatus.cls || 'on' : '');
-  a.textContent = safeGet(TOKEN) ? (syncStatus.cls === 'err' ? 'sync: error' : 'sync: on') : 'sync: off';
+  a.textContent = safeGet(TOKEN) ? (syncStatus.cls === 'err' ? 'Sync error' : 'Synced') : 'Sync off';
 }
 function scheduleSync() { if (!safeGet(TOKEN)) return; clearTimeout(syncTimer); syncTimer = setTimeout(() => syncNow(false), 1500); }
 async function gh(path, opts = {}) {
@@ -537,6 +537,14 @@ async function syncNow(loud) {
   } finally { syncing = false; setSyncLink(); }
 }
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncNow(false); });
+
+// ---------- theme ----------
+const themeBtn = $('#themeBtn');
+const isDark = () => (document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+const paintThemeBtn = () => { themeBtn.textContent = isDark() ? '☀' : '☾'; document.querySelector('meta[name=theme-color]').content = getComputedStyle(document.body).backgroundColor; };
+themeBtn.onclick = () => { const t = isDark() ? 'light' : 'dark'; document.documentElement.dataset.theme = t; safeSet('caraway-theme', t); paintThemeBtn(); };
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', paintThemeBtn);
+paintThemeBtn();
 
 // ---------- start ----------
 refreshNav(); setSyncLink();

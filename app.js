@@ -229,7 +229,7 @@ function viewProduct(app, handle) {
             <span class="cname">${v.image ? `<img class="vthumb" src="${esc(img(v.image, 160))}" alt="${esc(p.title + ' in ' + c)}" data-big="${esc(img(v.image, 900))}" loading="lazy">` : ''}<i class="sw" style="${swatchCss(c, p)}" title="${esc(c)}"></i>${esc(c)}${lc(c) === lc(pref()) ? ' <span class="badge b-green">your color</span>' : ''}
               <span class="small muted">${v.live === false ? (v.archived ? ' · old color' : ' · no longer sold') : v.available === false ? ' · sold out' : ''}${v.sku ? ' · ' + esc(v.sku) : ''}</span></span>
             <span class="small">${money(v.price)}${v.compareAt > v.price ? ` <span class="strike">${money(v.compareAt)}</span>` : ''}${alone != null && alone < v.price ? ` <span class="gold">→ ${money(alone)}</span>` : ''}</span>
-            ${!isOwned(handle, c) && viaOf(handle, c) ? `<span class="btn sm on" title="Comes in a bundle you own">✓ Owned via bundle</span>` : `<button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' + (qtyOf(handle, c) > 1 ? ' ×' + qtyOf(handle, c) : '') : 'I own this'}</button>${ownedNote(handle, c)}`}
+            ${!isOwned(handle, c) && viaOf(handle, c) ? `<span class="btn sm on" title="Comes in a bundle you own">✓ Owned via bundle${viaOf(handle, c).reduce((n, b) => n + (b.qty || 1), 0) > 1 ? ' ×' + viaOf(handle, c).reduce((n, b) => n + (b.qty || 1), 0) : ''}</span>` : `<button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' + (qtyOf(handle, c) > 1 ? ' ×' + qtyOf(handle, c) : '') : 'I own this'}</button>${ownedNote(handle, c)}`}
             <button class="btn sm" data-wish="${esc(c)}">+ Wishlist</button>
           </div>`;
         }).join('')}</div>
@@ -474,10 +474,10 @@ function viewKitchen(app) {
   const paid = known.reduce((s, r) => s + (ent(r).gift ? 0 : Number(ent(r).paid) || 0), 0);
   const knownFull = known.reduce((s, r) => s + full(r), 0);
   const gifts = rows.filter((r) => ent(r).gift).reduce((s, r) => s + r.q, 0);
-  const viaRows = Object.entries(ctx.via || {}).filter(([k]) => !state.owned[k]).map(([k, via]) => { const i = k.lastIndexOf('|'); const h = k.slice(0, i), c = k.slice(i + 1); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { h, c: v ? v.color || v.title : c, p, v, via }; })
+  const viaRows = Object.entries(ctx.via || {}).filter(([k]) => !state.owned[k]).map(([k, via]) => { const i = k.lastIndexOf('|'); const h = k.slice(0, i), c = k.slice(i + 1); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { h, c: v ? v.color || v.title : c, p, v, via, q: via.reduce((n, b) => n + (b.qty || 1), 0) }; })
     .sort((a, b) => String(a.p?.title || a.h).localeCompare(String(b.p?.title || b.h)));
   app.innerHTML = `<p class="eyebrow">Your shelf</p><h1>My kitchen</h1>
-    <p class="sub">${count} item${count === 1 ? '' : 's'} owned, about ${money(value)} at full price. ${viaRows.length ? ` Plus ${viaRows.length} more that came in your bundles.` : ''} Owned colors are flagged everywhere and left out of suggestions.</p>
+    <p class="sub">${count} item${count === 1 ? '' : 's'} owned, about ${money(value)} at full price. ${viaRows.length ? ` Plus ${viaRows.reduce((n, r) => n + r.q, 0)} more that came in your bundles.` : ''} Owned colors are flagged everywhere and left out of suggestions.</p>
     ${known.length ? `<div class="kv sec"><div><span>You paid</span><b>${money(paid)}</b> <span class="small muted">for ${known.reduce((s, r) => s + r.q, 0)} item${known.reduce((s, r) => s + r.q, 0) > 1 ? 's' : ''}</span></div><div><span>Full price of those</span><b>${money(knownFull)}</b></div><div><span>You saved</span><b class="green">${money(Math.max(0, knownFull - paid))}</b> <span class="small muted">${knownFull ? Math.round((1 - paid / knownFull) * 100) + '%' : ''}</span></div>${gifts ? `<div><span>Free gifts</span><b>${gifts}</b></div>` : ''}</div>` : ''}
     <div class="sec panel"><h3>Add something you own</h3><div id="pick" style="margin-top:10px"></div></div>
     <div class="sec tablewrap"><table class="owned-tbl"><tr><th>Product</th><th>Color</th><th>Qty</th><th>Got it</th><th>Paid (total)</th><th>Free gift</th><th class="num">Price now</th><th></th></tr>
@@ -489,8 +489,8 @@ function viewKitchen(app) {
       <td class="num">${money(r.v && r.v.price)}</td><td><button class="btn sm" data-del="${esc(r.k)}">Remove</button></td></tr>`; }).join('') || '<tr><td colspan="8" class="muted">Nothing marked yet. Open any product and press "I own this" next to a color.</td></tr>'}
     </table></div>
     ${viaRows.length ? `<section class="sec"><h2>Included in your bundles</h2><p class="sub">You own these because they came in a bundle you own. To change them, change the bundle.</p>
-    <div class="tablewrap"><table><tr><th>Product</th><th>Color</th><th>From</th><th class="num">Price now</th></tr>
-    ${viaRows.map((r) => `<tr><td class="oprod">${thumb(r)}${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td>${swc(r)}${esc(r.c)}</td><td>${viaText(r.via, r.c)}</td><td class="num">${money(r.v && r.v.price)}</td></tr>`).join('')}
+    <div class="tablewrap"><table><tr><th>Product</th><th>Color</th><th class="num">Qty</th><th>From</th><th class="num">Price now</th></tr>
+    ${viaRows.map((r) => `<tr><td class="oprod">${thumb(r)}${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td>${swc(r)}${esc(r.c)}</td><td class="num">×${r.q}</td><td>${viaText(r.via, r.c)}</td><td class="num">${money(r.v && r.v.price)}</td></tr>`).join('')}
     </table></div></section>` : ''}`;
   picker($('#pick'), (h, c) => { const p = D.products[h]; const color = c || (p.variants[0] && (p.variants[0].color || p.variants[0].title)); const k = ownKey(h, color); const e = state.owned[k];
     if (e) { state.owned[k] = { ...(typeof e === 'object' ? e : {}), qty: Math.max(1, Number(e.qty) || 1) + 1 }; toast('You now own ' + state.owned[k].qty); }

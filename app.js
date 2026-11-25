@@ -195,14 +195,14 @@ function viewProduct(app, handle) {
     <div class="detail">
       <div><div class="pic">${p.image ? `<img src="${esc(img(p.image, 900))}" alt="">` : ''}</div></div>
       <div>
-        <div class="row">${p.discontinued ? `<span class="badge b-red">Discontinued${p.discontinuedOn ? ' ' + fmtDate(p.discontinuedOn) : ''}</span>` : ''}${p.bundle ? '<span class="badge b-line">Bundle</span>' : ''}${(p.badges || []).filter((b) => !/^[a-z0-9-]+$/.test(b)).map((b) => `<span class="badge b-line">${esc(b)}</span>`).join('')}</div>
+        <div class="row">${p.discontinued ? `<span class="badge b-red">Discontinued${p.discontinuedOn ? ' ' + fmtDate(p.discontinuedOn) : ''}</span>` : ''}${p.bundle ? '<span class="badge b-line">Bundle</span>' : ''}${badgesFor(p, s).map((b) => `<span class="badge b-line">${esc(b)}</span>`).join('')}</div>
         <h1 style="margin-top:8px">${esc(p.title)}</h1>
         ${viaNotes(p)}
         <p class="sub">${esc(p.byline || categoryOf(p))}${p.rating ? ` · ★ ${p.rating} (${Number(p.reviews || 0).toLocaleString()} reviews)` : ''}</p>
         <div class="kv">
           <div><span>Price</span><b>${money(s.base)}</b>${s.compareAt > s.base ? ` <span class="strike small">${money(s.compareAt)}</span>` : ''}</div>
           <div><span>With today's sale, alone</span><b class="${s.sale < s.base ? 'gold' : ''}">${money(s.sale)}</b></div>
-          <div><span>Lowest tracked</span><b>${money(s.low)}</b> <span class="small muted">${s.lowDate ? fmtDate(s.lowDate) : ''}</span></div>
+          <div><span>Lowest list price</span><b>${money(s.low)}</b> <span class="small muted">${s.lowDate ? fmtDate(s.lowDate) : ''}</span></div>
           <div><span>Tracked since</span><b>${fmtDate(p.archiveFirstSeen || p.firstSeen)}</b></div>
         </div>
         <div class="row">
@@ -231,6 +231,12 @@ function viewProduct(app, handle) {
   app.querySelectorAll('[data-own]').forEach((b) => (b.onclick = () => { const k = ownKey(handle, b.dataset.own); if (state.owned[k]) delete state.owned[k]; else state.owned[k] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); }));
   app.querySelectorAll('[data-wish]').forEach((b) => (b.onclick = () => addWish(handle, b.dataset.wish === '*' ? null : b.dataset.wish)));
   drawHistory($('#hist'), p);
+}
+// Caraway's badges sometimes carry an unfilled template ("Save {{XXX}}"); fill it with the real list-price saving or drop it.
+function badgesFor(p, s) {
+  const save = s && s.compareAt > s.base ? s.compareAt - s.base : null;
+  return (p.badges || []).filter((b) => !/^[a-z0-9-]+$/.test(b))
+    .map((b) => (/\{\{[^}]*\}\}/.test(b) ? (save ? b.replace(/\{\{[^}]*\}\}/g, money(save)) : null) : b)).filter(Boolean);
 }
 function ownedNote(h, c) {
   const e = state.owned[ownKey(h, c)];

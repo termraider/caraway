@@ -135,8 +135,21 @@ export function extractProductInPage() {
     })),
   })) : [];
 
+  // Add-ons offered on this page ("add glass lids", "add a utensil holder for $25 less").
+  const ao = pd.addOns || {};
+  const addOns = [...(ao.toggleOptions || []).map((o) => ({ ...o, kind: 'toggle' })), ...(ao.regularOptions || []).map((o) => ({ ...o, kind: 'regular' }))]
+    .map((o) => ({
+      label: o.label || '', kind: o.kind, match: o.match || null,
+      items: (o.items || []).map((i) => (i.kind === 'variant' && i.variant
+        ? { variantId: id(i.variant.id), title: i.variant.title, price: num(i.variant.price && i.variant.price.amount) }
+        : { handle: (i.product && i.product.handle) || null })).filter((i) => i.handle || i.variantId),
+      priceOverrides: Object.fromEntries(Object.entries(o.priceOverrides || {}).map(([h, d]) => [h, { type: d.decreaseType || 'amount', value: num(d.decreaseValue) }])),
+    }))
+    .filter((o) => o.items.length);
+
   return {
     handle: pr.handle,
+    addOns,
     title: pr.title,
     productType: pr.productType || null,
     vendor: pr.vendor || null,

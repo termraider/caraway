@@ -93,3 +93,16 @@ test('a bundle on the wishlist also covers its parts on the wishlist', () => {
   assert.equal(solutions[0].chosen.length, 1);
   assert.equal(solutions[0].chosen[0].color, 'Cream');
 });
+
+test('add-on deals: an item is cheaper when its host product is in the same cart', () => {
+  const pr = promos();
+  pr.current.addOnDeals = [{ host: 'fry-pan', handle: 'tea-towels', type: 'amount', value: 10, label: 'Tea Towels' }];
+  const cat = catalog();
+  const ctx = makeContext(cat, buildBundles(cat.products), pr);
+  const alone = priceCart([{ handle: 'tea-towels', variantId: '600', base: 55 }], ctx.pricing);
+  assert.equal(alone.total, 55 * 1 === 55 ? alone.total : 0);
+  const both = priceCart([{ handle: 'fry-pan', variantId: '100', base: 125 }, { handle: 'tea-towels', variantId: '600', base: 55 }], ctx.pricing);
+  assert.equal(both.lines[1].addOn.host, 'fry-pan');
+  assert.equal(both.subtotal, 170); // 125 + (55 - 10)
+  assert.equal(both.total, 144.5); // 15% tier
+});

@@ -8,7 +8,7 @@
 import { chromium } from 'playwright';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { extractRootInPage, extractProductInPage } from './extract.js';
-import { today, mergeCatalog, mergePriceHistory, mergePromos, buildBundles } from './lib.js';
+import { today, mergeCatalog, mergePriceHistory, mergePromos, buildBundles, buildAddOnDeals } from './lib.js';
 
 const BASE = 'https://www.carawayhome.com';
 const DATA = new URL('../data/', import.meta.url);
@@ -148,6 +148,8 @@ async function main() {
   const merged = mergeCatalog(catalog, scraped, missing, date, sitemapCollections);
   merged.updatedAt = date;
   mergePriceHistory(history, scraped, date);
+  root.addOnDeals = buildAddOnDeals(merged.products);
+  log(`add-on deals: ${root.addOnDeals.length}`);
   const promoState = mergePromos(promos, root, date);
   const bundles = buildBundles(merged.products);
 

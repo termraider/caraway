@@ -123,6 +123,10 @@ export function promoEntries(root) {
   if (root.freeShipping && root.freeShipping.enabled && root.freeShipping.threshold != null) {
     out.push({ kind: 'shipping', key: `shipping:${root.freeShipping.threshold}`, title: `Free shipping on orders $${root.freeShipping.threshold}+`, detail: { threshold: root.freeShipping.threshold } });
   }
+  for (const d of root.addOnDeals || []) {
+    out.push({ kind: 'add-on', key: `add-on:${d.handle}:${d.host}:${d.type}:${d.value}`,
+      title: `${d.handle} ${d.type === 'percent' ? d.value + '% off' : '$' + d.value + ' off'} when added with ${d.host}`, detail: d });
+  }
   for (const s of root.promoText || []) out.push({ kind: 'banner', key: 'banner:' + s.toLowerCase(), title: s });
   return out;
 }
@@ -205,4 +209,26 @@ export function mergeBackfill(catalog, history, obs) {
     };
   }
   return { catalog, history };
+}
+
+/**
+ * Add-on deals: product X is cheaper when added from product H's page ("Utensil Holder $25 off with the Utensil Set").
+ * Returns [{host, handle, type: 'amount'|'percent', value, label}] for every pair where the page actually offers X.
+ */
+export function buildAddOnDeals(products) {
+  const byVariant = new Map();
+  for (const p of Object.values(products)) for (const v of p.variants || []) byVariant.set(String(v.id), p.handle);
+  const deals = [];
+  for (const host of Object.values(products)) {
+    if (host.discontinued) continue;
+    for (const o of host.addOns || []) {
+      const offered = new Set(o.items.map((i) => i.handle || byVariant.get(String(i.variantId))).filter(Boolean));
+      for (const h of offered) {
+        const d = o.priceOverrides && o.priceOverrides[h];
+        if (!d || !d.value) continue;
+        if (!deals.some((x) => x.host === host.handle && x.handle === h)) deals.push({ host: host.handle, handle: h, type: d.type, value: d.value, label: o.label });
+      }
+    }
+  }
+  return deals;
 }

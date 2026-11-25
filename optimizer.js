@@ -33,11 +33,26 @@ export function makePricing(promos, group = 'control') {
     excludeTags: new Set(((tp && tp.excludeTags) || []).map(lc)),
     gift: giftTier ? { threshold: giftTier.amount, handle: giftTier.giftHandle, title: giftTier.giftTitle } : null,
     freeShippingAt: cur.freeShipping && cur.freeShipping.enabled ? cur.freeShipping.threshold : null,
+    addOnDeals: cur.addOnDeals || [],
   };
 }
 
 /** Prices a cart. lines = [{handle, variantId, base, tags?}] */
 export function priceCart(lines, pricing) {
+  // Add-on deals: an item is cheaper when a product that offers it as an add-on is in the same cart.
+  const inCart = new Set(lines.map((l) => l.handle));
+  const used = new Set();
+  lines = lines.map((l, idx) => {
+    let best = null;
+    for (const d of pricing.addOnDeals || []) {
+      if (d.handle !== l.handle || !inCart.has(d.host) || d.host === l.handle) continue;
+      const price = d.type === 'percent' ? l.base * (1 - d.value / 100) : Math.max(0, l.base - d.value);
+      if (!best || price < best.price) best = { price: round(price), deal: d };
+    }
+    if (!best || used.has(l.handle)) return l;
+    used.add(l.handle); // one discounted add-on per product per order
+    return { ...l, listBase: l.base, base: best.price, addOn: best.deal };
+  });
   const subtotal = round(lines.reduce((s, l) => s + l.base, 0));
   let tier = null;
   for (const t of pricing.tiers) if (subtotal >= t.threshold) tier = t;
@@ -67,9 +82,11 @@ export function priceCart(lines, pricing) {
 /** Lowest price an option could ever get in a cart (deepest tier, or a tier-only fixed price). */
 function minPrice(o, pricing) {
   let m = o.base;
+  for (const d of pricing.addOnDeals || []) if (d.handle === o.handle) m = Math.min(m, d.type === 'percent' ? o.base * (1 - d.value / 100) : Math.max(0, o.base - d.value));
   if (pricing.excludedHandles.has(o.handle)) return m;
+  const b = m;
   for (const t of pricing.tiers) {
-    m = Math.min(m, o.base * (1 - t.percentOff / 100));
+    m = Math.min(m, b * (1 - t.percentOff / 100));
     const sp = t.prices[o.handle] && t.prices[o.handle][o.variantId];
     if (sp != null) m = Math.min(m, sp);
   }

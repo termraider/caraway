@@ -1,12 +1,12 @@
-import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=2';
+import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=3';
 
 // ---------- state (saved in this browser, optionally synced through a private GitHub gist) ----------
 const LS = 'caraway-state', TOKEN = 'caraway-token', GIST = 'caraway-gist', FILE = 'caraway-tracker-state.json';
-const DEFAULTS = { owned: {}, wishlist: [], exclude: {}, coupons: [], budget: 500, objective: 'count', group: 'control', updatedAt: 0 };
+const DEFAULTS = { owned: {}, wishlist: [], exclude: {}, coupons: [], budget: 500, objective: 'count', group: 'control', prefColor: '', updatedAt: 0 };
 const safeGet = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
 const safeSet = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
 let state = { ...DEFAULTS, ...(JSON.parse(safeGet(LS) || 'null') || {}) };
-const ui = { q: '', coll: '', sort: 'name', kind: 'all', onSale: false, showGone: false, ownedOnly: false, hideOwned: false, mode: 'cheapest', color: {} };
+const ui = { q: '', coll: '', sort: 'name', kind: 'all', inPref: false, onSale: false, showGone: false, ownedOnly: false, hideOwned: false, mode: 'cheapest', color: {} };
 
 function save(rerender = true) {
   state.updatedAt = Date.now();
@@ -47,6 +47,15 @@ const ownKey = (h, c) => `${h}|${lc(c)}`;
 const isOwned = (h, c) => !!state.owned[ownKey(h, c)];
 const liveVariants = (p) => (p.variants || []).filter((v) => v.live !== false);
 const ownedColors = (p) => (p.variants || []).filter((v) => isOwned(p.handle, v.color || v.title)).map((v) => v.color || v.title);
+const colorOf = (v) => v.color || v.title;
+const pref = () => state.prefColor || '';
+const hasColor = (p, c) => !!c && (p.variants || []).some((v) => v.live !== false && lc(colorOf(v)) === lc(c));
+const isMultiColor = (p) => new Set((p.variants || []).map((v) => lc(colorOf(v)))).size > 1 || (p.variants || []).some((v) => v.color);
+function allColors() {
+  const n = {};
+  for (const p of Object.values(D.products)) if (!p.discontinued) for (const v of p.variants || []) if (v.color && v.live !== false) n[v.color] = (n[v.color] || 0) + 1;
+  return Object.entries(n).filter(([, k]) => k >= 3).sort((a, b) => b[1] - a[1]).map(([c]) => c);
+}
 function toast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), 1800); }
 
 function alonePrice(p, v) {
@@ -55,7 +64,8 @@ function alonePrice(p, v) {
 }
 function productSummary(p) {
   const vs = liveVariants(p).filter((v) => v.price != null);
-  const pool = vs.length ? vs : (p.variants || []).filter((v) => v.price != null);
+  const inPref = pref() ? vs.filter((v) => lc(colorOf(v)) === lc(pref())) : [];
+  const pool = inPref.length ? inPref : vs.length ? vs : (p.variants || []).filter((v) => v.price != null);
   const cheapestV = [...pool].sort((a, b) => a.price - b.price)[0];
   const base = cheapestV ? cheapestV.price : null;
   const compareAt = cheapestV ? cheapestV.compareAt : null;
@@ -115,6 +125,7 @@ function viewCatalog(app) {
       <div class="fld"><label for="sort">Sort</label><select id="sort">${[['name', 'Name'], ['price', 'Price, low to high'], ['-price', 'Price, high to low'], ['off', 'Biggest discount'], ['low', 'Closest to lowest ever'], ['new', 'Newest']].map(([v, l]) => `<option value="${v}" ${v === ui.sort ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
     </div>
     <div class="chips">
+      ${pref() ? `<button class="chip" data-k="inPref" aria-pressed="${!!ui.inPref}">Comes in ${esc(pref())}</button>` : ''}
       ${[['onSale', 'On sale'], ['ownedOnly', 'Owned'], ['hideOwned', 'Hide owned'], ['showGone', 'Include discontinued']].map(([k, l]) => `<button class="chip" data-k="${k}" aria-pressed="${!!ui[k]}">${l}</button>`).join('')}
     </div>
     <p class="count" id="count"></p><div class="grid" id="grid"></div>`;
@@ -125,6 +136,7 @@ function viewCatalog(app) {
       && (ui.kind === 'all' || (ui.kind === 'bundle') === !!p.bundle)
       && (!q || lc(p.title + ' ' + (p.productType || '') + ' ' + (p.variants || []).map((v) => v.color || v.title).join(' ') + ' ' + p.handle).includes(q)));
     const S = new Map(list.map((p) => [p.handle, productSummary(p)]));
+    if (ui.inPref && pref()) list = list.filter((p) => hasColor(p, pref()));
     if (ui.onSale) list = list.filter((p) => S.get(p.handle).off > 0);
     if (ui.ownedOnly) list = list.filter((p) => ownedColors(p).length);
     if (ui.hideOwned) list = list.filter((p) => !ownedColors(p).length);
@@ -161,6 +173,7 @@ function card(p, s) {
         ${s.sale != null && s.sale < s.base ? `<b>${money(s.sale)}</b><span class="strike">${money(s.base)}</span>` : `<b>${money(s.base)}</b>`}
         ${s.compareAt && s.compareAt > s.base ? `<span class="strike small">${money(s.compareAt)}</span>` : ''}
       </div>
+      ${pref() && isMultiColor(p) && !p.discontinued ? (hasColor(p, pref()) ? `<span class="small green">✓ comes in ${esc(pref())}</span>` : `<span class="small muted">not in ${esc(pref())}</span>`) : ''}
       <span class="small ${atLow ? 'gold' : 'muted'}">${s.low != null ? (atLow ? 'At its lowest tracked price' : `Lowest: ${money(s.low)} (${fmtDate(s.lowDate)})`) : ''}</span>
     </div></div>`;
 }
@@ -170,7 +183,7 @@ function viewProduct(app, handle) {
   const p = D.products[handle];
   if (!p) { app.innerHTML = `<p class="empty">Unknown product. <a href="#/">Back to catalog</a></p>`; return; }
   const s = productSummary(p);
-  const variants = (p.variants || []).filter((v) => v.price != null).sort((a, b) => (b.live !== false) - (a.live !== false));
+  const variants = (p.variants || []).filter((v) => v.price != null).sort((a, b) => (b.live !== false) - (a.live !== false) || (lc(colorOf(b)) === lc(pref())) - (lc(colorOf(a)) === lc(pref())));
   const inBundles = bundlesContaining(handle);
   const bundle = D.bundles.bundles && D.bundles.bundles[handle];
   app.innerHTML = `
@@ -197,7 +210,7 @@ function viewProduct(app, handle) {
           const c = v.color || v.title;
           const alone = alonePrice(p, v);
           return `<div class="crow">
-            <span><i style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${swatch(c)};vertical-align:-1px;margin-right:8px"></i>${esc(c)}
+            <span><i style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${swatch(c)};vertical-align:-1px;margin-right:8px"></i>${esc(c)}${lc(c) === lc(pref()) ? ' <span class="badge b-green">your color</span>' : ''}
               <span class="small muted">${v.live === false ? (v.archived ? ' · old color' : ' · no longer sold') : v.available === false ? ' · sold out' : ''}${v.sku ? ' · ' + esc(v.sku) : ''}</span></span>
             <span class="small">${money(v.price)}${v.compareAt > v.price ? ` <span class="strike">${money(v.compareAt)}</span>` : ''}${alone != null && alone < v.price ? ` <span class="gold">→ ${money(alone)}</span>` : ''}</span>
             <button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' : 'I own this'}</button>
@@ -207,11 +220,26 @@ function viewProduct(app, handle) {
       </div>
     </div>
     ${bundle ? bundleTable(bundle, s) : ''}
+    ${addOnSection(p)}
     <section class="sec"><h2>Price history</h2><div id="hist"></div></section>
     ${inBundles.length ? `<section class="sec"><h2>Bundles that include it</h2><div class="tablewrap"><table><tr><th>Bundle</th><th class="num">Price</th><th class="num">Parts value</th><th></th></tr>${inBundles.map((b) => { const bp = D.products[b.handle]; const bs = bp ? productSummary(bp) : {}; return `<tr><td><a href="#/p/${encodeURIComponent(b.handle)}">${esc(b.title)}</a></td><td class="num">${money(bs.base)}</td><td class="num">${money(b.componentValue)}</td><td class="small muted">${bp && bp.discontinued ? 'discontinued' : ''}</td></tr>`; }).join('')}</table></div></section>` : ''}`;
   app.querySelectorAll('[data-own]').forEach((b) => (b.onclick = () => { const k = ownKey(handle, b.dataset.own); if (state.owned[k]) delete state.owned[k]; else state.owned[k] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); }));
   app.querySelectorAll('[data-wish]').forEach((b) => (b.onclick = () => addWish(handle, b.dataset.wish === '*' ? null : b.dataset.wish)));
   drawHistory($('#hist'), p);
+}
+const addOnDeals = () => (D.promos.current && D.promos.current.addOnDeals) || [];
+const ptitle = (h) => (D.products[h] ? `<a href="#/p/${encodeURIComponent(h)}">${esc(D.products[h].title)}</a>` : esc(h));
+const dealText = (d) => (d.type === 'percent' ? `${d.value}% off` : `${money(d.value)} off`);
+function addOnSection(p) {
+  const offers = addOnDeals().filter((d) => d.host === p.handle);
+  const cheaper = addOnDeals().filter((d) => d.handle === p.handle);
+  const plain = (p.addOns || []).filter((o) => o.kind === 'toggle' && o.items.some((i) => i.variantId));
+  if (!offers.length && !cheaper.length && !plain.length) return '';
+  return `<section class="sec"><h2>Add-on deals</h2>
+    ${offers.map((d) => `<p>Add ${ptitle(d.handle)} from this page for <b class="gold">${dealText(d)}</b>.</p>`).join('')}
+    ${cheaper.length ? `<p>This is cheaper as an add-on: <b class="gold">${dealText(cheaper[0])}</b> when bought with ${cheaper.map((d) => ptitle(d.host)).join(', ')}.</p>` : ''}
+    ${plain.map((o) => `<p class="small muted">Optional add-on: ${esc(o.label)} (${o.items.filter((i) => i.variantId).map((i) => `${esc(i.title)} ${money(i.price)}`).join(', ')}).</p>`).join('')}
+    <p class="small muted">The wishlist planner applies these automatically when both items are in the order.</p></section>`;
 }
 function bundleTable(b, s) {
   const rows = b.items.map((i) => `<tr><td>${i.handle ? `<a href="#/p/${encodeURIComponent(i.handle)}">${esc(i.name)}</a>` : esc(i.name)}</td><td class="num">${i.qty}</td><td class="num">${money(i.unitPrice)}</td><td class="num">${i.unitPrice != null ? money(i.unitPrice * i.qty) : '—'}</td></tr>`).join('');
@@ -307,6 +335,10 @@ function viewSales(app) {
       ${cur.freeShipping && cur.freeShipping.enabled ? `<p>Free shipping on orders ${money(cur.freeShipping.threshold)}+.</p>` : ''}
       ${(cur.promoText || []).length ? `<div class="panel small">${cur.promoText.map((t) => `<div>${esc(t)}</div>`).join('')}</div>` : ''}
     </section>
+    ${addOnDeals().length ? `<section class="sec"><h2>Add-on deals</h2><p class="sub">Items that cost less when added from another product's page.</p>
+      <div class="tablewrap"><table><tr><th>Item</th><th>Discount</th><th>When bought with</th></tr>
+      ${Object.entries(addOnDeals().reduce((m, d) => { (m[d.handle + '|' + d.type + d.value] ||= { ...d, hosts: [] }).hosts.push(d.host); return m; }, {})).map(([, d]) => `<tr><td>${ptitle(d.handle)}</td><td class="gold">${dealText(d)}</td><td class="small">${d.hosts.map(ptitle).join(', ')}</td></tr>`).join('')}
+      </table></div></section>` : ''}
     <section class="sec"><h2>Coupon codes</h2>
       <p class="sub">Caraway doesn't post codes on the site, so add the ones you get by email here. They're saved with your synced data.</p>
       <div class="tablewrap"><table><tr><th>Code</th><th>Deal</th><th>From</th><th>To</th><th></th></tr>
@@ -351,7 +383,7 @@ function picker(el, onPick, { anyColor = true, label = 'Add' } = {}) {
     const b = e.target.closest('button'); if (!b) return;
     chosen = D.products[b.dataset.h]; input.value = chosen.title; list.hidden = true;
     const colors = [...new Map((chosen.variants || []).map((v) => [lc(v.color || v.title), v.color || v.title])).values()];
-    sel.innerHTML = (anyColor && colors.length > 1 ? '<option value="">Any color</option>' : '') + colors.map((c) => `<option>${esc(c)}</option>`).join('');
+    sel.innerHTML = (anyColor && colors.length > 1 ? `<option value="">Any color${pref() && colors.some((c) => lc(c) === lc(pref())) ? ` (${esc(pref())} first)` : ''}</option>` : '') + colors.map((c) => `<option>${esc(c)}</option>`).join('');
     sel.disabled = false; btn.disabled = false;
   };
   btn.onclick = () => { if (chosen) { onPick(chosen.handle, sel.value || null); input.value = ''; sel.disabled = btn.disabled = true; chosen = null; } };
@@ -386,7 +418,7 @@ function solutionHTML(sol, entries, i, extra = '') {
     const priced = sol.lines.find((l) => l.handle === o.handle && l.variantId === o.variantId);
     return `<tr><td>${o.kind === 'bundle' || D.products[o.handle]?.bundle ? '<span class="badge b-line">Bundle</span> ' : ''}<a href="#/p/${encodeURIComponent(o.handle)}">${esc(o.title)}</a> <span class="small muted">${esc(o.color || '')}</span>
       <div class="small muted">covers: ${o.covers.map((j) => esc(D.products[entries[j].handle]?.title || entries[j].handle)).join(', ')}</div></td>
-      <td class="num">${money(o.base)}</td><td class="num">${priced && priced.price < o.base ? `<span class="gold">${money(priced.price)}</span>` : money(priced ? priced.price : o.base)}</td>
+      <td class="num">${money(o.base)}</td><td class="num">${priced && priced.price < o.base ? `<span class="gold">${money(priced.price)}</span>` : money(priced ? priced.price : o.base)}${priced && priced.addOn ? `<div class="small muted">add-on deal with ${esc(D.products[priced.addOn.host]?.title || priced.addOn.host)}</div>` : ''}</td>
       <td><a class="small" href="${esc(o.url || '')}" target="_blank" rel="noopener">buy ↗</a></td></tr>`;
   };
   return `<div class="sol ${i === 0 ? 'best' : ''}">
@@ -407,7 +439,7 @@ function viewWishlist(app) {
     <p class="sub">Add what you want. It finds the cheapest mix of single items and bundles using today's sale tiers, tier-only prices and the free-gift line, or the most you can get for a budget.</p>
     <div class="sec panel"><h3>Add to wishlist</h3><div id="pick" style="margin-top:10px"></div></div>
     <div class="sec tablewrap"><table><tr><th>Item</th><th>Color</th><th class="num">Price</th><th>Leave out of budget</th><th></th></tr>
-      ${state.wishlist.map((w) => { const p = D.products[w.handle]; return `<tr><td>${p ? `<a href="#/p/${encodeURIComponent(w.handle)}">${esc(p.title)}</a>${p.discontinued ? ' <span class="badge b-red">gone</span>' : ''}` : esc(w.handle)}</td><td>${esc(w.color || 'Any')}${w.color && isOwned(w.handle, w.color) ? ' <span class="small red">owned</span>' : ''}</td><td class="num">${p ? money(productSummary(p).base) : '—'}</td>
+      ${state.wishlist.map((w) => { const p = D.products[w.handle]; return `<tr><td>${p ? `<a href="#/p/${encodeURIComponent(w.handle)}">${esc(p.title)}</a>${p.discontinued ? ' <span class="badge b-red">gone</span>' : ''}` : esc(w.handle)}</td><td>${esc(w.color || (p && pref() && hasColor(p, pref()) ? pref() + ' (your color)' : 'Any'))}${!w.color && p && pref() && isMultiColor(p) && !hasColor(p, pref()) ? ` <span class="small muted">no ${esc(pref())}, any color</span>` : ''}${w.color && isOwned(w.handle, w.color) ? ' <span class="small red">owned</span>' : ''}</td><td class="num">${p ? money(productSummary(p).base) : '—'}</td>
         <td><input type="checkbox" data-ex="${esc(w.id)}" ${state.exclude[w.id] ? 'checked' : ''} aria-label="Leave out of budget"></td><td><button class="btn sm" data-rm="${esc(w.id)}">Remove</button></td></tr>`; }).join('') || '<tr><td colspan="5" class="muted">Empty. Search above, or use "+ Wishlist" on any product.</td></tr>'}
     </table></div>
     <div class="sec row">
@@ -432,7 +464,7 @@ function addWishAndRender(h, c) { addWish(h, c); render(); }
 
 function runOptimizer() {
   const el = $('#results'); if (!el) return;
-  const wish = state.wishlist.map((w) => ({ handle: w.handle, color: w.color, id: w.id }));
+  const wish = state.wishlist.map((w) => { const p = D.products[w.handle]; return { handle: w.handle, color: w.color || (p && pref() && hasColor(p, pref()) ? pref() : null), id: w.id }; });
   if (!wish.length) { el.innerHTML = ''; return; }
   el.innerHTML = '<p class="muted">Working…</p>';
   setTimeout(() => {
@@ -524,7 +556,7 @@ async function syncNow(loud) {
     if ((remote.updatedAt || 0) > (state.updatedAt || 0)) {
       state = { ...DEFAULTS, ...remote };
       safeSet(LS, JSON.stringify(state));
-      rebuildContext(); refreshNav(); render();
+      rebuildContext(); refreshNav(); paintPref(); render();
       syncStatus = { cls: 'on', msg: 'Loaded changes from your other device.' };
     } else if ((state.updatedAt || 0) > (remote.updatedAt || 0)) {
       await gh('/gists/' + g.id, { method: 'PATCH', body: JSON.stringify({ files: { [FILE]: { content: JSON.stringify(state, null, 1) } } }) });
@@ -548,4 +580,11 @@ paintThemeBtn();
 
 // ---------- start ----------
 refreshNav(); setSyncLink();
-loadData().then(() => { render(); syncNow(false); });
+function paintPref() {
+  const sel = $('#prefSel');
+  const colors = allColors();
+  if (pref() && !colors.some((c) => lc(c) === lc(pref()))) colors.unshift(pref());
+  sel.innerHTML = '<option value="">🎨 Any color</option>' + colors.map((c) => `<option ${lc(c) === lc(pref()) ? 'selected' : ''}>${esc(c)}</option>`).join('');
+}
+$('#prefSel').onchange = (e) => { state.prefColor = e.target.value; save(); toast(state.prefColor ? `Showing ${state.prefColor} first` : 'No color preference'); };
+loadData().then(() => { paintPref(); render(); syncNow(false); });

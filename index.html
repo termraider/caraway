@@ -58,6 +58,7 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding:12px 0}
 .tools{margin-left:auto;display:flex;align-items:center;gap:10px}
 .sync{font-size:13px;color:var(--dim);text-decoration:none;font-weight:600}
 .sync.on{color:var(--green)}.sync.err{color:var(--accent)}
+.pref{height:38px;width:auto;max-width:170px;border-radius:999px;font-size:13px;font-weight:700;padding:0 30px 0 14px;background-position:calc(100% - 16px) 16px,calc(100% - 11px) 16px}
 .theme{width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);background:var(--panel);color:var(--hi);cursor:pointer;font-size:17px;line-height:1}
 main.wrap{padding-top:28px;padding-bottom:80px;min-height:70vh}
 .eyebrow{margin:0 0 6px;color:var(--gold);font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
@@ -153,10 +154,10 @@ footer{border-top:1px solid var(--line);padding:18px 0 30px;color:var(--dim);fon
     <a href="#/kitchen" data-nav="kitchen">My kitchen<span class="n" id="nOwned"></span></a>
     <a href="#/wishlist" data-nav="wishlist">Wishlist<span class="n" id="nWish"></span></a>
   </div>
-  <div class="tools"><a class="sync" id="syncLink" href="#/settings">Sync off</a><button class="theme" id="themeBtn" type="button" aria-label="Switch light or dark theme" title="Light or dark">☾</button></div>
+  <div class="tools"><select id="prefSel" class="pref" aria-label="Your favorite color" title="Your favorite color"><option value="">Any color</option></select><a class="sync" id="syncLink" href="#/settings">Sync off</a><button class="theme" id="themeBtn" type="button" aria-label="Switch light or dark theme" title="Light or dark">☾</button></div>
 </nav></div></header>
 <main class="wrap" id="app"><p class="empty">Loading…</p></main>
 <footer><div class="wrap">Prices scraped from carawayhome.com once a day. Sale math is an estimate of how Caraway's cart applies its tiers; check the cart before you buy. Not affiliated with Caraway. <span id="updated"></span></div></footer>
-<script type="module" src="app.js?v=2"></script>
+<script type="module" src="app.js?v=3"></script>
 </body>
 </html>

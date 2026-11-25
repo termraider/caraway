@@ -1,0 +1,43 @@
+name: Backfill from Internet Archive
+
+# One-time history backfill. Each run fetches up to `max` archived snapshots and saves progress,
+# so run it again until the log says "0 snapshots left".
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: 'Snapshots to fetch this run'
+        default: '1200'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Backfill
+        env:
+          MAX: ${{ github.event.inputs.max || '1200' }}
+        run: node scraper/backfill.js
+      - name: Save changes
+        run: |
+          git config user.name "caraway-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Backfill from Internet Archive $(TZ=America/New_York date +%F)"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 10))
+          done
+          exit 1

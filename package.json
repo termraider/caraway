@@ -1,0 +1,13 @@
+{
+  "name": "caraway",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scraper/scrape.js",
+    "backfill": "node scraper/backfill.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "playwright": "1.48.2"
+  }
+}

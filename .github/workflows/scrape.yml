@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  pages: write # to ask Pages to republish after saving data
 
 concurrency:
   group: scrape
@@ -42,6 +43,8 @@ jobs:
         run: node scraper/scrape.js
 
       - name: Save changes
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "caraway-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -49,7 +52,11 @@ jobs:
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Caraway data $(TZ=America/New_York date +%F)"
           for i in 1 2 3 4; do
-            git pull --rebase -X theirs origin main && git push origin HEAD:main && exit 0
+            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then
+              # Republish the site (bot pushes don't always start a Pages build on their own).
+              gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || echo "Pages rebuild request failed (site will update on the next push)"
+              exit 0
+            fi
             sleep $((i * 10))
           done
           exit 1

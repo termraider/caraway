@@ -1,5 +1,7 @@
 # Caraway tracker
 
+**Site:** https://termraider.github.io/caraway/
+
 Tracks every product and bundle on carawayhome.com: prices per color, how long each price lasted, sale tiers, tier-only prices, free gifts, banners, and discontinued items. The website (GitHub Pages) shows the catalog and price history, lets you mark what you own (by color), and works out the cheapest way to buy a wishlist or the most you can get for a budget.
 
 ## How it works

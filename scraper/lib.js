@@ -236,6 +236,7 @@ export function mergeBackfill(catalog, history, obs) {
     if (!h.color && rec.color) h.color = rec.color;
   }
   for (const [handle, p] of Object.entries(obs.products || {})) {
+    if (!/^[a-z0-9-]+$/.test(handle)) continue; // junk archive URLs like "bundle\\"
     const cur = products[handle];
     const variants = Object.entries(obs.variants || {}).filter(([, r]) => r.handle === handle).map(([id, r]) => {
       const last = [...r.seen].sort((a, b) => a[0].localeCompare(b[0])).pop();

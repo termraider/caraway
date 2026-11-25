@@ -7,6 +7,8 @@
 
 import { chromium } from 'playwright';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { extractRootInPage, extractProductInPage } from './extract.js';
 import { today, mergeCatalog, mergePriceHistory, mergePromos, buildBundles, buildAddOnDeals, inferColors } from './lib.js';
 
@@ -16,6 +18,8 @@ const DELAY_MS = Number(process.env.DELAY_MS || 2500);
 const LIMIT = Number(process.env.LIMIT || 0); // for testing: only scrape the first N products
 const UA_SUFFIX = ' CarawayPriceTracker/1.0 (personal price history; github.com/termraider/caraway)';
 
+// Raw results of a run are kept here so MERGE_ONLY=1 can re-merge them into newer data after a pull.
+const RUN_FILE = process.env.RUN_FILE || join(tmpdir(), 'caraway-run.json');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 
@@ -45,9 +49,10 @@ function robotsAllows(robots, path) {
 const locs = (xml) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 
 async function main() {
+  await mkdir(DATA, { recursive: true });
+  if (process.env.MERGE_ONLY) { await save(JSON.parse(await readFile(RUN_FILE, 'utf8'))); return; }
   const date = today();
   const started = Date.now();
-  await mkdir(DATA, { recursive: true });
 
   const browser = await chromium.launch();
   const context = await browser.newContext({
@@ -82,10 +87,8 @@ async function main() {
   log(`sitemap: ${sitemapHandles.length} products, ${sitemapCollections.length} collections`);
   if (sitemapHandles.length < 50) throw new Error('sitemap looks wrong (under 50 products); stopping without saving');
 
-  // 3. previous data
+  // 3. previous data (only to know which products to re-check; merging re-reads data/ in save())
   const catalog = await readJSON('products.json', { products: {} });
-  const history = await readJSON('price-history.json', {});
-  const promos = await readJSON('promos.json', { log: [] });
 
   // Re-check products we knew about that left the sitemap, to tell "discontinued" (404) from "unlisted".
   const known = Object.values(catalog.products).filter((p) => !p.discontinued).map((p) => p.handle);
@@ -144,7 +147,16 @@ async function main() {
   // Don't record a broken run as mass price changes / discontinuations.
   if (Object.keys(scraped).length < handles.length * 0.7) throw new Error('too many products failed this run; not saving');
 
-  // 6. merge + write
+  const run = { date, started, scraped, missing, failed, root, sitemapCollections, sitemapProducts: sitemapHandles.length };
+  await writeFile(RUN_FILE, JSON.stringify(run));
+  await save(run);
+}
+
+// 6. merge this run into whatever is in data/ now, and write.
+async function save({ date, started, scraped, missing, failed, root, sitemapCollections, sitemapProducts }) {
+  const catalog = await readJSON('products.json', { products: {} });
+  const history = await readJSON('price-history.json', {});
+  const promos = await readJSON('promos.json', { log: [] });
   const merged = mergeCatalog(catalog, scraped, missing, date, sitemapCollections);
   merged.updatedAt = date;
   log(`colors inferred for ${inferColors(merged.products)} products`);
@@ -160,7 +172,7 @@ async function main() {
   await writeJSON('bundles.json', { updatedAt: date, bundles });
   const meta = await readJSON('meta.json', { runs: [] });
   meta.lastRun = { date, at: new Date().toISOString(), seconds: Math.round((Date.now() - started) / 1000),
-    products: Object.keys(scraped).length, gone: missing, failed, sitemapProducts: sitemapHandles.length };
+    products: Object.keys(scraped).length, gone: missing, failed, sitemapProducts };
   meta.runs = [meta.lastRun, ...(meta.runs || [])].slice(0, 60);
   await writeJSON('meta.json', meta);
   log('saved');

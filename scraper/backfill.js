@@ -9,7 +9,7 @@
 // Each run fetches at most MAX snapshots (default 1200), ~1.5 s apart, then saves. Run it again to continue.
 
 import { readFile, writeFile } from 'node:fs/promises';
-import { mergeBackfill, today } from './lib.js';
+import { mergeBackfill, today, inferColors, buildBundles } from './lib.js';
 
 const DATA = new URL('../data/', import.meta.url);
 const MAX = Number(process.env.MAX || 1200);
@@ -107,8 +107,22 @@ function fromProductPage(html, handle) {
   return out.slice(0, 1).filter((p) => p.variants.length);
 }
 
+// MERGE_ONLY=1: skip the Internet Archive and just fold the saved observations into the current data files.
+// The workflow uses this after pulling, so a long backfill never overwrites data that changed meanwhile.
+async function mergeInto(obs) {
+  const catalog = await readJSON('products.json', { products: {} });
+  const history = await readJSON('price-history.json', {});
+  mergeBackfill(catalog, history, obs);
+  inferColors(catalog.products);
+  await writeJSON('products.json', catalog);
+  await writeJSON('price-history.json', history);
+  const b = await readJSON('bundles.json', {});
+  await writeJSON('bundles.json', { updatedAt: b.updatedAt || today(), bundles: buildBundles(catalog.products) });
+}
+
 async function main() {
   const obs = await readJSON('wayback-observations.json', { done: [], products: {}, variants: {} });
+  if (process.env.MERGE_ONLY) { await mergeInto(obs); log('merged saved observations'); return; }
   const done = new Set(obs.done);
   let fetched = 0;
 
@@ -172,11 +186,7 @@ async function main() {
   await writeJSON('wayback-observations.json', obs);
 
   // Merge into the live files.
-  const catalog = await readJSON('products.json', { products: {} });
-  const history = await readJSON('price-history.json', {});
-  mergeBackfill(catalog, history, obs);
-  await writeJSON('products.json', catalog);
-  await writeJSON('price-history.json', history);
+  await mergeInto(obs);
   log(`done: fetched ${fetched}, ${remaining} snapshots left${remaining ? ' (run again to continue)' : ''}`);
 }
 

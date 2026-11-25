@@ -17766,6 +17766,125 @@
     }
    ],
    "componentValue": 2595
+  },
+  "2025-hosting-bundle": {
+   "handle": "2025-hosting-bundle",
+   "title": "2025 Hosting Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "2025-hosting-bundle-walnut": {
+   "handle": "2025-hosting-bundle-walnut",
+   "title": "2025 Hosting Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "5pc-bakeware-set": {
+   "handle": "5pc-bakeware-set",
+   "title": "Half Bakeware Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "back-to-school-prep-bundle": {
+   "handle": "back-to-school-prep-bundle",
+   "title": "Back-to-School Prep Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "bake-with-love-bundle": {
+   "handle": "bake-with-love-bundle",
+   "title": "Bake With Love Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "baking-set-bundle": {
+   "handle": "baking-set-bundle",
+   "title": "Baking Set Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "bar-cart-bundle": {
+   "handle": "bar-cart-bundle",
+   "title": "Bar Cart Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "birthday-cake-bundle": {
+   "handle": "birthday-cake-bundle",
+   "title": "Birthday Cake Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "breakfast-of-champions-bundle": {
+   "handle": "breakfast-of-champions-bundle",
+   "title": "Breakfast of Champions Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "celebration-prep-bundle": {
+   "handle": "celebration-prep-bundle",
+   "title": "Celebration Prep Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "ceramic-coated-pan-trio": {
+   "handle": "ceramic-coated-pan-trio",
+   "title": "Fry Pan Trio",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "ceramic-cooking-starter-set": {
+   "handle": "ceramic-cooking-starter-set",
+   "title": "Ceramic Cooking Starter Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "clean-start-bundle": {
+   "handle": "clean-start-bundle",
+   "title": "Clean Start Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "compact-kitchen-bundle": {
+   "handle": "compact-kitchen-bundle",
+   "title": "Compact Kitchen Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "daily-duo": {
+   "handle": "daily-duo",
+   "title": "Daily Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "date-night-in-bundle": {
+   "handle": "date-night-in-bundle",
+   "title": "Date-Night-In Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "dinner-for-two-bundle": {
+   "handle": "dinner-for-two-bundle",
+   "title": "Dinner for Two Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
   }
  }
 }

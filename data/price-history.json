@@ -1,0 +1,1102 @@
+{
+ "30339901292626": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 445,
+    "compareAt": 675,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "30339901325394": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 445,
+    "compareAt": 675,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "30339901259858": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Sage",
+  "runs": [
+   {
+    "price": 445,
+    "compareAt": 675,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "30461189423186": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Gray",
+  "runs": [
+   {
+    "price": 445,
+    "compareAt": 675,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "30751735742546": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 445,
+    "compareAt": 675,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "39493885067346": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Marigold",
+  "runs": [
+   {
+    "price": 445,
+    "compareAt": 675,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40014597619794": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "Black",
+  "runs": [
+   {
+    "price": 595,
+    "compareAt": 775,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40014598340690": {
+  "handle": "cookware-sets",
+  "title": "Cookware Set",
+  "color": "White",
+  "runs": [
+   {
+    "price": 595,
+    "compareAt": 775,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32332471337042": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$100",
+  "runs": [
+   {
+    "price": 100,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32332466815058": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$25",
+  "runs": [
+   {
+    "price": 25,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32332083396690": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$50",
+  "runs": [
+   {
+    "price": 50,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "39753350152274": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$75",
+  "runs": [
+   {
+    "price": 75,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "33177956384850": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$200",
+  "runs": [
+   {
+    "price": 200,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40229390123090": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$250",
+  "runs": [
+   {
+    "price": 250,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "30461487972434": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$395",
+  "runs": [
+   {
+    "price": 395,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40229390155858": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$400",
+  "runs": [
+   {
+    "price": 400,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40229390188626": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$600",
+  "runs": [
+   {
+    "price": 600,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40229390221394": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$800",
+  "runs": [
+   {
+    "price": 800,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40229390254162": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$1000",
+  "runs": [
+   {
+    "price": 1000,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "41263744122962": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$1500",
+  "runs": [
+   {
+    "price": 1500,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "41263773319250": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$500",
+  "runs": [
+   {
+    "price": 500,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "41263775580242": {
+  "handle": "gift-card",
+  "title": "Digital Gift Card",
+  "color": "$750",
+  "runs": [
+   {
+    "price": 750,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426276126802": {
+  "handle": "tea-towels",
+  "title": "Tea Towels",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 55,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426276454482": {
+  "handle": "tea-towels",
+  "title": "Tea Towels",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 55,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426276552786": {
+  "handle": "tea-towels",
+  "title": "Tea Towels",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 55,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426266067026": {
+  "handle": "oven-mitts",
+  "title": "Oven Mitts",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 40,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426266099794": {
+  "handle": "oven-mitts",
+  "title": "Oven Mitts",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 40,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426266132562": {
+  "handle": "oven-mitts",
+  "title": "Oven Mitts",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 40,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426270064722": {
+  "handle": "pot-holders",
+  "title": "Pot Holders",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 40,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426270097490": {
+  "handle": "pot-holders",
+  "title": "Pot Holders",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 40,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40426270195794": {
+  "handle": "pot-holders",
+  "title": "Pot Holders",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 40,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601501958226": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 125,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601501990994": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Gray",
+  "runs": [
+   {
+    "price": 125,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601502023762": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 125,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601502056530": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Sage",
+  "runs": [
+   {
+    "price": 125,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601502089298": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 125,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "39493907447890": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Marigold",
+  "runs": [
+   {
+    "price": 125,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40236834816082": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "White",
+  "runs": [
+   {
+    "price": 135,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40236837142610": {
+  "handle": "fry-pan",
+  "title": "Fry Pan",
+  "color": "Black",
+  "runs": [
+   {
+    "price": 135,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601915293778": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601915326546": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Gray",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601915359314": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601915392082": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Sage",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601915424850": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "39493909348434": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Marigold",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40236873220178": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "Black",
+  "runs": [
+   {
+    "price": 205,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40236875251794": {
+  "handle": "saute-pan",
+  "title": "Sauté Pan",
+  "color": "White",
+  "runs": [
+   {
+    "price": 205,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601917096018": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Cream",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601917128786": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Gray",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601917161554": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Perracotta",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601917194322": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Sage",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "32601917227090": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Navy",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "39493894864978": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Marigold",
+  "runs": [
+   {
+    "price": 165,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40236842582098": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "Black",
+  "runs": [
+   {
+    "price": 185,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ },
+ "40236843761746": {
+  "handle": "dutch-oven",
+  "title": "Dutch Oven",
+  "color": "White",
+  "runs": [
+   {
+    "price": 185,
+    "compareAt": null,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ],
+  "stock": [
+   {
+    "available": true,
+    "from": "2026-11-24",
+    "to": "2026-11-24"
+   }
+  ]
+ }
+}

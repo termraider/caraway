@@ -1,0 +1,806 @@
+{
+ "updatedAt": "2026-11-24",
+ "current": {
+  "holidayEnabled": true,
+  "tierPricing": {
+   "tiers": [
+    {
+     "threshold": 85,
+     "percentOff": 15,
+     "prices": {}
+    },
+    {
+     "threshold": 425,
+     "percentOff": 20,
+     "prices": {
+      "mini-fry-pan": {
+       "40144570318930": 89,
+       "40144570351698": 89,
+       "40144570384466": 89,
+       "40144570417234": 89,
+       "40144570450002": 89,
+       "40144570482770": 89
+      },
+      "square-butcher-block": {
+       "42116320034898": 89
+      },
+      "mini-utensil-set": {
+       "42116320100434": 89
+      }
+     }
+    },
+    {
+     "threshold": 525,
+     "percentOff": 25,
+     "prices": {
+      "glass-airtight-container-set": {
+       "41983308562514": 199,
+       "41983308595282": 199,
+       "41983308628050": 199,
+       "41983308660818": 199,
+       "41983308693586": 199,
+       "41983308726354": 199
+      },
+      "baking-sheet-duo": {
+       "39767345823826": 89,
+       "39767345922130": 89,
+       "39767345856594": 89,
+       "39767345889362": 89,
+       "39767345954898": 89,
+       "39948250447954": 89,
+       "39948250480722": 89
+      },
+      "better-baking-bundle": {
+       "42286786347090": 599,
+       "42286786379858": 599,
+       "42286786412626": 599,
+       "42286786445394": 599,
+       "42286786478162": 599
+      },
+      "cast-iron-set": {
+       "41244107538514": 499,
+       "41244107571282": 499,
+       "41244107604050": 499,
+       "41244107636818": 499,
+       "41244107669586": 499,
+       "41244107702354": 499
+      },
+      "circle-pan-duo": {
+       "40363313496146": 89,
+       "40363313528914": 89
+      },
+      "cookware-cookware-plus-and-minis-duo": {
+       "41234337267794": 899,
+       "41234337300562": 899,
+       "41234337333330": 899,
+       "41234337366098": 899,
+       "41234337398866": 899,
+       "41234337431634": 899
+      },
+      "cookware-bakeware-minis-duo-bundle": {
+       "41234336940114": 799,
+       "41234336972882": 799,
+       "41234337005650": 799,
+       "41234337038418": 799,
+       "41234337071186": 799,
+       "41234337103954": 799
+      },
+      "enameled-cast-iron-skillet-trio": {
+       "41975322935378": 399,
+       "41975322968146": 399,
+       "41975323000914": 399,
+       "41975323033682": 399,
+       "41975323066450": 399,
+       "41975323099218": 399
+      },
+      "ultimate-glass-airtight-storage-set": {
+       "42377937289298": 399,
+       "42377937322066": 399,
+       "42377937354834": 399,
+       "42377937387602": 399,
+       "42377937420370": 399,
+       "42377937453138": 399
+      }
+     }
+    }
+   ],
+   "segments": {
+    "flat20": {
+     "percentOff": 20,
+     "prices": {
+      "mini-fry-pan": {
+       "40144570318930": 89,
+       "40144570351698": 89,
+       "40144570384466": 89,
+       "40144570417234": 89,
+       "40144570450002": 89,
+       "40144570482770": 89
+      },
+      "square-butcher-block": {
+       "42116320034898": 89
+      },
+      "mini-utensil-set": {
+       "42116320100434": 89
+      },
+      "ceramic-cookware-plus-set": {
+       "40776665595986": 408,
+       "40776665628754": 408,
+       "40776665661522": 408,
+       "40776665694290": 408,
+       "40776665727058": 408,
+       "40776665759826": 408
+      },
+      "squareware-set": {
+       "40523580670034": 446,
+       "40523580702802": 446,
+       "40527283978322": 446,
+       "40523580735570": 446,
+       "40523580768338": 446,
+       "40523580801106": 446
+      },
+      "stainless-steel-cookware-set": {
+       "40545383317586": 446
+      },
+      "cast-iron-set": {
+       "41244107538514": 499,
+       "41244107571282": 499,
+       "41244107604050": 499,
+       "41244107636818": 499,
+       "41244107669586": 499,
+       "41244107702354": 499
+      },
+      "7pc-fry-saute-set": {
+       "42410710368338": 499,
+       "42410710401106": 499,
+       "42410710433874": 499,
+       "42410710466642": 499,
+       "42410710499410": 499,
+       "42410710532178": 499
+      },
+      "clean-start-bundle": {
+       "42277560680530": 999,
+       "42277560713298": 999,
+       "42277560746066": 999,
+       "42277560778834": 999,
+       "42277560811602": 999
+      },
+      "cookie-sheet-duo": {
+       "42266967310418": 99,
+       "42266967343186": 99,
+       "42266967375954": 99,
+       "42266967408722": 99,
+       "42266967441490": 99,
+       "42266967474258": 99,
+       "42266967507026": 99
+      },
+      "cookware-cookware-plus-and-minis-duo": {
+       "41234337267794": 899,
+       "41234337300562": 899,
+       "41234337333330": 899,
+       "41234337366098": 899,
+       "41234337398866": 899,
+       "41234337431634": 899
+      },
+      "cookware-bakeware-minis-duo-bundle": {
+       "41234336940114": 799,
+       "41234336972882": 799,
+       "41234337005650": 799,
+       "41234337038418": 799,
+       "41234337071186": 799,
+       "41234337103954": 799
+      },
+      "deluxe-cookware-set": {
+       "41234336186450": 499,
+       "41234336219218": 499,
+       "41234336251986": 499,
+       "41234336284754": 499,
+       "41234336317522": 499,
+       "41234336350290": 499
+      },
+      "family-time-bundle": {
+       "42022807339090": 799,
+       "42022807371858": 799,
+       "42022807404626": 799,
+       "42022807437394": 799,
+       "42022807470162": 799
+      },
+      "full-ceramic-cookware-bundle": {
+       "41260852215890": 1357,
+       "41260852248658": 1357,
+       "41260852281426": 1357,
+       "41260852314194": 1357,
+       "41260852346962": 1357,
+       "41260852379730": 1357
+      },
+      "ultimate-holiday-bundle": {
+       "42277560680530": 999,
+       "42277560713298": 999,
+       "42277560746066": 999,
+       "42277560778834": 999,
+       "42277560811602": 999
+      }
+     }
+    }
+   },
+   "productOverrides": {
+    "gift-card": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "coffee-maker": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "clean-coffee-bundle": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "coffee-cookware-bundle": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "sustainability-coverage": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "59-143189095378034": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "98-09458161494223": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "27-749245489711384": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "32-98341597113736": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "84-33747137316028": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "80-56353170927353": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "77-82200120551049": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "34-84170471591794": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "66-82715340067395": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "31-272674785051557": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "51-9092268245456": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "42-35845975182517": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "70-4841051360833": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "65-7173517777782": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "5-582223940338937": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "98-71717546988586": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "38-68743581385583": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "8-84652098419747": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "6-915551666196329": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "38-499719067160584": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "extend-protection-plans-4": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "cast-iron-dutch-oven-and-lid-gwp": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "48-920383183080475": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "16-418874553499265": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "13-979051895427963": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "51-337908780345586": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "44-79855325683171": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "37-44648704434563": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "96-18213285758846": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "39-80973461341304": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "50-934579615772236": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "6-240519106377018": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "29-055520816371505": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "62-755271285002465": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "92-46800280735555": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "47-4672294223853": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "21-218820073857223": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "33-153666324933106": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "64-8273799326643": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "77-90922539470483": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "30-84106522714345": {
+     "percentOff": 0,
+     "prices": {}
+    },
+    "4pc-mini-airtight-storage-container-set": {
+     "percentOff": 0,
+     "prices": {}
+    }
+   },
+   "excludeTags": [
+    "exclude-from-discounts"
+   ]
+  },
+  "progressBars": [
+   {
+    "name": "Holiday Tiers - 4 Tiers",
+    "enabled": true,
+    "featureFlag": {
+     "key": "holiday-offer",
+     "variant": "control"
+    },
+    "completedMessage": "🎉 Best Deal Unlocked! 25% off + FREE Dutch Oven!",
+    "progressCalculation": "pre-discount",
+    "tiers": [
+     {
+      "title": "15% Off",
+      "amount": 85,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} to unlock 15% off!",
+      "giftHandle": null,
+      "giftTitle": null
+     },
+     {
+      "title": "20% Off",
+      "amount": 425,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} more to unlock 20% off!",
+      "giftHandle": null,
+      "giftTitle": null
+     },
+     {
+      "title": "25% Off",
+      "amount": 525,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} more to unlock 25% off!",
+      "giftHandle": null,
+      "giftTitle": null
+     },
+     {
+      "title": "Free Gift",
+      "amount": 966.66,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} more to unlock a FREE Dutch Oven!",
+      "giftHandle": "cast-iron-dutch-oven-and-lid-gwp",
+      "giftTitle": "6.5 qt Enameled Cast Iron Dutch Oven - GWP"
+     }
+    ]
+   },
+   {
+    "name": "Holiday Tiers - 2 Tiers",
+    "enabled": true,
+    "featureFlag": {
+     "key": "holiday-offer",
+     "variant": "flat20"
+    },
+    "completedMessage": "Success! 20% off + FREE Cast Iron Dutch Oven",
+    "progressCalculation": "pre-discount",
+    "tiers": [
+     {
+      "title": "20% Off",
+      "amount": 0,
+      "applyCode": "",
+      "progressMessage": "Spend $725* to unlock a FREE Cast Iron Dutch Oven",
+      "giftHandle": null,
+      "giftTitle": null
+     },
+     {
+      "title": "Free Gift",
+      "amount": 906.25,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} more to unlock a FREE Cast Iron Dutch Oven",
+      "giftHandle": "cast-iron-dutch-oven-and-lid-gwp",
+      "giftTitle": "6.5 qt Enameled Cast Iron Dutch Oven - GWP"
+     }
+    ]
+   },
+   {
+    "name": "Prime",
+    "enabled": false,
+    "featureFlag": null,
+    "completedMessage": "Success! 20% off applied in cart.",
+    "progressCalculation": "pre-discount",
+    "tiers": [
+     {
+      "title": "Free Shipping",
+      "amount": 90,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} to unlock free shipping!",
+      "giftHandle": null,
+      "giftTitle": null
+     },
+     {
+      "title": "20% Off",
+      "amount": 875,
+      "applyCode": "",
+      "progressMessage": "Spend {{remaining}} more to unlock 20% off!",
+      "giftHandle": null,
+      "giftTitle": null
+     }
+    ]
+   }
+  ],
+  "freeShipping": {
+   "enabled": true,
+   "threshold": 90,
+   "raw": "{\"enabled\":true,\"minCartSpend\":90,\"progressMessage\":\"You're only {{amount}} away from free shipping!\",\"progressBarColor\":\"var(--primary)\",\"qualifiedMessage\":\"You've qualified for free shipping!\"}"
+  },
+  "cartDiscounts": "{\"enabled\":false}",
+  "promoText": [
+   "LIMITED TIME | Save $230 With Our Best-Selling Cookware Set | Shop Now →",
+   "Carts $725*+ receive a FREE Enameled Cast Iron Dutch Oven",
+   "25% Off + Free Cast Iron Dutch Oven",
+   "Congrats! FREE Enameled Cast Iron Dutch Oven* has been added to your cart!",
+   "Our Biggest Sale of the Year",
+   "Save up to 25% off + unlock a Free Dutch Oven"
+  ]
+ },
+ "log": [
+  {
+   "kind": "tiers",
+   "key": "tiers:15@85,20@425,25@525",
+   "title": "Spend tiers: 15% off at $85, 20% off at $425, 25% off at $525",
+   "detail": {
+    "tiers": [
+     {
+      "threshold": 85,
+      "percentOff": 15
+     },
+     {
+      "threshold": 425,
+      "percentOff": 20
+     },
+     {
+      "threshold": 525,
+      "percentOff": 25
+     }
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:mini-fry-pan:425:89",
+   "title": "mini-fry-pan drops to $89 once the cart reaches $425",
+   "detail": {
+    "handle": "mini-fry-pan",
+    "threshold": 425,
+    "prices": [
+     89
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:square-butcher-block:425:89",
+   "title": "square-butcher-block drops to $89 once the cart reaches $425",
+   "detail": {
+    "handle": "square-butcher-block",
+    "threshold": 425,
+    "prices": [
+     89
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:mini-utensil-set:425:89",
+   "title": "mini-utensil-set drops to $89 once the cart reaches $425",
+   "detail": {
+    "handle": "mini-utensil-set",
+    "threshold": 425,
+    "prices": [
+     89
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:glass-airtight-container-set:525:199",
+   "title": "glass-airtight-container-set drops to $199 once the cart reaches $525",
+   "detail": {
+    "handle": "glass-airtight-container-set",
+    "threshold": 525,
+    "prices": [
+     199
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:baking-sheet-duo:525:89",
+   "title": "baking-sheet-duo drops to $89 once the cart reaches $525",
+   "detail": {
+    "handle": "baking-sheet-duo",
+    "threshold": 525,
+    "prices": [
+     89
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:better-baking-bundle:525:599",
+   "title": "better-baking-bundle drops to $599 once the cart reaches $525",
+   "detail": {
+    "handle": "better-baking-bundle",
+    "threshold": 525,
+    "prices": [
+     599
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:cast-iron-set:525:499",
+   "title": "cast-iron-set drops to $499 once the cart reaches $525",
+   "detail": {
+    "handle": "cast-iron-set",
+    "threshold": 525,
+    "prices": [
+     499
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:circle-pan-duo:525:89",
+   "title": "circle-pan-duo drops to $89 once the cart reaches $525",
+   "detail": {
+    "handle": "circle-pan-duo",
+    "threshold": 525,
+    "prices": [
+     89
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:cookware-cookware-plus-and-minis-duo:525:899",
+   "title": "cookware-cookware-plus-and-minis-duo drops to $899 once the cart reaches $525",
+   "detail": {
+    "handle": "cookware-cookware-plus-and-minis-duo",
+    "threshold": 525,
+    "prices": [
+     899
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:cookware-bakeware-minis-duo-bundle:525:799",
+   "title": "cookware-bakeware-minis-duo-bundle drops to $799 once the cart reaches $525",
+   "detail": {
+    "handle": "cookware-bakeware-minis-duo-bundle",
+    "threshold": 525,
+    "prices": [
+     799
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:enameled-cast-iron-skillet-trio:525:399",
+   "title": "enameled-cast-iron-skillet-trio drops to $399 once the cart reaches $525",
+   "detail": {
+    "handle": "enameled-cast-iron-skillet-trio",
+    "threshold": 525,
+    "prices": [
+     399
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "tier-price",
+   "key": "tier-price:ultimate-glass-airtight-storage-set:525:399",
+   "title": "ultimate-glass-airtight-storage-set drops to $399 once the cart reaches $525",
+   "detail": {
+    "handle": "ultimate-glass-airtight-storage-set",
+    "threshold": 525,
+    "prices": [
+     399
+    ]
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "gift",
+   "key": "gift:cast-iron-dutch-oven-and-lid-gwp:966.66:control",
+   "title": "Free 6.5 qt Enameled Cast Iron Dutch Oven - GWP when the cart reaches $966.66 before discounts",
+   "detail": {
+    "giftHandle": "cast-iron-dutch-oven-and-lid-gwp",
+    "giftTitle": "6.5 qt Enameled Cast Iron Dutch Oven - GWP",
+    "threshold": 966.66,
+    "bar": "Holiday Tiers - 4 Tiers",
+    "group": "control"
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "gift",
+   "key": "gift:cast-iron-dutch-oven-and-lid-gwp:906.25:flat20",
+   "title": "Free 6.5 qt Enameled Cast Iron Dutch Oven - GWP when the cart reaches $906.25 before discounts (flat20 shoppers)",
+   "detail": {
+    "giftHandle": "cast-iron-dutch-oven-and-lid-gwp",
+    "giftTitle": "6.5 qt Enameled Cast Iron Dutch Oven - GWP",
+    "threshold": 906.25,
+    "bar": "Holiday Tiers - 2 Tiers",
+    "group": "flat20"
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "shipping",
+   "key": "shipping:90",
+   "title": "Free shipping on orders $90+",
+   "detail": {
+    "threshold": 90
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:limited time | save $230 with our best-selling cookware set | shop now →",
+   "title": "LIMITED TIME | Save $230 With Our Best-Selling Cookware Set | Shop Now →",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:carts $725*+ receive a free enameled cast iron dutch oven",
+   "title": "Carts $725*+ receive a FREE Enameled Cast Iron Dutch Oven",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:25% off + free cast iron dutch oven",
+   "title": "25% Off + Free Cast Iron Dutch Oven",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:congrats! free enameled cast iron dutch oven* has been added to your cart!",
+   "title": "Congrats! FREE Enameled Cast Iron Dutch Oven* has been added to your cart!",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:our biggest sale of the year",
+   "title": "Our Biggest Sale of the Year",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:save up to 25% off + unlock a free dutch oven",
+   "title": "Save up to 25% off + unlock a Free Dutch Oven",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  }
+ ]
+}

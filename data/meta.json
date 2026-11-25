@@ -1,0 +1,22 @@
+{
+ "runs": [
+  {
+   "date": "2026-11-24",
+   "at": "2026-11-25T01:53:02.987Z",
+   "seconds": 28,
+   "products": 8,
+   "gone": [],
+   "failed": [],
+   "sitemapProducts": 206
+  }
+ ],
+ "lastRun": {
+  "date": "2026-11-24",
+  "at": "2026-11-25T01:53:02.987Z",
+  "seconds": 28,
+  "products": 8,
+  "gone": [],
+  "failed": [],
+  "sitemapProducts": 206
+ }
+}

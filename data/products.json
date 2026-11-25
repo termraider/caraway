@@ -1,0 +1,2053 @@
+{
+ "products": {
+  "cookware-sets": {
+   "handle": "cookware-sets",
+   "title": "Cookware Set",
+   "productType": "Cookware Sets",
+   "vendor": "Caraway",
+   "tags": [
+    "ceramic",
+    "chord_origin: contentful",
+    "chord_origin_id: 48h3v2nA3gE7PStML3bJ7J",
+    "cookware",
+    "customTag",
+    "set",
+    "tbyb:30339901259858",
+    "tbyb:30339901292626",
+    "tbyb:30339901325394",
+    "tbyb:30461189423186",
+    "tbyb:30751735742546",
+    "tbyb:39493885067346",
+    "Verishop",
+    "YGroup_cookware",
+    "zest-gift"
+   ],
+   "collections": [
+    "cookware",
+    "all",
+    "bundles",
+    "storage-and-organization",
+    "ceramic-cookware",
+    "cookware-sets-and-duos",
+    "gifts-for-me",
+    "gifts-for-them",
+    "impossible-to-shop-for",
+    "lunar-new-year",
+    "microplastic-free",
+    "seasonal-picks",
+    "toxin-free-tools",
+    "best-sellers",
+    "birthday",
+    "everyday-home-cook",
+    "fall-collection",
+    "fall-favorites",
+    "for-all-dads",
+    "for-all-moms",
+    "for-the-kitchen-beginners",
+    "gifts-by-price",
+    "gifts-by-serving-size",
+    "gifts-for-me-and-them",
+    "going-going",
+    "holiday",
+    "induction-compatible-cookware",
+    "made-without-forever-chemicals",
+    "made-without-microplastics",
+    "milestones",
+    "most-reviewed",
+    "mothers-day-picks",
+    "new-year-essentials",
+    "non-stick-pans",
+    "pots-and-pans",
+    "ready-to-ship",
+    "small-kitchens",
+    "tax-refund",
+    "tiktok-famous",
+    "top-rated-customer-favorites",
+    "top-trending",
+    "cookware-ceramic-cookware"
+   ],
+   "publishedAt": "2026-02-18T19:39:05Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_cream_hero.jpg?v=1782881447",
+   "description": "12-pc non-stick ceramic cookware set with storage",
+   "byline": "12-Piece Ceramic Set With Storage Organizers",
+   "badges": [
+    "🔥 SELLING FAST",
+    "percent-off-47"
+   ],
+   "rating": 4.7,
+   "reviews": 87047,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Navy",
+      "Sage",
+      "Gray",
+      "Perracotta",
+      "Marigold",
+      "Black",
+      "White"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "30339901292626",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "CW-CSET-R01",
+     "price": 445,
+     "compareAt": 675,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_cream_hero.jpg?v=1782881447",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "30339901325394",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "CW-CSET-R06",
+     "price": 445,
+     "compareAt": 675,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_navy_hero.jpg?v=1782881457",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "30339901259858",
+     "title": "Sage",
+     "options": {
+      "Color": "Sage"
+     },
+     "color": "Sage",
+     "sku": "CW-CSET-R03",
+     "price": 445,
+     "compareAt": 675,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_sage_hero.jpg?v=1782881488",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "30461189423186",
+     "title": "Gray",
+     "options": {
+      "Color": "Gray"
+     },
+     "color": "Gray",
+     "sku": "CW-CSET-R04",
+     "price": 445,
+     "compareAt": 675,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_gray_hero.jpg?v=1782881467",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "30751735742546",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "CW-CSET-R07",
+     "price": 445,
+     "compareAt": 675,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_perracotta_hero.jpg?v=1782881478",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "39493885067346",
+     "title": "Marigold",
+     "options": {
+      "Color": "Marigold"
+     },
+     "color": "Marigold",
+     "sku": "CW-CSET-R05",
+     "price": 445,
+     "compareAt": 675,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_marigold_hero.jpg?v=1782881496",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40014597619794",
+     "title": "Black",
+     "options": {
+      "Color": "Black"
+     },
+     "color": "Black",
+     "sku": "CW-CSET-R08",
+     "price": 595,
+     "compareAt": 775,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_black_hero.jpg?v=1784616353",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40014598340690",
+     "title": "White",
+     "options": {
+      "Color": "White"
+     },
+     "color": "White",
+     "sku": "CW-CSET-R09",
+     "price": 595,
+     "compareAt": 775,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/cookware-sets_white_hero.jpg?v=1784616353",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [
+    {
+     "name": "10.5” Ceramic-Coated Fry Pan",
+     "shortName": "Fry Pan",
+     "qty": 1,
+     "type": "pan",
+     "match": "color",
+     "priceOverride": null,
+     "variants": [
+      {
+       "id": "32601501958226",
+       "color": "cream",
+       "edition": "standard",
+       "label": "Fry Pan – Cream",
+       "price": 125
+      },
+      {
+       "id": "32601501990994",
+       "color": "gray",
+       "edition": "standard",
+       "label": "Fry Pan – Gray",
+       "price": 125
+      },
+      {
+       "id": "32601502023762",
+       "color": "perracotta",
+       "edition": "standard",
+       "label": "Fry Pan – Perracotta",
+       "price": 125
+      },
+      {
+       "id": "32601502056530",
+       "color": "sage",
+       "edition": "standard",
+       "label": "Fry Pan – Sage",
+       "price": 125
+      },
+      {
+       "id": "32601502089298",
+       "color": "navy",
+       "edition": "standard",
+       "label": "Fry Pan – Navy",
+       "price": 125
+      },
+      {
+       "id": "39493907447890",
+       "color": "marigold",
+       "edition": "standard",
+       "label": "Fry Pan – Marigold",
+       "price": 125
+      },
+      {
+       "id": "40236834816082",
+       "color": "white",
+       "edition": "iconics",
+       "label": "Fry Pan – White",
+       "price": 135
+      },
+      {
+       "id": "40236837142610",
+       "color": "black",
+       "edition": "iconics",
+       "label": "Fry Pan – Black",
+       "price": 135
+      }
+     ]
+    },
+    {
+     "name": "3 qt Ceramic-Coated Sauce Pan With Lid",
+     "shortName": "Sauce Pan",
+     "qty": 1,
+     "type": "pan",
+     "match": "color",
+     "priceOverride": null,
+     "variants": [
+      {
+       "id": "32601917423698",
+       "color": "cream",
+       "edition": "standard",
+       "label": "Sauce Pan – Cream",
+       "price": 135
+      },
+      {
+       "id": "32601917456466",
+       "color": "gray",
+       "edition": "standard",
+       "label": "Sauce Pan – Gray",
+       "price": 135
+      },
+      {
+       "id": "32601917489234",
+       "color": "perracotta",
+       "edition": "standard",
+       "label": "Sauce Pan – Perracotta",
+       "price": 135
+      },
+      {
+       "id": "32601917522002",
+       "color": "sage",
+       "edition": "standard",
+       "label": "Sauce Pan – Sage",
+       "price": 135
+      },
+      {
+       "id": "32601917554770",
+       "color": "navy",
+       "edition": "standard",
+       "label": "Sauce Pan – Navy",
+       "price": 135
+      },
+      {
+       "id": "39493908529234",
+       "color": "marigold",
+       "edition": "standard",
+       "label": "Sauce Pan – Marigold",
+       "price": 135
+      },
+      {
+       "id": "40236846841938",
+       "color": "black",
+       "edition": "iconics",
+       "label": "Sauce Pan – Black",
+       "price": 165
+      },
+      {
+       "id": "40236848021586",
+       "color": "white",
+       "edition": "iconics",
+       "label": "Sauce Pan – White",
+       "price": 165
+      }
+     ]
+    },
+    {
+     "name": "4.5 qt Ceramic-Coated Sauté Pan With Lid",
+     "shortName": "Sauté Pan",
+     "qty": 1,
+     "type": "pan",
+     "match": "color",
+     "priceOverride": null,
+     "variants": [
+      {
+       "id": "32601915293778",
+       "color": "cream",
+       "edition": "standard",
+       "label": "Sauté Pan – Cream",
+       "price": 165
+      },
+      {
+       "id": "32601915326546",
+       "color": "gray",
+       "edition": "standard",
+       "label": "Sauté Pan – Gray",
+       "price": 165
+      },
+      {
+       "id": "32601915359314",
+       "color": "perracotta",
+       "edition": "standard",
+       "label": "Sauté Pan – Perracotta",
+       "price": 165
+      },
+      {
+       "id": "32601915392082",
+       "color": "sage",
+       "edition": "standard",
+       "label": "Sauté Pan – Sage",
+       "price": 165
+      },
+      {
+       "id": "32601915424850",
+       "color": "navy",
+       "edition": "standard",
+       "label": "Sauté Pan – Navy",
+       "price": 165
+      },
+      {
+       "id": "39493909348434",
+       "color": "marigold",
+       "edition": "standard",
+       "label": "Sauté Pan – Marigold",
+       "price": 165
+      },
+      {
+       "id": "40236873220178",
+       "color": "black",
+       "edition": "iconics",
+       "label": "Sauté Pan – Black",
+       "price": 205
+      },
+      {
+       "id": "40236875251794",
+       "color": "white",
+       "edition": "iconics",
+       "label": "Sauté Pan – White",
+       "price": 205
+      }
+     ]
+    },
+    {
+     "name": "6.5 qt Ceramic-Coated Dutch Oven With Lid",
+     "shortName": "Dutch Oven",
+     "qty": 1,
+     "type": "pot",
+     "match": "color",
+     "priceOverride": null,
+     "variants": [
+      {
+       "id": "32601917096018",
+       "color": "cream",
+       "edition": "standard",
+       "label": "Dutch Oven – Cream",
+       "price": 165
+      },
+      {
+       "id": "32601917128786",
+       "color": "gray",
+       "edition": "standard",
+       "label": "Dutch Oven – Gray",
+       "price": 165
+      },
+      {
+       "id": "32601917161554",
+       "color": "perracotta",
+       "edition": "standard",
+       "label": "Dutch Oven – Perracotta",
+       "price": 165
+      },
+      {
+       "id": "32601917194322",
+       "color": "sage",
+       "edition": "standard",
+       "label": "Dutch Oven – Sage",
+       "price": 165
+      },
+      {
+       "id": "32601917227090",
+       "color": "navy",
+       "edition": "standard",
+       "label": "Dutch Oven – Navy",
+       "price": 165
+      },
+      {
+       "id": "39493894864978",
+       "color": "marigold",
+       "edition": "standard",
+       "label": "Dutch Oven – Marigold",
+       "price": 165
+      },
+      {
+       "id": "40236842582098",
+       "color": "black",
+       "edition": "iconics",
+       "label": "Dutch Oven – Black",
+       "price": 185
+      },
+      {
+       "id": "40236843761746",
+       "color": "white",
+       "edition": "iconics",
+       "label": "Dutch Oven – White",
+       "price": 185
+      }
+     ]
+    },
+    {
+     "name": "Storage Organizer",
+     "shortName": null,
+     "qty": 4,
+     "type": "storage_organizer",
+     "match": "color",
+     "priceOverride": 50,
+     "variants": []
+    },
+    {
+     "name": "Canvas Lid Holder",
+     "shortName": null,
+     "qty": 1,
+     "type": "canvas_lid_holder",
+     "match": "color",
+     "priceOverride": 35,
+     "variants": []
+    }
+   ],
+   "url": "https://www.carawayhome.com/products/cookware-sets",
+   "bundle": true,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "gift-card": {
+   "handle": "gift-card",
+   "title": "Digital Gift Card",
+   "productType": "Gift Card",
+   "vendor": "Caraway",
+   "tags": [
+    "customTag",
+    "gift card",
+    "YBlocklist"
+   ],
+   "collections": [
+    "accessories",
+    "all",
+    "impossible-to-shop-for",
+    "for-all-dads",
+    "mothers-day-picks",
+    "top-rated-customer-favorites"
+   ],
+   "publishedAt": "2026-02-18T19:39:05Z",
+   "status": "ACTIVE",
+   "isGiftCard": true,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+   "description": "The easiest way to give the gift of clean cooking",
+   "byline": "Give the gift of cleaner cooking with a Caraway digital gift card.",
+   "badges": [
+    "🎁 Top Gift",
+    "top-gift"
+   ],
+   "rating": 4.7,
+   "reviews": 68597,
+   "options": [
+    {
+     "name": "Value",
+     "values": [
+      "$100",
+      "$25",
+      "$50",
+      "$75",
+      "$200",
+      "$250",
+      "$395",
+      "$400",
+      "$600",
+      "$800",
+      "$1000",
+      "$1500",
+      "$500",
+      "$750"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "32332471337042",
+     "title": "$100",
+     "options": {
+      "Value": "$100"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-100",
+     "price": 100,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32332466815058",
+     "title": "$25",
+     "options": {
+      "Value": "$25"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-25",
+     "price": 25,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32332083396690",
+     "title": "$50",
+     "options": {
+      "Value": "$50"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-50",
+     "price": 50,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "39753350152274",
+     "title": "$75",
+     "options": {
+      "Value": "$75"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-75",
+     "price": 75,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "33177956384850",
+     "title": "$200",
+     "options": {
+      "Value": "$200"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-200",
+     "price": 200,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40229390123090",
+     "title": "$250",
+     "options": {
+      "Value": "$250"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-250",
+     "price": 250,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "30461487972434",
+     "title": "$395",
+     "options": {
+      "Value": "$395"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-395",
+     "price": 395,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40229390155858",
+     "title": "$400",
+     "options": {
+      "Value": "$400"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-400",
+     "price": 400,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40229390188626",
+     "title": "$600",
+     "options": {
+      "Value": "$600"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-600",
+     "price": 600,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40229390221394",
+     "title": "$800",
+     "options": {
+      "Value": "$800"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-800",
+     "price": 800,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40229390254162",
+     "title": "$1000",
+     "options": {
+      "Value": "$1000"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-1000",
+     "price": 1000,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "41263744122962",
+     "title": "$1500",
+     "options": {
+      "Value": "$1500"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-1500",
+     "price": 1500,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "41263773319250",
+     "title": "$500",
+     "options": {
+      "Value": "$500"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-500",
+     "price": 500,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "41263775580242",
+     "title": "$750",
+     "options": {
+      "Value": "$750"
+     },
+     "color": null,
+     "sku": "GIFT-CARD-750",
+     "price": 750,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": null,
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/GiftCards-hero.jpg?v=1793803034",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/gift-card",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "tea-towels": {
+   "handle": "tea-towels",
+   "title": "Tea Towels",
+   "productType": "Linens",
+   "vendor": "Caraway",
+   "tags": [
+    "chord_origin: contentful",
+    "chord_origin_id: 7I2OOkpxX52vNyZ9X1XJLM",
+    "customTag",
+    "linen",
+    "YGroup_Linens"
+   ],
+   "collections": [
+    "linens",
+    "accessories",
+    "all",
+    "toxin-free-tools",
+    "new-year-essentials",
+    "coffee-and-tea"
+   ],
+   "publishedAt": "2026-02-18T19:39:05Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/tea-towels_cream_hero.jpg?v=1784589550",
+   "description": "Organic towels with loops to elevate your kitchen",
+   "byline": "Trio of organic cotton & sustainable made Tea Towels.",
+   "badges": [
+    "⚡ Trending",
+    "trending"
+   ],
+   "rating": 4.8,
+   "reviews": 633,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Navy",
+      "Perracotta"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "40426276126802",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "LN-TTWL-101",
+     "price": 55,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/tea-towels_cream_hero.jpg?v=1784589550",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40426276454482",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "LN-TTWL-102",
+     "price": 55,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/tea-towels_navy_hero.jpg?v=1784589550",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40426276552786",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "LN-TTWL-103",
+     "price": 55,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/tea-towels_perracotta_hero.jpg?v=1784589550",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/tea-towels",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "oven-mitts": {
+   "handle": "oven-mitts",
+   "title": "Oven Mitts",
+   "productType": "Linens",
+   "vendor": "Caraway",
+   "tags": [
+    "chord_origin: contentful",
+    "chord_origin_id: 5n46Rec4AM913MGFTTDGOb",
+    "customTag",
+    "linen",
+    "YGroup_Linens"
+   ],
+   "collections": [
+    "linens",
+    "accessories",
+    "all",
+    "toxin-free-tools",
+    "for-all-moms",
+    "gifts-by-price",
+    "going-going",
+    "new-year-essentials",
+    "small-kitchens"
+   ],
+   "publishedAt": "2026-02-18T19:39:06Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/oven-mitts_cream_hero.jpg?v=1784589550",
+   "description": "Pair of double-layered, organic cotton oven mitts",
+   "byline": "Pair of organic cotton & sustainably made Oven Mitts.",
+   "badges": [
+    "Best Seller"
+   ],
+   "rating": 4.7,
+   "reviews": 811,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Navy",
+      "Perracotta"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "40426266067026",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "LN-OVMT-101",
+     "price": 40,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/oven-mitts_cream_hero.jpg?v=1784589550",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40426266099794",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "LN-OVMT-102",
+     "price": 40,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/oven-mitts_navy_hero.jpg?v=1784589550",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40426266132562",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "LN-OVMT-103",
+     "price": 40,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/oven-mitts_perracotta_hero.jpg?v=1784589550",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/oven-mitts",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "pot-holders": {
+   "handle": "pot-holders",
+   "title": "Pot Holders",
+   "productType": "Linens",
+   "vendor": "Caraway",
+   "tags": [
+    "chord_origin: contentful",
+    "chord_origin_id: 2OXglDzVaxWeWCS7SU0LVZ",
+    "customTag",
+    "linen",
+    "YGroup_Linens"
+   ],
+   "collections": [
+    "linens",
+    "accessories",
+    "all",
+    "night-in-necessities",
+    "gifts-by-price",
+    "new-year-essentials"
+   ],
+   "publishedAt": "2026-02-18T19:39:06Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/pot-holders_cream_hero.jpg?v=1785830440",
+   "description": "Pair of double-layered, heat-resistant pot holders",
+   "byline": "Pair of organic cotton & sustainably made Pot Holders.",
+   "badges": [
+    "Perfect Add-on"
+   ],
+   "rating": 4.8,
+   "reviews": 726,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Navy",
+      "Perracotta"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "40426270064722",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "LN-PHLD-101",
+     "price": 40,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/pot-holders_cream_hero.jpg?v=1785830440",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40426270097490",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "LN-PHLD-102",
+     "price": 40,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/pot-holders_navy_hero.jpg?v=1785830440",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40426270195794",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "LN-PHLD-103",
+     "price": 40,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/pot-holders_perracotta_hero.jpg?v=1785830440",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/pot-holders",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "fry-pan": {
+   "handle": "fry-pan",
+   "title": "Fry Pan",
+   "productType": "Cookware Singles",
+   "vendor": "Caraway",
+   "tags": [
+    "ceramic",
+    "chord_origin: contentful",
+    "chord_origin_id: 6flTjbaKZnEOJhvU1Mow4C",
+    "cookware",
+    "cookware singles",
+    "customTag",
+    "TBYB",
+    "YGroup_cookware",
+    "zest-gift"
+   ],
+   "collections": [
+    "cookware",
+    "all",
+    "ceramic-cookware",
+    "skillet-fry-and-saute-pans",
+    "gifts-for-them",
+    "impossible-to-shop-for",
+    "best-sellers",
+    "gifts-by-price",
+    "gifts-for-him-and-her",
+    "gifts-for-me-and-them",
+    "holiday",
+    "induction-compatible-cookware",
+    "made-without-forever-chemicals",
+    "made-without-microplastics",
+    "most-reviewed",
+    "mothers-day-picks",
+    "new-year-essentials",
+    "non-stick-pans",
+    "pots-and-pans",
+    "ready-to-ship",
+    "cookware-ceramic-cookware",
+    "gifts-250-under"
+   ],
+   "publishedAt": "2026-02-18T19:39:06Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_cream_hero.jpg?v=1785827500",
+   "description": "10.5” ceramic fry pan for daily non-stick cooking",
+   "byline": "10.5” Non-Stick Ceramic Fry Pan",
+   "badges": [
+    "🎁 Top Gift",
+    "top-gift"
+   ],
+   "rating": 4.8,
+   "reviews": 20472,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Gray",
+      "Perracotta",
+      "Sage",
+      "Navy",
+      "Marigold",
+      "White",
+      "Black"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "32601501958226",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "CW-FRYP-CRM",
+     "price": 125,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_cream_hero.jpg?v=1785827500",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601501990994",
+     "title": "Gray",
+     "options": {
+      "Color": "Gray"
+     },
+     "color": "Gray",
+     "sku": "CW-FRYP-GRY",
+     "price": 125,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_gray_hero.jpg?v=1785827500",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601502023762",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "CW-FRYP-TER",
+     "price": 125,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_perracotta_hero.jpg?v=1785827499",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601502056530",
+     "title": "Sage",
+     "options": {
+      "Color": "Sage"
+     },
+     "color": "Sage",
+     "sku": "CW-FRYP-GRE",
+     "price": 125,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_sage_hero.jpg?v=1785827499",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601502089298",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "CW-FRYP-NVY",
+     "price": 125,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_navy_hero.jpg?v=1785827499",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "39493907447890",
+     "title": "Marigold",
+     "options": {
+      "Color": "Marigold"
+     },
+     "color": "Marigold",
+     "sku": "CW-FRYP-MRG",
+     "price": 125,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_marigold_hero.jpg?v=1785827499",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40236834816082",
+     "title": "White",
+     "options": {
+      "Color": "White"
+     },
+     "color": "White",
+     "sku": "CW-FRYP-WTG",
+     "price": 135,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_white_hero.jpg?v=1785827499",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40236837142610",
+     "title": "Black",
+     "options": {
+      "Color": "Black"
+     },
+     "color": "Black",
+     "sku": "CW-FRYP-BKG",
+     "price": 135,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/fry-pan_black_hero.jpg?v=1785827500",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/fry-pan",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "saute-pan": {
+   "handle": "saute-pan",
+   "title": "Sauté Pan",
+   "productType": "Cookware Singles",
+   "vendor": "Caraway",
+   "tags": [
+    "ceramic",
+    "chord_origin: contentful",
+    "chord_origin_id: 3XIUtNaYlgCOXbBvjfoQQ6",
+    "cookware",
+    "cookware singles",
+    "customTag",
+    "TBYB",
+    "YGroup_cookware",
+    "zest-gift"
+   ],
+   "collections": [
+    "cookware",
+    "all",
+    "ceramic-cookware",
+    "skillet-fry-and-saute-pans",
+    "gifts-for-me",
+    "meal-prep-must-haves",
+    "seasonal-picks",
+    "best-sellers",
+    "gifts-by-price",
+    "gifts-for-me-and-them",
+    "holiday",
+    "induction-compatible-cookware",
+    "made-without-forever-chemicals",
+    "made-without-microplastics",
+    "most-reviewed",
+    "new-year-essentials",
+    "non-stick-pans",
+    "pots-and-pans",
+    "top-rated-customer-favorites",
+    "top-trending",
+    "cookware-ceramic-cookware"
+   ],
+   "publishedAt": "2026-02-18T19:39:06Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_cream_hero.jpg?v=1785827494",
+   "description": "4.5 qt ceramic sauté pan for family-sized servings",
+   "byline": "4.5 qt Non-Stick Ceramic Pan With Lid",
+   "badges": [
+    "⭐ Top Rated"
+   ],
+   "rating": 4.8,
+   "reviews": 7358,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Gray",
+      "Perracotta",
+      "Sage",
+      "Navy",
+      "Marigold",
+      "Black",
+      "White"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "32601915293778",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "CW-SUTP-CRM",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_cream_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601915326546",
+     "title": "Gray",
+     "options": {
+      "Color": "Gray"
+     },
+     "color": "Gray",
+     "sku": "CW-SUTP-GRY",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_gray_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601915359314",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "CW-SUTP-TER",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_perracotta_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601915392082",
+     "title": "Sage",
+     "options": {
+      "Color": "Sage"
+     },
+     "color": "Sage",
+     "sku": "CW-SUTP-GRE",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_sage_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601915424850",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "CW-SUTP-NVY",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_navy_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "39493909348434",
+     "title": "Marigold",
+     "options": {
+      "Color": "Marigold"
+     },
+     "color": "Marigold",
+     "sku": "CW-SUTP-MRG",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_marigold_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40236873220178",
+     "title": "Black",
+     "options": {
+      "Color": "Black"
+     },
+     "color": "Black",
+     "sku": "CW-SUTP-BKG",
+     "price": 205,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_black_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40236875251794",
+     "title": "White",
+     "options": {
+      "Color": "White"
+     },
+     "color": "White",
+     "sku": "CW-SUTP-WTG",
+     "price": 205,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/saute-pan_white_hero.jpg?v=1785827494",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/saute-pan",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  },
+  "dutch-oven": {
+   "handle": "dutch-oven",
+   "title": "Dutch Oven",
+   "productType": "Cookware Singles",
+   "vendor": "Caraway",
+   "tags": [
+    "ceramic",
+    "chord_origin: contentful",
+    "chord_origin_id: kOYHXGNFAoLjh4tSEdA81",
+    "cookware",
+    "cookware singles",
+    "customTag",
+    "TBYB",
+    "YGroup_cookware",
+    "zest-gift"
+   ],
+   "collections": [
+    "cookware",
+    "all",
+    "ceramic-cookware",
+    "dutch-ovens-stock-pots-and-braiser",
+    "gifts-for-them",
+    "impossible-to-shop-for",
+    "best-sellers",
+    "gifts-by-price",
+    "gifts-for-me-and-them",
+    "holiday",
+    "induction-compatible-cookware",
+    "made-without-forever-chemicals",
+    "made-without-microplastics",
+    "non-stick-pans",
+    "pots-and-pans",
+    "pots-and-sauce-pans",
+    "tiktok-famous",
+    "top-rated-customer-favorites",
+    "top-trending",
+    "cookware-ceramic-cookware"
+   ],
+   "publishedAt": "2026-02-18T19:39:06Z",
+   "status": "ACTIVE",
+   "isGiftCard": false,
+   "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_cream_hero.jpg?v=1785827483",
+   "description": "6.5 qt ceramic dutch oven for slow-cooked meals",
+   "byline": "6.5 qt Non-Stick Ceramic Pan With Lid",
+   "badges": [
+    "🎁 Top Gift"
+   ],
+   "rating": 4.9,
+   "reviews": 2214,
+   "options": [
+    {
+     "name": "Color",
+     "values": [
+      "Cream",
+      "Gray",
+      "Perracotta",
+      "Sage",
+      "Navy",
+      "Marigold",
+      "Black",
+      "White"
+     ]
+    }
+   ],
+   "variants": [
+    {
+     "id": "32601917096018",
+     "title": "Cream",
+     "options": {
+      "Color": "Cream"
+     },
+     "color": "Cream",
+     "sku": "CW-DTCH-CRM",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_cream_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601917128786",
+     "title": "Gray",
+     "options": {
+      "Color": "Gray"
+     },
+     "color": "Gray",
+     "sku": "CW-DTCH-GRY",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_gray_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601917161554",
+     "title": "Perracotta",
+     "options": {
+      "Color": "Perracotta"
+     },
+     "color": "Perracotta",
+     "sku": "CW-DTCH-TER",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_perracotta_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601917194322",
+     "title": "Sage",
+     "options": {
+      "Color": "Sage"
+     },
+     "color": "Sage",
+     "sku": "CW-DTCH-GRE",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_sage_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "32601917227090",
+     "title": "Navy",
+     "options": {
+      "Color": "Navy"
+     },
+     "color": "Navy",
+     "sku": "CW-DTCH-NVY",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_navy_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "39493894864978",
+     "title": "Marigold",
+     "options": {
+      "Color": "Marigold"
+     },
+     "color": "Marigold",
+     "sku": "CW-DTCH-MRG",
+     "price": 165,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Standard",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_marigold_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40236842582098",
+     "title": "Black",
+     "options": {
+      "Color": "Black"
+     },
+     "color": "Black",
+     "sku": "CW-DTCH-BKG",
+     "price": 185,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_black_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    },
+    {
+     "id": "40236843761746",
+     "title": "White",
+     "options": {
+      "Color": "White"
+     },
+     "color": "White",
+     "sku": "CW-DTCH-WTG",
+     "price": 185,
+     "compareAt": null,
+     "available": true,
+     "availability": null,
+     "discontinued": null,
+     "edition": "Iconics",
+     "shippingLabel": null,
+     "byline": null,
+     "image": "https://cdn.shopify.com/s/files/1/0258/6273/3906/files/dutch-oven_white_hero.jpg?v=1785827483",
+     "badges": [],
+     "live": true,
+     "firstSeen": "2026-11-24",
+     "lastSeen": "2026-11-24"
+    }
+   ],
+   "components": [],
+   "url": "https://www.carawayhome.com/products/dutch-oven",
+   "bundle": false,
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24",
+   "discontinued": false,
+   "discontinuedOn": null,
+   "source": "live"
+  }
+ },
+ "updatedAt": "2026-11-24"
+}

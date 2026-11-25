@@ -1,0 +1,231 @@
+{
+ "updatedAt": "2026-11-24",
+ "bundles": {
+  "cookware-sets": {
+   "handle": "cookware-sets",
+   "title": "Cookware Set",
+   "discontinued": false,
+   "items": [
+    {
+     "name": "10.5” Ceramic-Coated Fry Pan",
+     "qty": 1,
+     "type": "pan",
+     "match": "color",
+     "handle": "fry-pan",
+     "unitPrice": 125,
+     "variants": [
+      {
+       "id": "32601501958226",
+       "color": "cream",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "32601501990994",
+       "color": "gray",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "32601502023762",
+       "color": "perracotta",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "32601502056530",
+       "color": "sage",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "32601502089298",
+       "color": "navy",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "39493907447890",
+       "color": "marigold",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "40236834816082",
+       "color": "white",
+       "handle": "fry-pan"
+      },
+      {
+       "id": "40236837142610",
+       "color": "black",
+       "handle": "fry-pan"
+      }
+     ]
+    },
+    {
+     "name": "3 qt Ceramic-Coated Sauce Pan With Lid",
+     "qty": 1,
+     "type": "pan",
+     "match": "color",
+     "handle": null,
+     "unitPrice": 135,
+     "variants": [
+      {
+       "id": "32601917423698",
+       "color": "cream",
+       "handle": null
+      },
+      {
+       "id": "32601917456466",
+       "color": "gray",
+       "handle": null
+      },
+      {
+       "id": "32601917489234",
+       "color": "perracotta",
+       "handle": null
+      },
+      {
+       "id": "32601917522002",
+       "color": "sage",
+       "handle": null
+      },
+      {
+       "id": "32601917554770",
+       "color": "navy",
+       "handle": null
+      },
+      {
+       "id": "39493908529234",
+       "color": "marigold",
+       "handle": null
+      },
+      {
+       "id": "40236846841938",
+       "color": "black",
+       "handle": null
+      },
+      {
+       "id": "40236848021586",
+       "color": "white",
+       "handle": null
+      }
+     ]
+    },
+    {
+     "name": "4.5 qt Ceramic-Coated Sauté Pan With Lid",
+     "qty": 1,
+     "type": "pan",
+     "match": "color",
+     "handle": "saute-pan",
+     "unitPrice": 165,
+     "variants": [
+      {
+       "id": "32601915293778",
+       "color": "cream",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "32601915326546",
+       "color": "gray",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "32601915359314",
+       "color": "perracotta",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "32601915392082",
+       "color": "sage",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "32601915424850",
+       "color": "navy",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "39493909348434",
+       "color": "marigold",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "40236873220178",
+       "color": "black",
+       "handle": "saute-pan"
+      },
+      {
+       "id": "40236875251794",
+       "color": "white",
+       "handle": "saute-pan"
+      }
+     ]
+    },
+    {
+     "name": "6.5 qt Ceramic-Coated Dutch Oven With Lid",
+     "qty": 1,
+     "type": "pot",
+     "match": "color",
+     "handle": "dutch-oven",
+     "unitPrice": 165,
+     "variants": [
+      {
+       "id": "32601917096018",
+       "color": "cream",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "32601917128786",
+       "color": "gray",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "32601917161554",
+       "color": "perracotta",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "32601917194322",
+       "color": "sage",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "32601917227090",
+       "color": "navy",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "39493894864978",
+       "color": "marigold",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "40236842582098",
+       "color": "black",
+       "handle": "dutch-oven"
+      },
+      {
+       "id": "40236843761746",
+       "color": "white",
+       "handle": "dutch-oven"
+      }
+     ]
+    },
+    {
+     "name": "Storage Organizer",
+     "qty": 4,
+     "type": "storage_organizer",
+     "match": "color",
+     "handle": null,
+     "unitPrice": 50,
+     "variants": []
+    },
+    {
+     "name": "Canvas Lid Holder",
+     "qty": 1,
+     "type": "canvas_lid_holder",
+     "match": "color",
+     "handle": null,
+     "unitPrice": 35,
+     "variants": []
+    }
+   ],
+   "componentValue": 825
+  }
+ }
+}

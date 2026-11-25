@@ -148,7 +148,7 @@ export function extractProductInPage() {
     image: (pr.featuredImage && pr.featuredImage.url) || null,
     description: (mf.short_desc || pr.description || '').slice(0, 400),
     byline: mf.product_byline || null,
-    badges: [...new Set([...badgeList(mf.badges), ...badgeList(mf.product_card_badge)])],
+    badges: [...new Set([...badgeList(mf.badges), ...badgeList(mf.product_card_badge)])].filter((b) => !/^[a-z0-9-]+$/.test(b)),
     rating: rating && rating.value ? Number(rating.value) : null,
     reviews: pr.reviewsRatingCount ? Number(pr.reviewsRatingCount.value) : null,
     options: (pr.options || []).map((o) => ({ name: o.name, values: (o.optionValues || []).map((x) => x.name) })),

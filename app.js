@@ -101,7 +101,8 @@ function saleBanner() {
 }
 function viewCatalog(app) {
   const all = Object.values(D.products).filter((p) => !p.isGiftCard);
-  const colls = [...new Set(all.flatMap((p) => p.collections || []))].sort();
+  const collCount = {}; for (const p of all) for (const c of p.collections || []) collCount[c] = (collCount[c] || 0) + 1;
+  const colls = Object.keys(collCount).filter((c) => collCount[c] >= 3 && c !== 'all').sort();
   app.innerHTML = `
     <p class="prompt">$ caraway --all</p><h1>Every product and bundle</h1>
     <p class="sub">${all.filter((p) => !p.discontinued).length} on sale now · ${all.filter((p) => p.discontinued).length} discontinued · prices per color, history since tracking began</p>
@@ -176,7 +177,7 @@ function viewProduct(app, handle) {
     <div class="detail">
       <div><div class="pic">${p.image ? `<img src="${esc(img(p.image, 900))}" alt="">` : ''}</div></div>
       <div>
-        <div class="row">${p.discontinued ? `<span class="badge b-red">Discontinued${p.discontinuedOn ? ' ' + fmtDate(p.discontinuedOn) : ''}</span>` : ''}${p.bundle ? '<span class="badge b-line">Bundle</span>' : ''}${(p.badges || []).map((b) => `<span class="badge b-line">${esc(b)}</span>`).join('')}</div>
+        <div class="row">${p.discontinued ? `<span class="badge b-red">Discontinued${p.discontinuedOn ? ' ' + fmtDate(p.discontinuedOn) : ''}</span>` : ''}${p.bundle ? '<span class="badge b-line">Bundle</span>' : ''}${(p.badges || []).filter((b) => !/^[a-z0-9-]+$/.test(b)).map((b) => `<span class="badge b-line">${esc(b)}</span>`).join('')}</div>
         <h1 style="margin-top:8px">${esc(p.title)}</h1>
         <p class="sub">${esc(p.byline || p.productType || '')}${p.rating ? ` · ★ ${p.rating} (${Number(p.reviews || 0).toLocaleString()} reviews)` : ''}</p>
         <div class="kv">

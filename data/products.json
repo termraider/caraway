@@ -8375,7 +8375,7 @@
      "options": {
       "Material": "Stainless Steel"
      },
-     "color": null,
+     "color": "Stainless Steel",
      "sku": "CW-STDU-101",
      "price": 130,
      "compareAt": null,
@@ -8397,7 +8397,7 @@
      "options": {
       "Material": "Gold"
      },
-     "color": null,
+     "color": "Gold",
      "sku": "CW-STDU-201",
      "price": 180,
      "compareAt": null,
@@ -8524,7 +8524,7 @@
      "options": {
       "Material": "Stainless Steel"
      },
-     "color": null,
+     "color": "Stainless Steel",
      "sku": "CW-STM6-SLS",
      "price": 70,
      "compareAt": null,
@@ -8546,7 +8546,7 @@
      "options": {
       "Material": "Gold"
      },
-     "color": null,
+     "color": "Gold",
      "sku": "CW-STM6-201",
      "price": 95,
      "compareAt": null,
@@ -8623,7 +8623,7 @@
      "options": {
       "Material": "Stainless Steel"
      },
-     "color": null,
+     "color": "Stainless Steel",
      "sku": "CW-STM3-SLS",
      "price": 60,
      "compareAt": null,
@@ -8645,7 +8645,7 @@
      "options": {
       "Material": "Gold"
      },
-     "color": null,
+     "color": "Gold",
      "sku": "CW-STM3-201",
      "price": 85,
      "compareAt": null,
@@ -39294,7 +39294,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "KW-GRPS-101",
      "price": 85,
      "compareAt": null,
@@ -39316,7 +39316,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "KW-GRPS-103",
      "price": 85,
      "compareAt": null,
@@ -39338,7 +39338,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "KW-GRPS-106",
      "price": 85,
      "compareAt": null,
@@ -39360,7 +39360,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "KW-GRPS-105",
      "price": 85,
      "compareAt": null,
@@ -39382,7 +39382,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "KW-GRPS-102",
      "price": 85,
      "compareAt": null,
@@ -39404,7 +39404,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "KW-GRPS-104",
      "price": 85,
      "compareAt": null,
@@ -39426,7 +39426,7 @@
      "options": {
       "Title": "Gold"
      },
-     "color": null,
+     "color": "Gold",
      "sku": "KW-GRPS-201",
      "price": 95,
      "compareAt": null,
@@ -39448,7 +39448,7 @@
      "options": {
       "Title": "Stainless Steel"
      },
-     "color": null,
+     "color": "Stainless Steel",
      "sku": "KW-GRPS-SLS",
      "price": 95,
      "compareAt": null,
@@ -39525,7 +39525,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "KW-KITI-101",
      "price": 40,
      "compareAt": null,
@@ -39547,7 +39547,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "KW-KITI-102",
      "price": 40,
      "compareAt": null,
@@ -39569,7 +39569,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "KW-KITI-103",
      "price": 40,
      "compareAt": null,
@@ -39591,7 +39591,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "KW-KITI-104",
      "price": 40,
      "compareAt": null,
@@ -39613,7 +39613,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "KW-KITI-105",
      "price": 40,
      "compareAt": null,
@@ -39635,7 +39635,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "KW-KITI-106",
      "price": 40,
      "compareAt": null,
@@ -39657,7 +39657,7 @@
      "options": {
       "Title": "Iconics Black"
      },
-     "color": null,
+     "color": "Iconics Black",
      "sku": "KW-KITI-201",
      "price": 65,
      "compareAt": null,
@@ -39679,7 +39679,7 @@
      "options": {
       "Title": "Iconics White"
      },
-     "color": null,
+     "color": "Iconics White",
      "sku": "KW-KITI-202",
      "price": 65,
      "compareAt": null,
@@ -39701,7 +39701,7 @@
      "options": {
       "Title": "Stainless Steel"
      },
-     "color": null,
+     "color": "Stainless Steel",
      "sku": "KW-KITI-203",
      "price": 65,
      "compareAt": null,
@@ -39774,7 +39774,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "BW-24MM-101",
      "price": 55,
      "compareAt": null,
@@ -39796,7 +39796,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "BW-24MM-102",
      "price": 55,
      "compareAt": null,
@@ -39818,7 +39818,7 @@
      "options": {
       "Title": "Slate"
      },
-     "color": null,
+     "color": "Slate",
      "sku": "BW-24MM-107",
      "price": 55,
      "compareAt": null,
@@ -39840,7 +39840,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "BW-24MM-103",
      "price": 55,
      "compareAt": null,
@@ -39862,7 +39862,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "BW-24MM-105",
      "price": 55,
      "compareAt": null,
@@ -39884,7 +39884,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "BW-24MM-104",
      "price": 55,
      "compareAt": null,
@@ -39906,7 +39906,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "BW-24MM-106",
      "price": 55,
      "compareAt": null,
@@ -39928,7 +39928,7 @@
      "options": {
       "Title": "Iconics Black"
      },
-     "color": null,
+     "color": "Iconics Black",
      "sku": "BW-24MM-201",
      "price": 70,
      "compareAt": null,
@@ -39950,7 +39950,7 @@
      "options": {
       "Title": "Iconics White"
      },
-     "color": null,
+     "color": "Iconics White",
      "sku": "BW-24MM-202",
      "price": 70,
      "compareAt": null,
@@ -40024,7 +40024,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "BW-BTPP-101",
      "price": 65,
      "compareAt": null,
@@ -40046,7 +40046,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "BW-BTPP-102",
      "price": 65,
      "compareAt": null,
@@ -40068,7 +40068,7 @@
      "options": {
       "Title": "Slate"
      },
-     "color": null,
+     "color": "Slate",
      "sku": "BW-BTPP-107",
      "price": 65,
      "compareAt": null,
@@ -40090,7 +40090,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "BW-BTPP-103",
      "price": 65,
      "compareAt": null,
@@ -40112,7 +40112,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "BW-BTPP-105",
      "price": 65,
      "compareAt": null,
@@ -40134,7 +40134,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "BW-BTPP-104",
      "price": 65,
      "compareAt": null,
@@ -40156,7 +40156,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "BW-BTPP-106",
      "price": 65,
      "compareAt": null,
@@ -40178,7 +40178,7 @@
      "options": {
       "Title": "Iconics Black"
      },
-     "color": null,
+     "color": "Iconics Black",
      "sku": "BW-BTPP-201",
      "price": 80,
      "compareAt": null,
@@ -40200,7 +40200,7 @@
      "options": {
       "Title": "Iconics White"
      },
-     "color": null,
+     "color": "Iconics White",
      "sku": "BW-BTPP-202",
      "price": 80,
      "compareAt": null,
@@ -40276,7 +40276,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "BW-LCSP-101",
      "price": 65,
      "compareAt": null,
@@ -40298,7 +40298,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "BW-LCSP-102",
      "price": 65,
      "compareAt": null,
@@ -40320,7 +40320,7 @@
      "options": {
       "Title": "Slate"
      },
-     "color": null,
+     "color": "Slate",
      "sku": "BW-LCSP-107",
      "price": 65,
      "compareAt": null,
@@ -40342,7 +40342,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "BW-LCSP-103",
      "price": 65,
      "compareAt": null,
@@ -40364,7 +40364,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "BW-LCSP-105",
      "price": 65,
      "compareAt": null,
@@ -40386,7 +40386,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "BW-LCSP-104",
      "price": 65,
      "compareAt": null,
@@ -40408,7 +40408,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "BW-LCSP-106",
      "price": 65,
      "compareAt": null,
@@ -40430,7 +40430,7 @@
      "options": {
       "Title": "Iconics Black"
      },
-     "color": null,
+     "color": "Iconics Black",
      "sku": "BW-LCSP-201",
      "price": 80,
      "compareAt": null,
@@ -40452,7 +40452,7 @@
      "options": {
       "Title": "Iconics White"
      },
-     "color": null,
+     "color": "Iconics White",
      "sku": "BW-LCSP-202",
      "price": 80,
      "compareAt": null,
@@ -40526,7 +40526,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "BW-SPPP-101",
      "price": 65,
      "compareAt": null,
@@ -40548,7 +40548,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "BW-SPPP-102",
      "price": 65,
      "compareAt": null,
@@ -40570,7 +40570,7 @@
      "options": {
       "Title": "Slate"
      },
-     "color": null,
+     "color": "Slate",
      "sku": "BW-SPPP-107",
      "price": 65,
      "compareAt": null,
@@ -40592,7 +40592,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "BW-SPPP-103",
      "price": 65,
      "compareAt": null,
@@ -40614,7 +40614,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "BW-SPPP-105",
      "price": 65,
      "compareAt": null,
@@ -40636,7 +40636,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "BW-SPPP-104",
      "price": 65,
      "compareAt": null,
@@ -40658,7 +40658,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "BW-SPPP-106",
      "price": 65,
      "compareAt": null,
@@ -40680,7 +40680,7 @@
      "options": {
       "Title": "Iconics Black"
      },
-     "color": null,
+     "color": "Iconics Black",
      "sku": "BW-SPPP-201",
      "price": 80,
      "compareAt": null,
@@ -40702,7 +40702,7 @@
      "options": {
       "Title": "Iconics White"
      },
-     "color": null,
+     "color": "Iconics White",
      "sku": "BW-SPPP-202",
      "price": 80,
      "compareAt": null,
@@ -40780,7 +40780,7 @@
      "options": {
       "Title": "Cream"
      },
-     "color": null,
+     "color": "Cream",
      "sku": "BW-LPCP-101",
      "price": 65,
      "compareAt": null,
@@ -40802,7 +40802,7 @@
      "options": {
       "Title": "Navy"
      },
-     "color": null,
+     "color": "Navy",
      "sku": "BW-LPCP-102",
      "price": 65,
      "compareAt": null,
@@ -40824,7 +40824,7 @@
      "options": {
       "Title": "Slate"
      },
-     "color": null,
+     "color": "Slate",
      "sku": "BW-LPCP-107",
      "price": 65,
      "compareAt": null,
@@ -40846,7 +40846,7 @@
      "options": {
       "Title": "Gray"
      },
-     "color": null,
+     "color": "Gray",
      "sku": "BW-LPCP-103",
      "price": 65,
      "compareAt": null,
@@ -40868,7 +40868,7 @@
      "options": {
       "Title": "Perracotta"
      },
-     "color": null,
+     "color": "Perracotta",
      "sku": "BW-LPCP-105",
      "price": 65,
      "compareAt": null,
@@ -40890,7 +40890,7 @@
      "options": {
       "Title": "Sage"
      },
-     "color": null,
+     "color": "Sage",
      "sku": "BW-LPCP-104",
      "price": 65,
      "compareAt": null,
@@ -40912,7 +40912,7 @@
      "options": {
       "Title": "Marigold"
      },
-     "color": null,
+     "color": "Marigold",
      "sku": "BW-LPCP-106",
      "price": 65,
      "compareAt": null,
@@ -40934,7 +40934,7 @@
      "options": {
       "Title": "Iconics Black"
      },
-     "color": null,
+     "color": "Iconics Black",
      "sku": "BW-LPCP-201",
      "price": 85,
      "compareAt": null,
@@ -40956,7 +40956,7 @@
      "options": {
       "Title": "Iconics White"
      },
-     "color": null,
+     "color": "Iconics White",
      "sku": "BW-LPCP-202",
      "price": 85,
      "compareAt": null,

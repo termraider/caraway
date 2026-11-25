@@ -74,3 +74,24 @@ test('categories: Shopify placeholder "Physical" and missing types get a real ca
   assert.equal(categoryOf({ handle: 'trash-can', collections: ['all', 'trash-recycling-bins'] }), 'Trash & Recycling');
   assert.equal(categoryOf({ handle: 'small-stainless-steel-strainer', collections: ['accessories', 'bakeware', 'mixing-bowls-and-strainers'] }), 'Prepware');
 });
+
+test('bundle parts Caraway leaves unlinked are matched by name and get every color', async () => {
+  const { buildBundles, inferColors } = await import('../scraper/lib.js');
+  const { pickPart } = await import('../optimizer.js');
+  const products = {
+    'cookie-sheet': { handle: 'cookie-sheet', title: 'Cookie Sheet', variants: [
+      { id: '1', title: 'Cream', options: { Title: 'Cream' }, price: 65 }, { id: '2', title: 'Iconics Black', options: { Title: 'Iconics Black' }, price: 65 }] },
+    'fry-pan': { handle: 'fry-pan', title: 'Fry Pan', variants: [{ id: '9', color: 'Cream', price: 125 }, { id: '8', color: 'Black', price: 125 }] },
+    'cookware-set-hanging-lid-holder': { handle: 'cookware-set-hanging-lid-holder', title: 'Cookware Set Hanging Lid Holder', variants: [{ id: '5', color: 'Cream', price: 35 }] },
+    bundle: { handle: 'bundle', title: 'B', bundle: true, variants: [{ id: '99', color: 'Black', price: 200 }], components: [
+      { name: 'Cookie Sheet', qty: 1, match: 'color', variants: [{ id: '1', color: 'cream', price: 65 }] },
+      { name: 'Canvas Lid Holder', qty: 1, match: 'color', type: 'canvas_lid_holder', variants: [] }] },
+  };
+  assert.equal(inferColors(products), 1);
+  const b = buildBundles(products).bundle;
+  assert.equal(b.items[0].handle, 'cookie-sheet');
+  assert.equal(pickPart(b.items[0], 'Black').id, '2'); // "Black" bundle -> "Iconics Black" sheet
+  assert.equal(b.items[1].handle, 'cookware-set-hanging-lid-holder');
+  assert.equal(b.items[1].unitPrice, 35);
+  assert.ok(pickPart(b.items[1], 'Black')); // organizers fall back to their default
+});

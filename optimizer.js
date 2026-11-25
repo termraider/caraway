@@ -110,7 +110,7 @@ export function bundleOwnership(catalog, bundles, owned) {
     seen.add(handle);
     for (const item of b.items || []) {
       const cvs = item.variants || [];
-      const pick = cvs.find((cv) => lc(cv.color) === lc(color)) || (cvs.length === 1 ? cvs[0] : null);
+      const pick = pickPart(item, color);
       const ref = pick && byVariant.get(String(pick.id));
       if (!ref) continue;
       const key = `${ref.handle}|${lc(ref.color)}`;
@@ -127,6 +127,17 @@ export function bundleOwnership(catalog, bundles, owned) {
     visit(h, c, { handle: h, title: (p && p.title) || all[h].title || h, color: v ? v.color || v.title : c }, 0, new Set());
   }
   return out;
+}
+
+/** The variant of a bundle part that comes in a bundle of `color`. Organizers etc. fall back to their default. */
+// Caraway spells some colors differently across products (a typo, "Iconics" editions, coffee-maker names).
+const COLOR_ALIASES = { peracotta: ['perracotta'], black: ['iconics black'], white: ['iconics white'], 'iconics black': ['black'], 'iconics white': ['white'], 'midnight navy': ['midnight', 'navy'] };
+export const colorCandidates = (c) => [lc(c), ...(COLOR_ALIASES[lc(c)] || [])];
+export function pickPart(item, color) {
+  const cvs = item.variants || [];
+  for (const c of colorCandidates(color)) { const hit = cvs.find((cv) => lc(cv.color) === c); if (hit) return hit; }
+  return (cvs.length === 1 ? cvs[0] : null)
+    || (item.match !== 'color' || /organizer|holder/.test(item.type || '') ? cvs[0] || null : null);
 }
 
 const isOwned = (owned, handle, color) => !!(owned && (owned[`${handle}|${lc(color)}`] || owned[`${handle}|*`]));
@@ -152,7 +163,7 @@ export function makeContext(catalog, bundles, promos, { group = 'control', owned
       const contents = [];
       for (const item of b.items || []) {
         const cvs = item.variants || [];
-        const pick = cvs.find((cv) => lc(cv.color) === color) || (cvs.length === 1 ? cvs[0] : null) || null;
+        const pick = pickPart(item, color);
         const ref = pick && byVariant.get(String(pick.id));
         contents.push({ name: item.name, qty: item.qty || 1, handle: ref ? ref.handle : item.handle, color: ref ? ref.color : (pick && pick.color) || null, unitPrice: item.unitPrice });
       }

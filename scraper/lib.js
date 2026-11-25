@@ -146,17 +146,66 @@ export function mergePromos(promos, root, date) {
 /**
  * Bundles: list each bundle's components mapped to standalone products, and its value vs. price.
  */
+/**
+ * Some products have their colors under a generic "Title" option (Cookie Sheet, Pie Pan, Grill Press...),
+ * so the scraper saw no color. If every value of a lone option is a color used elsewhere, treat it as the color.
+ */
+export function inferColors(products) {
+  const known = new Set();
+  for (const p of Object.values(products)) for (const v of p.variants || []) if (v.color) known.add(v.color.toLowerCase());
+  const isColor = (x) => known.has(String(x).toLowerCase()) || /^iconics /i.test(x);
+  let n = 0;
+  for (const p of Object.values(products)) {
+    const vs = p.variants || [];
+    if (vs.length < 2 || vs.some((v) => v.color)) continue;
+    const keys = [...new Set(vs.flatMap((v) => Object.keys(v.options || {})))];
+    if (keys.length !== 1) continue;
+    const vals = vs.map((v) => v.options[keys[0]]);
+    if (vals.every(isColor)) { for (const v of vs) v.color = v.options[keys[0]]; n++; }
+  }
+  return n;
+}
+
+// Bundle parts Caraway doesn't link to a product (organizers, lid holders, some pans): match them by name.
+const norm = (s) => String(s || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9.]+/g, ' ').trim();
+const PART_ALIASES = [
+  [/^(cookware )?storage organizers?$/, 'cookware-set-pan-organizers'],
+  [/^canvas lid holder$/, 'cookware-set-hanging-lid-holder'],
+  [/^cookware storage organizer$/, 'cookware-organizer'],
+  [/^squareware storage organizers?$/, 'squareware-set-organizers'],
+];
+
 export function buildBundles(products) {
   const byVariant = new Map();
   for (const p of Object.values(products)) for (const v of p.variants || []) byVariant.set(v.id, { handle: p.handle, color: v.color });
+  const byTitle = new Map();
+  for (const p of Object.values(products)) if (!p.bundle && !p.discontinued) byTitle.set(norm(p.title), p.handle);
+  const findByName = (c) => {
+    const n = norm(c.name), sn = norm(c.shortName);
+    for (const [re, h] of PART_ALIASES) if ((re.test(n) || re.test(sn)) && products[h]) return h;
+    return byTitle.get(n) || byTitle.get(sn) || null;
+  };
   const out = {};
   for (const p of Object.values(products)) {
     if (!p.bundle) continue;
     const items = (p.components || []).map((c) => {
-      const handles = [...new Set(c.variants.map((cv) => byVariant.get(cv.id)?.handle).filter(Boolean))];
-      const price = c.priceOverride ?? (c.variants[0] && c.variants[0].price) ?? null;
-      return { name: c.name, qty: c.qty, type: c.type, match: c.match, handle: handles[0] || null, unitPrice: price,
-        variants: c.variants.map((cv) => ({ id: cv.id, color: cv.color, handle: byVariant.get(cv.id)?.handle || null })) };
+      let handles = [...new Set(c.variants.map((cv) => byVariant.get(cv.id)?.handle).filter(Boolean))];
+      let variants = c.variants.map((cv) => ({ id: cv.id, color: cv.color, handle: byVariant.get(cv.id)?.handle || null }));
+      let matchedBy = handles.length ? 'link' : null;
+      if (!handles.length) { const h = findByName(c); if (h) { handles = [h]; matchedBy = 'name'; } }
+      const h = handles.length === 1 ? handles[0] : null;
+      const prod = h && products[h];
+      // Fill in every color of the part's product, so any bundle color finds its matching part.
+      if (prod) {
+        const have = new Set(variants.map((v) => v.id));
+        let extra = (prod.variants || []).filter((v) => !have.has(v.id) && v.live !== false);
+        const size = (c.name.match(/^([\d.]+)[”"]/) || [])[1];
+        if (size) extra = extra.filter((v) => Object.values(v.options || {}).some((o) => String(o).startsWith(size + '"')));
+        variants = [...variants, ...extra.map((v) => ({ id: v.id, color: v.color ? v.color.toLowerCase() : null, handle: h }))];
+      }
+      const firstPrice = prod && variants[0] && (prod.variants || []).find((v) => v.id === variants[0].id)?.price;
+      const price = c.priceOverride ?? (c.variants[0] && c.variants[0].price) ?? firstPrice ?? null;
+      return { name: c.name, qty: c.qty, type: c.type, match: c.match, handle: h || handles[0] || null, matchedBy, unitPrice: price, variants };
     });
     const value = items.reduce((s, i) => s + (i.unitPrice || 0) * i.qty, 0);
     out[p.handle] = { handle: p.handle, title: p.title, discontinued: !!p.discontinued, items, componentValue: Math.round(value * 100) / 100 };

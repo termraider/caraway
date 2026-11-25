@@ -12,6 +12,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -62,6 +63,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -112,6 +114,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -162,6 +165,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -211,18 +215,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
      "unitPrice": 35,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     }
    ],
    "componentValue": 825
@@ -238,6 +266,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -293,6 +322,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -348,6 +378,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -403,6 +434,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -458,6 +490,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "square-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -513,6 +546,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "loaf-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -568,6 +602,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "circle-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -623,6 +658,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -643,6 +679,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -658,6 +695,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -681,6 +719,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -736,6 +775,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -791,6 +831,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -846,6 +887,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -901,6 +943,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -921,6 +964,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -944,6 +988,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -999,6 +1044,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -1062,6 +1108,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -1117,6 +1164,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -1145,6 +1193,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -1195,6 +1244,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -1244,12 +1294,24 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "name",
+     "unitPrice": 30,
+     "variants": [
+      {
+       "id": "42525914857554",
+       "color": "cream",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914890322",
+       "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      }
+     ]
     }
    ],
-   "componentValue": 240
+   "componentValue": 270
   },
   "food-storage-set": {
    "handle": "food-storage-set",
@@ -1262,6 +1324,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -1302,6 +1365,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -1342,6 +1406,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -1382,6 +1447,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 25,
      "variants": [
       {
@@ -1397,6 +1463,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer-three-slot",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -1420,6 +1487,7 @@
      "type": null,
      "match": "material",
      "handle": "small-steamer",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -1440,6 +1508,7 @@
      "type": null,
      "match": "material",
      "handle": "large-steamer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -1468,6 +1537,7 @@
      "type": null,
      "match": "color",
      "handle": "tea-towels",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -1493,6 +1563,7 @@
      "type": null,
      "match": "color",
      "handle": "linen-apron",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -1518,6 +1589,7 @@
      "type": null,
      "match": "color",
      "handle": "oven-mitts",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -1543,6 +1615,7 @@
      "type": null,
      "match": "color",
      "handle": "pot-holders",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -1576,6 +1649,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-knife-set",
+     "matchedBy": "link",
      "unitPrice": 275,
      "variants": [
       {
@@ -1616,6 +1690,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "utensil-set",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -1631,6 +1706,7 @@
      "type": null,
      "match": "color",
      "handle": "knife-block",
+     "matchedBy": "link",
      "unitPrice": 95,
      "variants": [
       {
@@ -1646,6 +1722,7 @@
      "type": null,
      "match": "color",
      "handle": "utensil-holder",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -1661,6 +1738,7 @@
      "type": null,
      "match": "color",
      "handle": "metal-utensil-bin",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -1696,6 +1774,7 @@
      "type": null,
      "match": "color",
      "handle": "metal-prep-tray",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -1744,6 +1823,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "large-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -1759,6 +1839,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "medium-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 85,
      "variants": [
       {
@@ -1774,6 +1855,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "small-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -1789,6 +1871,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cutting-board-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -1812,6 +1895,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-griddle-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -1862,6 +1946,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -1912,6 +1997,7 @@
      "type": "pan",
      "match": "color",
      "handle": "roasting-pan",
+     "matchedBy": "link",
      "unitPrice": 215,
      "variants": [
       {
@@ -1962,6 +2048,7 @@
      "type": "pan",
      "match": "color",
      "handle": "double-burner-griddle",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -2011,9 +2098,16 @@
      "qty": 2,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "squareware-set-organizers",
+     "matchedBy": "name",
      "unitPrice": 100,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525915054162",
+       "color": null,
+       "handle": "squareware-set-organizers"
+      }
+     ]
     }
    ],
    "componentValue": 910
@@ -2029,6 +2123,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -2044,6 +2139,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -2059,6 +2155,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-saute-pan",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -2074,6 +2171,7 @@
      "type": "pot",
      "match": "color",
      "handle": "stainless-steel-dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -2088,21 +2186,45 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 65,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     }
    ],
-   "componentValue": 950
+   "componentValue": 985
   },
   "stainless-steel-minis-duo": {
    "handle": "stainless-steel-minis-duo",
@@ -2115,6 +2237,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -2130,6 +2253,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -2144,12 +2268,24 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "name",
+     "unitPrice": 30,
+     "variants": [
+      {
+       "id": "42525914857554",
+       "color": "cream",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914890322",
+       "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      }
+     ]
     }
    ],
-   "componentValue": 270
+   "componentValue": 300
   },
   "stainless-steel-kitchen-gadget-set": {
    "handle": "stainless-steel-kitchen-gadget-set",
@@ -2162,6 +2298,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-can-opener",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -2177,6 +2314,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-pizza-cutter",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -2192,6 +2330,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-garlic-press",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -2207,6 +2346,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-ice-cream-scoop",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -2222,6 +2362,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-vegetable-peeler",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -2237,6 +2378,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "gadgets-drawer-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -2260,6 +2402,7 @@
      "type": "pan",
      "match": "color",
      "handle": "ceramic-stir-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -2310,6 +2453,7 @@
      "type": "pot",
      "match": "color",
      "handle": "ceramic-stock-pot",
+     "matchedBy": "link",
      "unitPrice": 215,
      "variants": [
       {
@@ -2360,6 +2504,7 @@
      "type": "pot",
      "match": "color",
      "handle": "ceramic-petite-cooker",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -2410,6 +2555,7 @@
      "type": "pan",
      "match": "color",
      "handle": "ceramic-rondeau",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -2459,12 +2605,24 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
+     "unitPrice": 50,
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     }
    ],
-   "componentValue": 650
+   "componentValue": 700
   },
   "deluxe-cookware-set": {
    "handle": "deluxe-cookware-set",
@@ -2477,6 +2635,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -2527,6 +2686,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -2577,6 +2737,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -2627,6 +2788,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -2677,6 +2839,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -2727,6 +2890,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -2776,9 +2940,21 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Minis Duo Pan & Lid Organizer",
@@ -2786,6 +2962,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -2805,9 +2982,21 @@
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
      "unitPrice": 35,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     }
    ],
    "componentValue": 1095
@@ -2823,6 +3012,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -2838,6 +3028,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -2853,6 +3044,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-saute-pan",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -2868,6 +3060,7 @@
      "type": "pot",
      "match": "color",
      "handle": "stainless-steel-dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -2882,18 +3075,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 65,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "8” Stainless Steel Mini Fry Pan",
@@ -2901,6 +3118,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -2916,6 +3134,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -2930,12 +3149,24 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "name",
+     "unitPrice": 30,
+     "variants": [
+      {
+       "id": "42525914857554",
+       "color": "cream",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914890322",
+       "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      }
+     ]
     }
    ],
-   "componentValue": 1220
+   "componentValue": 1285
   },
   "4pc-fry-saute-set": {
    "handle": "4pc-fry-saute-set",
@@ -2948,6 +3179,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -2998,6 +3230,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -3048,6 +3281,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -3106,6 +3340,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -3146,6 +3381,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -3186,6 +3422,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -3234,6 +3471,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -3284,6 +3522,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -3334,6 +3573,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -3384,6 +3624,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -3433,18 +3674,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "Large Baking Sheet with Handles",
@@ -3452,6 +3717,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -3507,6 +3773,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -3562,6 +3829,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -3617,6 +3885,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -3672,6 +3941,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "square-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -3727,6 +3997,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "loaf-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -3782,6 +4053,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "circle-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -3837,6 +4109,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -3857,6 +4130,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -3872,6 +4146,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -3887,6 +4162,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -3937,6 +4213,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -3986,12 +4263,24 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "name",
+     "unitPrice": 30,
+     "variants": [
+      {
+       "id": "42525914857554",
+       "color": "cream",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914890322",
+       "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      }
+     ]
     }
    ],
-   "componentValue": 1635
+   "componentValue": 1700
   },
   "cookware-cookware-plus-and-minis-duo": {
    "handle": "cookware-cookware-plus-and-minis-duo",
@@ -4004,6 +4293,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -4054,6 +4344,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -4104,6 +4395,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -4154,6 +4446,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -4204,6 +4497,7 @@
      "type": "pan",
      "match": "color",
      "handle": "ceramic-stir-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -4254,6 +4548,7 @@
      "type": "pot",
      "match": "color",
      "handle": "ceramic-stock-pot",
+     "matchedBy": "link",
      "unitPrice": 215,
      "variants": [
       {
@@ -4304,6 +4599,7 @@
      "type": "pot",
      "match": "color",
      "handle": "ceramic-petite-cooker",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -4354,6 +4650,7 @@
      "type": "pan",
      "match": "color",
      "handle": "ceramic-rondeau",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -4404,6 +4701,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -4454,6 +4752,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -4503,9 +4802,21 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Minis Duo Pan & Lid Organizer",
@@ -4513,6 +4824,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -4533,6 +4845,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-organizer",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -4547,9 +4860,21 @@
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
      "unitPrice": 35,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     }
    ],
    "componentValue": 1810
@@ -4565,6 +4890,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -4615,6 +4941,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -4665,6 +4992,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -4715,6 +5043,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -4764,18 +5093,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "Large Baking Sheet with Handles",
@@ -4783,6 +5136,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -4838,6 +5192,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -4893,6 +5248,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -4948,6 +5304,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -5003,6 +5360,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "square-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5058,6 +5416,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "loaf-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5113,6 +5472,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "circle-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5168,6 +5528,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5188,6 +5549,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -5203,6 +5565,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -5213,7 +5576,7 @@
      ]
     }
    ],
-   "componentValue": 1395
+   "componentValue": 1430
   },
   "fry-pan-duo": {
    "handle": "fry-pan-duo",
@@ -5226,6 +5589,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -5276,6 +5640,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -5334,6 +5699,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -5349,6 +5715,7 @@
      "type": "pan",
      "match": "color",
      "handle": "stainless-steel-mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -5372,6 +5739,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-knife-set",
+     "matchedBy": "link",
      "unitPrice": 275,
      "variants": [
       {
@@ -5412,6 +5780,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "utensil-set",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -5427,6 +5796,7 @@
      "type": null,
      "match": "color",
      "handle": "knife-block",
+     "matchedBy": "link",
      "unitPrice": 95,
      "variants": [
       {
@@ -5442,6 +5812,7 @@
      "type": null,
      "match": "color",
      "handle": "utensil-holder",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -5457,6 +5828,7 @@
      "type": null,
      "match": "color",
      "handle": "metal-utensil-bin",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5492,6 +5864,7 @@
      "type": null,
      "match": "color",
      "handle": "metal-prep-tray",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -5532,6 +5905,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "large-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -5547,6 +5921,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "medium-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 85,
      "variants": [
       {
@@ -5562,6 +5937,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "small-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -5577,6 +5953,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cutting-board-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -5600,6 +5977,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -5640,6 +6018,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 175,
      "variants": [
       {
@@ -5680,6 +6059,7 @@
      "type": "pot",
      "match": "color",
      "handle": "cast-iron-dutch-oven-and-lid",
+     "matchedBy": "link",
      "unitPrice": 265,
      "variants": [
       {
@@ -5720,6 +6100,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-braiser-and-lid",
+     "matchedBy": "link",
      "unitPrice": 235,
      "variants": [
       {
@@ -5760,6 +6141,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "medium-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5783,6 +6165,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -5823,6 +6206,7 @@
      "type": "pot",
      "match": "color",
      "handle": "cast-iron-dutch-oven-and-lid",
+     "matchedBy": "link",
      "unitPrice": 265,
      "variants": [
       {
@@ -5863,6 +6247,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "medium-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5886,6 +6271,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -5926,6 +6312,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-braiser-and-lid",
+     "matchedBy": "link",
      "unitPrice": 235,
      "variants": [
       {
@@ -5966,6 +6353,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "medium-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -5989,6 +6377,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -6029,6 +6418,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 175,
      "variants": [
       {
@@ -6069,6 +6459,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "medium-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -6092,6 +6483,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -6142,6 +6534,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -6192,6 +6585,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -6242,6 +6636,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -6292,6 +6687,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -6342,6 +6738,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -6392,6 +6789,7 @@
      "type": "pot",
      "match": "color",
      "handle": "ceramic-petite-cooker",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -6442,6 +6840,7 @@
      "type": "pan",
      "match": "color",
      "handle": "ceramic-stir-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -6492,6 +6891,7 @@
      "type": "pan",
      "match": "color",
      "handle": "ceramic-rondeau",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -6542,6 +6942,7 @@
      "type": "pot",
      "match": "color",
      "handle": "ceramic-stock-pot",
+     "matchedBy": "link",
      "unitPrice": 215,
      "variants": [
       {
@@ -6592,6 +6993,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-griddle-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -6642,6 +7044,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -6692,6 +7095,7 @@
      "type": "pan",
      "match": "color",
      "handle": "roasting-pan",
+     "matchedBy": "link",
      "unitPrice": 215,
      "variants": [
       {
@@ -6742,6 +7146,7 @@
      "type": "pan",
      "match": "color",
      "handle": "double-burner-griddle",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -6791,9 +7196,21 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Minis Duo Pan & Lid Organizer",
@@ -6801,6 +7218,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -6821,6 +7239,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-organizer",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -6836,6 +7255,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "squareware-set-organizers",
+     "matchedBy": "link",
      "unitPrice": 100,
      "variants": [
       {
@@ -6850,9 +7270,21 @@
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
      "unitPrice": 35,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     }
    ],
    "componentValue": 2720
@@ -6868,6 +7300,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -6918,6 +7351,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -6968,6 +7402,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -7018,6 +7453,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -7067,18 +7503,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "Square Griddle Pan",
@@ -7086,6 +7546,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-griddle-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -7136,6 +7597,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -7186,6 +7648,7 @@
      "type": "pan",
      "match": "color",
      "handle": "roasting-pan",
+     "matchedBy": "link",
      "unitPrice": 215,
      "variants": [
       {
@@ -7236,6 +7699,7 @@
      "type": "pan",
      "match": "color",
      "handle": "double-burner-griddle",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -7285,12 +7749,19 @@
      "qty": 2,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "squareware-set-organizers",
+     "matchedBy": "name",
      "unitPrice": 100,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525915054162",
+       "color": null,
+       "handle": "squareware-set-organizers"
+      }
+     ]
     }
    ],
-   "componentValue": 1700
+   "componentValue": 1735
   },
   "square-pan-duo": {
    "handle": "square-pan-duo",
@@ -7303,6 +7774,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -7353,6 +7825,7 @@
      "type": "pan",
      "match": "color",
      "handle": "square-griddle-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -7411,6 +7884,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-can-opener",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -7426,6 +7900,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-vegetable-peeler",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -7449,6 +7924,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-can-opener",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -7464,6 +7940,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-vegetable-peeler",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -7479,6 +7956,7 @@
      "type": "gadget",
      "match": "color",
      "handle": "stainless-steel-garlic-press",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -7502,6 +7980,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "small-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -7557,6 +8036,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "small-rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7612,6 +8092,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "6-cup-muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7667,6 +8148,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "small-cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7687,6 +8169,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-mini-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -7710,6 +8193,7 @@
      "type": "container",
      "match": "color",
      "handle": "mini-rectangle-container",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7750,6 +8234,7 @@
      "type": "container",
      "match": "color",
      "handle": "mini-square-container",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -7790,6 +8275,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "mini-food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -7813,6 +8299,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -7868,6 +8355,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "small-rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7931,6 +8419,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -7986,6 +8475,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "6-cup-muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -8049,6 +8539,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -8089,6 +8580,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -8129,6 +8621,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -8169,6 +8662,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 25,
      "variants": [
       {
@@ -8184,6 +8678,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer-three-slot",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -8199,6 +8694,7 @@
      "type": "container",
      "match": "color",
      "handle": "mini-rectangle-container",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -8239,6 +8735,7 @@
      "type": "container",
      "match": "color",
      "handle": "mini-square-container",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -8279,6 +8776,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "mini-food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -8302,6 +8800,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -8357,6 +8856,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -8412,6 +8912,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "small-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -8475,6 +8976,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "small-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -8530,6 +9032,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "small-cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -8558,6 +9061,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -8598,6 +9102,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-skillet",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -8638,6 +9143,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "small-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -8661,6 +9167,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-large-skillet",
+     "matchedBy": "link",
      "unitPrice": 225,
      "variants": [
       {
@@ -8701,6 +9208,7 @@
      "type": "pot",
      "match": "color",
      "handle": "enameled-cast-iron-oval-dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 285,
      "variants": [
       {
@@ -8741,6 +9249,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "large-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -8764,6 +9273,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -8804,6 +9314,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 175,
      "variants": [
       {
@@ -8844,6 +9355,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-braiser-and-lid",
+     "matchedBy": "link",
      "unitPrice": 235,
      "variants": [
       {
@@ -8884,6 +9396,7 @@
      "type": "pot",
      "match": "color",
      "handle": "cast-iron-dutch-oven-and-lid",
+     "matchedBy": "link",
      "unitPrice": 265,
      "variants": [
       {
@@ -8924,6 +9437,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -8964,6 +9478,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-skillet",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -9004,6 +9519,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "medium-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -9019,6 +9535,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "small-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -9042,6 +9559,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -9082,6 +9600,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-grill-pan",
+     "matchedBy": "link",
      "unitPrice": 175,
      "variants": [
       {
@@ -9122,6 +9641,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-braiser-and-lid",
+     "matchedBy": "link",
      "unitPrice": 235,
      "variants": [
       {
@@ -9162,6 +9682,7 @@
      "type": "pot",
      "match": "color",
      "handle": "cast-iron-dutch-oven-and-lid",
+     "matchedBy": "link",
      "unitPrice": 265,
      "variants": [
       {
@@ -9202,6 +9723,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -9242,6 +9764,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-skillet",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -9282,6 +9805,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-large-skillet",
+     "matchedBy": "link",
      "unitPrice": 225,
      "variants": [
       {
@@ -9322,6 +9846,7 @@
      "type": "pot",
      "match": "color",
      "handle": "enameled-cast-iron-oval-dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 285,
      "variants": [
       {
@@ -9362,6 +9887,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "medium-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -9377,6 +9903,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "small-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -9392,6 +9919,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "large-cast-iron-storage-shelf",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -9415,6 +9943,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-skillet",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -9455,6 +9984,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -9495,6 +10025,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-large-skillet",
+     "matchedBy": "link",
      "unitPrice": 225,
      "variants": [
       {
@@ -9543,6 +10074,7 @@
      "type": "pan",
      "match": "color",
      "handle": "enameled-cast-iron-mini-skillet",
+     "matchedBy": "link",
      "unitPrice": 145,
      "variants": [
       {
@@ -9583,6 +10115,7 @@
      "type": "pan",
      "match": "color",
      "handle": "cast-iron-skillet",
+     "matchedBy": "link",
      "unitPrice": 185,
      "variants": [
       {
@@ -9631,6 +10164,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -9671,6 +10205,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -9711,6 +10246,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -9751,6 +10287,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-scoop",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -9766,6 +10303,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-measuring-cup",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -9781,6 +10319,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "airtight-storage-tray",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -9804,6 +10343,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -9844,6 +10384,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -9884,6 +10425,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -9932,6 +10474,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -9972,6 +10515,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -10012,6 +10556,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -10052,6 +10597,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-scoop",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -10067,6 +10613,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-measuring-cup",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -10082,6 +10629,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "airtight-storage-tray",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -10097,6 +10645,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -10137,6 +10686,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -10177,6 +10727,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -10217,6 +10768,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 25,
      "variants": [
       {
@@ -10232,6 +10784,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer-three-slot",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -10255,6 +10808,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -10295,6 +10849,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -10335,6 +10890,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -10375,6 +10931,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-scoop",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -10390,6 +10947,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-measuring-cup",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -10405,6 +10963,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "airtight-storage-tray",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -10420,6 +10979,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -10460,6 +11020,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -10500,6 +11061,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -10540,6 +11102,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 25,
      "variants": [
       {
@@ -10555,6 +11118,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer-three-slot",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -10570,6 +11134,7 @@
      "type": "container",
      "match": "color",
      "handle": "mini-rectangle-container",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -10610,6 +11175,7 @@
      "type": "container",
      "match": "color",
      "handle": "mini-square-container",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -10650,6 +11216,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "mini-food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -10673,6 +11240,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -10723,6 +11291,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -10773,6 +11342,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -10823,6 +11393,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -10872,18 +11443,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "8-inch Ceramic-Coated Mini Fry Pan",
@@ -10891,6 +11486,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -10941,6 +11537,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -10990,9 +11587,21 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "minis-duo-pan-and-lid-organizer",
+     "matchedBy": "name",
+     "unitPrice": 30,
+     "variants": [
+      {
+       "id": "42525914857554",
+       "color": "cream",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914890322",
+       "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      }
+     ]
     },
     {
      "name": "Large Container",
@@ -11000,6 +11609,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -11040,6 +11650,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -11080,6 +11691,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -11120,6 +11732,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 25,
      "variants": [
       {
@@ -11135,6 +11748,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer-three-slot",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -11150,6 +11764,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -11205,6 +11820,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -11255,7 +11871,7 @@
      ]
     }
    ],
-   "componentValue": 1460
+   "componentValue": 1525
   },
   "complete-bar-set": {
    "handle": "complete-bar-set",
@@ -11268,6 +11884,7 @@
      "type": "bar_tool",
      "match": "color",
      "handle": null,
+     "matchedBy": null,
      "unitPrice": 195,
      "variants": []
     },
@@ -11277,6 +11894,7 @@
      "type": null,
      "match": "color",
      "handle": null,
+     "matchedBy": null,
      "unitPrice": 55,
      "variants": []
     },
@@ -11286,6 +11904,7 @@
      "type": null,
      "match": "color",
      "handle": null,
+     "matchedBy": null,
      "unitPrice": 65,
      "variants": []
     }
@@ -11303,6 +11922,7 @@
      "type": "cutting_board",
      "match": "material",
      "handle": "rectangle-butcher-block",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -11323,6 +11943,7 @@
      "type": "cutting_board",
      "match": "material",
      "handle": "square-butcher-block",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -11343,6 +11964,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "butcher-block-organizer",
+     "matchedBy": "link",
      "unitPrice": 75,
      "variants": [
       {
@@ -11366,6 +11988,7 @@
      "type": "cutting_board",
      "match": "material",
      "handle": "rectangle-butcher-block",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -11386,6 +12009,7 @@
      "type": "cutting_board",
      "match": "material",
      "handle": "square-butcher-block",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -11406,6 +12030,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "butcher-block-organizer",
+     "matchedBy": "link",
      "unitPrice": 75,
      "variants": [
       {
@@ -11421,6 +12046,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "large-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -11436,6 +12062,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "medium-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 85,
      "variants": [
       {
@@ -11451,6 +12078,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "small-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -11466,6 +12094,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cutting-board-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -11489,6 +12118,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "mini-utensil-set",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -11504,6 +12134,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "utensil-set",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -11527,6 +12158,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-measuring-cup",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -11542,6 +12174,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-scoop",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -11565,6 +12198,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -11615,6 +12249,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -11665,6 +12300,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "utensil-set",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -11688,6 +12324,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -11742,9 +12379,56 @@
      "qty": 1,
      "type": "baking_sheet",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookie-sheet",
+     "matchedBy": "name",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "42248968863826",
+       "color": "cream",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968896594",
+       "color": "navy",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968929362",
+       "color": "slate",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968962130",
+       "color": "gray",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968994898",
+       "color": "perracotta",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969027666",
+       "color": "sage",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969060434",
+       "color": "marigold",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969093202",
+       "color": "iconics black",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969125970",
+       "color": "iconics white",
+       "handle": "cookie-sheet"
+      }
+     ]
     },
     {
      "name": "Small Baking Sheet",
@@ -11752,6 +12436,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "small-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -11807,6 +12492,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -11857,7 +12543,7 @@
      ]
     }
    ],
-   "componentValue": 165
+   "componentValue": 230
   },
   "ultimate-holiday-bundle": {
    "handle": "ultimate-holiday-bundle",
@@ -11870,6 +12556,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -11920,6 +12607,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -11970,6 +12658,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -12020,6 +12709,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -12069,18 +12759,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "Large Baking Sheet with Handles",
@@ -12088,6 +12802,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -12143,6 +12858,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -12198,6 +12914,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -12253,6 +12970,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -12308,6 +13026,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "square-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12363,6 +13082,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "loaf-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12418,6 +13138,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "circle-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12473,6 +13194,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12493,6 +13215,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -12508,6 +13231,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -12523,6 +13247,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -12563,6 +13288,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -12603,6 +13329,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12643,6 +13370,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer",
+     "matchedBy": "link",
      "unitPrice": 25,
      "variants": [
       {
@@ -12658,6 +13386,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "food-storage-organizer-three-slot",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -12673,6 +13402,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "large-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -12688,6 +13418,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "medium-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 85,
      "variants": [
       {
@@ -12703,6 +13434,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "small-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -12718,6 +13450,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cutting-board-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -12728,7 +13461,7 @@
      ]
     }
    ],
-   "componentValue": 2015
+   "componentValue": 2050
   },
   "stainless-steel-strainer-set": {
    "handle": "stainless-steel-strainer-set",
@@ -12741,6 +13474,7 @@
      "type": null,
      "match": "color",
      "handle": "large-stainless-steel-strainer",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -12756,6 +13490,7 @@
      "type": null,
      "match": "color",
      "handle": "medium-stainless-steel-strainer",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12771,6 +13506,7 @@
      "type": null,
      "match": "color",
      "handle": "small-stainless-steel-strainer",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -12794,6 +13530,7 @@
      "type": "mixing_bowl",
      "match": "color",
      "handle": "mixing-bowl-set",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -12834,6 +13571,7 @@
      "type": null,
      "match": "color",
      "handle": "large-stainless-steel-strainer",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -12849,6 +13587,7 @@
      "type": null,
      "match": "color",
      "handle": "medium-stainless-steel-strainer",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -12864,6 +13603,7 @@
      "type": null,
      "match": "color",
      "handle": "small-stainless-steel-strainer",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -12887,6 +13627,7 @@
      "type": "mixing_bowl",
      "match": "color",
      "handle": "mixing-bowl-set",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -12927,6 +13668,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-knife-set",
+     "matchedBy": "link",
      "unitPrice": 275,
      "variants": [
       {
@@ -12967,6 +13709,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "utensil-set",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -12982,6 +13725,7 @@
      "type": null,
      "match": "color",
      "handle": "knife-block",
+     "matchedBy": "link",
      "unitPrice": 95,
      "variants": [
       {
@@ -12997,6 +13741,7 @@
      "type": null,
      "match": "color",
      "handle": "utensil-holder",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -13012,6 +13757,7 @@
      "type": null,
      "match": "color",
      "handle": "metal-utensil-bin",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -13047,6 +13793,7 @@
      "type": null,
      "match": "color",
      "handle": "metal-prep-tray",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -13087,6 +13834,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "large-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -13102,6 +13850,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "medium-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 85,
      "variants": [
       {
@@ -13117,6 +13866,7 @@
      "type": "cutting_board",
      "match": "color",
      "handle": "small-cutting-board",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -13132,6 +13882,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cutting-board-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -13155,6 +13906,7 @@
      "type": "mixing_bowl",
      "match": "color",
      "handle": "mixing-bowl-set",
+     "matchedBy": "link",
      "unitPrice": 195,
      "variants": [
       {
@@ -13195,6 +13947,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -13250,6 +14003,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -13305,6 +14059,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -13360,6 +14115,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -13415,6 +14171,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "square-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -13470,6 +14227,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "loaf-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -13525,6 +14283,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "circle-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -13580,6 +14339,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -13600,6 +14360,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -13615,6 +14376,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -13630,6 +14392,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -13670,6 +14433,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -13710,6 +14474,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -13758,6 +14523,7 @@
      "type": null,
      "match": "color",
      "handle": "trash-can",
+     "matchedBy": "link",
      "unitPrice": 295,
      "variants": [
       {
@@ -13793,6 +14559,7 @@
      "type": null,
      "match": "color",
      "handle": "2-drawer-recycling-bin",
+     "matchedBy": "link",
      "unitPrice": 295,
      "variants": [
       {
@@ -13836,6 +14603,7 @@
      "type": null,
      "match": "color",
      "handle": "2-drawer-recycling-bin",
+     "matchedBy": "link",
      "unitPrice": 295,
      "variants": [
       {
@@ -13871,6 +14639,7 @@
      "type": null,
      "match": "color",
      "handle": "slim-trash-can",
+     "matchedBy": "link",
      "unitPrice": 295,
      "variants": [
       {
@@ -13914,6 +14683,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -13954,6 +14724,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -13994,6 +14765,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -14034,6 +14806,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-scoop",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -14049,6 +14822,7 @@
      "type": null,
      "match": "color",
      "handle": "stainless-steel-measuring-cup",
+     "matchedBy": "link",
      "unitPrice": 15,
      "variants": [
       {
@@ -14064,6 +14838,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "airtight-storage-tray",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -14087,6 +14862,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -14142,6 +14918,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "small-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -14197,6 +14974,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -14217,6 +14995,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "small-cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -14245,6 +15024,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -14295,6 +15075,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -14345,6 +15126,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -14395,6 +15177,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -14444,18 +15227,42 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     },
     {
      "name": "Large Baking Sheet with Handles",
@@ -14463,6 +15270,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -14518,6 +15326,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -14573,6 +15382,7 @@
      "type": "container",
      "match": "color",
      "handle": "small-storage-container",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -14613,6 +15423,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-storage-container",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -14653,6 +15464,7 @@
      "type": "container",
      "match": "color",
      "handle": "large-storage-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -14693,6 +15505,7 @@
      "type": null,
      "match": "color",
      "handle": "linen-apron",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -14718,6 +15531,7 @@
      "type": null,
      "match": "color",
      "handle": "tea-towels",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -14743,6 +15557,7 @@
      "type": null,
      "match": "color",
      "handle": "pot-holders",
+     "matchedBy": "link",
      "unitPrice": 40,
      "variants": [
       {
@@ -14768,6 +15583,7 @@
      "type": "utensil",
      "match": "color",
      "handle": "utensil-set",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -14778,7 +15594,7 @@
      ]
     }
    ],
-   "componentValue": 2050
+   "componentValue": 2085
   },
   "full-ceramic-bakeware-set": {
    "handle": "full-ceramic-bakeware-set",
@@ -14791,6 +15607,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "large-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -14846,6 +15663,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "medium-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -14901,6 +15719,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -14956,6 +15775,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -15011,6 +15831,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "square-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -15066,6 +15887,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "loaf-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -15121,6 +15943,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "circle-pan",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -15176,6 +15999,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -15196,6 +16020,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "cookie-sheet",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -15251,6 +16076,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "pizza-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -15306,6 +16132,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "fluted-cake-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -15361,6 +16188,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "pie-pan",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -15416,6 +16244,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "24-cup-mini-muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -15471,6 +16300,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "small-baking-sheet",
+     "matchedBy": "link",
      "unitPrice": 45,
      "variants": [
       {
@@ -15526,6 +16356,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "small-rectangle-pan",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -15581,6 +16412,7 @@
      "type": "bakeware_pan",
      "match": "color",
      "handle": "6-cup-muffin-pan",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -15636,6 +16468,7 @@
      "type": "cooling_rack",
      "match": "edition",
      "handle": "small-cooling-rack",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -15656,6 +16489,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "3-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -15671,6 +16505,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -15686,6 +16521,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "2-slot-mini-bakeware-organizer",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -15709,6 +16545,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -15759,6 +16596,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -15809,6 +16647,7 @@
      "type": "pan",
      "match": "color",
      "handle": "large-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -15858,30 +16697,66 @@
      "qty": 1,
      "type": "lid",
      "match": "edition",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "glass-lid",
+     "matchedBy": "name",
+     "unitPrice": 55,
+     "variants": [
+      {
+       "id": "40682867097682",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277739991122",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
     },
     {
      "name": "10.5” Glass Lid",
      "qty": 1,
      "type": "lid",
      "match": "edition",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "glass-lid",
+     "matchedBy": "name",
+     "unitPrice": 60,
+     "variants": [
+      {
+       "id": "40682867130450",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277740023890",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
     },
     {
      "name": "12” Glass Lid",
      "qty": 1,
      "type": "lid",
      "match": "edition",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "glass-lid",
+     "matchedBy": "name",
+     "unitPrice": 70,
+     "variants": [
+      {
+       "id": "40682867163218",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277740056658",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
     }
    ],
-   "componentValue": 375
+   "componentValue": 560
   },
   "7pc-fry-saute-set": {
    "handle": "7pc-fry-saute-set",
@@ -15894,6 +16769,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -15944,6 +16820,7 @@
      "type": "pan",
      "match": "color",
      "handle": "small-saute-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -15994,6 +16871,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -16044,6 +16922,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -16094,6 +16973,7 @@
      "type": "pan",
      "match": "color",
      "handle": "large-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -16152,6 +17032,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -16202,6 +17083,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -16260,6 +17142,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -16310,6 +17193,7 @@
      "type": "pan",
      "match": "color",
      "handle": "small-saute-pan",
+     "matchedBy": "link",
      "unitPrice": 155,
      "variants": [
       {
@@ -16368,6 +17252,7 @@
      "type": "pan",
      "match": "color",
      "handle": "mini-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 115,
      "variants": [
       {
@@ -16418,6 +17303,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -16468,6 +17354,7 @@
      "type": "pan",
      "match": "color",
      "handle": "large-fry-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -16526,6 +17413,7 @@
      "type": null,
      "match": "color",
      "handle": "coffee-maker",
+     "matchedBy": "link",
      "unitPrice": 495,
      "variants": [
       {
@@ -16556,6 +17444,7 @@
      "type": "pan",
      "match": "color",
      "handle": "fry-pan",
+     "matchedBy": "link",
      "unitPrice": 125,
      "variants": [
       {
@@ -16606,6 +17495,7 @@
      "type": "pan",
      "match": "color",
      "handle": "sauce-pan",
+     "matchedBy": "link",
      "unitPrice": 135,
      "variants": [
       {
@@ -16656,6 +17546,7 @@
      "type": "pan",
      "match": "color",
      "handle": "saute-pan",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -16706,6 +17597,7 @@
      "type": "pot",
      "match": "color",
      "handle": "dutch-oven",
+     "matchedBy": "link",
      "unitPrice": 165,
      "variants": [
       {
@@ -16755,21 +17647,45 @@
      "qty": 4,
      "type": "storage_organizer",
      "match": "color",
-     "handle": null,
+     "handle": "cookware-set-pan-organizers",
+     "matchedBy": "name",
      "unitPrice": 50,
-     "variants": []
+     "variants": [
+      {
+       "id": "42525914595410",
+       "color": "cream",
+       "handle": "cookware-set-pan-organizers"
+      },
+      {
+       "id": "42525914628178",
+       "color": "charcoal",
+       "handle": "cookware-set-pan-organizers"
+      }
+     ]
     },
     {
      "name": "Canvas Lid Holder",
      "qty": 1,
      "type": "canvas_lid_holder",
      "match": "color",
-     "handle": null,
-     "unitPrice": null,
-     "variants": []
+     "handle": "cookware-set-hanging-lid-holder",
+     "matchedBy": "name",
+     "unitPrice": 35,
+     "variants": [
+      {
+       "id": "42525914726482",
+       "color": "cream",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914759250",
+       "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      }
+     ]
     }
    ],
-   "componentValue": 3265
+   "componentValue": 3300
   },
   "clean-coffee-bundle": {
    "handle": "clean-coffee-bundle",
@@ -16782,6 +17698,7 @@
      "type": null,
      "match": "color",
      "handle": "coffee-maker",
+     "matchedBy": "link",
      "unitPrice": 495,
      "variants": [
       {
@@ -16812,6 +17729,7 @@
      "type": "container",
      "match": "color",
      "handle": "medium-glass-airtight-container",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {

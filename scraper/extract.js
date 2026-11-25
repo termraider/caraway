@@ -129,7 +129,7 @@ export function extractProductInPage() {
     type: it.type || null,
     match: it.match || null,
     priceOverride: num(it.priceOverride && it.priceOverride.amount),
-    variants: (it.productVariants || []).map((pv) => ({
+    variants: [...(it.productVariants || []), ...(it.variants || []).filter((x) => !(it.productVariants || []).some((y) => y.id === x.id))].map((pv) => ({
       id: id(pv.id), color: pv.color || null, edition: pv.edition || null, label: pv.label || null,
       price: num(pv.price && pv.price.amount),
     })),

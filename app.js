@@ -1,4 +1,4 @@
-import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=3';
+import { makeContext, priceCart, cheapest, withinBudget, tierBoosts } from './optimizer.js?v=4';
 
 // ---------- state (saved in this browser, optionally synced through a private GitHub gist) ----------
 const LS = 'caraway-state', TOKEN = 'caraway-token', GIST = 'caraway-gist', FILE = 'caraway-tracker-state.json';
@@ -45,8 +45,11 @@ const SWATCH = { cream: '#EDE4D3', navy: '#26324D', sage: '#A6B49D', gray: '#8D9
 const swatch = (c) => SWATCH[lc(c).split(/[\s/]+/)[0]] || `hsl(${[...lc(c)].reduce((h, ch) => h + ch.charCodeAt(0) * 7, 0) % 360} 25% 55%)`;
 const ownKey = (h, c) => `${h}|${lc(c)}`;
 const isOwned = (h, c) => !!state.owned[ownKey(h, c)];
+const viaOf = (h, c) => (ctx && ctx.via && ctx.via[ownKey(h, c)]) || null; // owned as part of a bundle you own
+const ownsAny = (h, c) => isOwned(h, c) || !!viaOf(h, c);
+const viaText = (list, same) => list.map((b) => `<a href="#/p/${encodeURIComponent(b.handle)}">${esc(b.title)}</a>${b.color && !/^standard$/i.test(b.color) && lc(b.color) !== lc(same) ? ' (' + esc(b.color) + ')' : ''}`).join(', ');
 const liveVariants = (p) => (p.variants || []).filter((v) => v.live !== false);
-const ownedColors = (p) => (p.variants || []).filter((v) => isOwned(p.handle, v.color || v.title)).map((v) => v.color || v.title);
+const ownedColors = (p) => (p.variants || []).filter((v) => ownsAny(p.handle, v.color || v.title)).map((v) => v.color || v.title);
 const colorOf = (v) => v.color || v.title;
 const pref = () => state.prefColor || '';
 const hasColor = (p, c) => !!c && (p.variants || []).some((v) => v.live !== false && lc(colorOf(v)) === lc(c));
@@ -168,7 +171,7 @@ function card(p, s) {
     <div class="tb">
       <span class="tk">${esc(p.productType || (p.bundle ? 'Bundle' : ''))}</span>
       <a class="tn" href="#/p/${encodeURIComponent(p.handle)}">${esc(p.title)}</a>
-      ${colors.length > 1 || colors[0] && colors[0] !== 'Default Title' ? `<div class="dots" title="${esc(colors.join(', '))}">${colors.slice(0, 12).map((c) => `<i style="background:${swatch(c)}" class="${isOwned(p.handle, c) ? 'own' : ''}" title="${esc(c)}${isOwned(p.handle, c) ? ' (owned)' : ''}"></i>`).join('')}</div>` : ''}
+      ${colors.length > 1 || colors[0] && colors[0] !== 'Default Title' ? `<div class="dots" title="${esc(colors.join(', '))}">${colors.slice(0, 12).map((c) => `<i style="background:${swatch(c)}" class="${ownsAny(p.handle, c) ? 'own' : ''}" title="${esc(c)}${ownsAny(p.handle, c) ? ' (owned)' : ''}"></i>`).join('')}</div>` : ''}
       <div class="tp">
         ${s.sale != null && s.sale < s.base ? `<b>${money(s.sale)}</b><span class="strike">${money(s.base)}</span>` : `<b>${money(s.base)}</b>`}
         ${s.compareAt && s.compareAt > s.base ? `<span class="strike small">${money(s.compareAt)}</span>` : ''}
@@ -193,6 +196,7 @@ function viewProduct(app, handle) {
       <div>
         <div class="row">${p.discontinued ? `<span class="badge b-red">Discontinued${p.discontinuedOn ? ' ' + fmtDate(p.discontinuedOn) : ''}</span>` : ''}${p.bundle ? '<span class="badge b-line">Bundle</span>' : ''}${(p.badges || []).filter((b) => !/^[a-z0-9-]+$/.test(b)).map((b) => `<span class="badge b-line">${esc(b)}</span>`).join('')}</div>
         <h1 style="margin-top:8px">${esc(p.title)}</h1>
+        ${viaNotes(p)}
         <p class="sub">${esc(p.byline || p.productType || '')}${p.rating ? ` · ★ ${p.rating} (${Number(p.reviews || 0).toLocaleString()} reviews)` : ''}</p>
         <div class="kv">
           <div><span>Price</span><b>${money(s.base)}</b>${s.compareAt > s.base ? ` <span class="strike small">${money(s.compareAt)}</span>` : ''}</div>
@@ -213,7 +217,7 @@ function viewProduct(app, handle) {
             <span><i style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${swatch(c)};vertical-align:-1px;margin-right:8px"></i>${esc(c)}${lc(c) === lc(pref()) ? ' <span class="badge b-green">your color</span>' : ''}
               <span class="small muted">${v.live === false ? (v.archived ? ' · old color' : ' · no longer sold') : v.available === false ? ' · sold out' : ''}${v.sku ? ' · ' + esc(v.sku) : ''}</span></span>
             <span class="small">${money(v.price)}${v.compareAt > v.price ? ` <span class="strike">${money(v.compareAt)}</span>` : ''}${alone != null && alone < v.price ? ` <span class="gold">→ ${money(alone)}</span>` : ''}</span>
-            <button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' : 'I own this'}</button>
+            ${!isOwned(handle, c) && viaOf(handle, c) ? `<span class="btn sm on" title="Comes in a bundle you own">✓ Owned via bundle</span>` : `<button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' : 'I own this'}</button>`}
             <button class="btn sm" data-wish="${esc(c)}">+ Wishlist</button>
           </div>`;
         }).join('')}</div>
@@ -226,6 +230,11 @@ function viewProduct(app, handle) {
   app.querySelectorAll('[data-own]').forEach((b) => (b.onclick = () => { const k = ownKey(handle, b.dataset.own); if (state.owned[k]) delete state.owned[k]; else state.owned[k] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); }));
   app.querySelectorAll('[data-wish]').forEach((b) => (b.onclick = () => addWish(handle, b.dataset.wish === '*' ? null : b.dataset.wish)));
   drawHistory($('#hist'), p);
+}
+function viaNotes(p) {
+  const rows = (p.variants || []).map((v) => [colorOf(v), viaOf(p.handle, colorOf(v))]).filter(([c, l]) => l && !isOwned(p.handle, c));
+  if (!rows.length) return '';
+  return `<div class="panel owned-note" style="margin:10px 0">✓ <b>You already own this</b> ${rows.map(([c, l]) => `${isMultiColor(p) ? 'in <b>' + esc(c) + '</b> ' : ''}through your ${viaText(l, c)}`).join('; ')}. It's left out of suggestions.</div>`;
 }
 const addOnDeals = () => (D.promos.current && D.promos.current.addOnDeals) || [];
 const ptitle = (h) => (D.products[h] ? `<a href="#/p/${encodeURIComponent(h)}">${esc(D.products[h].title)}</a>` : esc(h));
@@ -394,12 +403,18 @@ function viewKitchen(app) {
   const rows = Object.keys(state.owned).map((k) => { const [h, c] = k.split('|'); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { k, h, c: v ? v.color || v.title : c, p, v }; })
     .sort((a, b) => String(a.p?.title || a.h).localeCompare(String(b.p?.title || b.h)));
   const value = rows.reduce((s, r) => s + (r.v ? Math.max(r.v.price || 0, r.v.compareAt || 0) : 0), 0);
+  const viaRows = Object.entries(ctx.via || {}).filter(([k]) => !state.owned[k]).map(([k, via]) => { const i = k.lastIndexOf('|'); const h = k.slice(0, i), c = k.slice(i + 1); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { h, c: v ? v.color || v.title : c, p, v, via }; })
+    .sort((a, b) => String(a.p?.title || a.h).localeCompare(String(b.p?.title || b.h)));
   app.innerHTML = `<p class="eyebrow">Your shelf</p><h1>My kitchen</h1>
-    <p class="sub">${rows.length} items owned, about ${money(value)} at full price. Owned colors are flagged everywhere and left out of suggestions.</p>
+    <p class="sub">${rows.length} items owned, about ${money(value)} at full price. ${viaRows.length ? ` Plus ${viaRows.length} more that came in your bundles.` : ''} Owned colors are flagged everywhere and left out of suggestions.</p>
     <div class="sec panel"><h3>Add something you own</h3><div id="pick" style="margin-top:10px"></div></div>
     <div class="sec tablewrap"><table><tr><th>Product</th><th>Color</th><th class="num">Price now</th><th></th></tr>
     ${rows.map((r) => `<tr><td>${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td><i style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${swatch(r.c)};margin-right:6px"></i>${esc(r.c)}</td><td class="num">${money(r.v && r.v.price)}</td><td><button class="btn sm" data-del="${esc(r.k)}">Remove</button></td></tr>`).join('') || '<tr><td colspan="4" class="muted">Nothing marked yet. Open any product and press "I own this" next to a color.</td></tr>'}
-    </table></div>`;
+    </table></div>
+    ${viaRows.length ? `<section class="sec"><h2>Included in your bundles</h2><p class="sub">You own these because they came in a bundle you own. To change them, change the bundle.</p>
+    <div class="tablewrap"><table><tr><th>Product</th><th>Color</th><th>From</th><th class="num">Price now</th></tr>
+    ${viaRows.map((r) => `<tr><td>${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td><i style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${swatch(r.c)};margin-right:6px"></i>${esc(r.c)}</td><td>${viaText(r.via, r.c)}</td><td class="num">${money(r.v && r.v.price)}</td></tr>`).join('')}
+    </table></div></section>` : ''}`;
   picker($('#pick'), (h, c) => { const p = D.products[h]; const color = c || (p.variants[0] && (p.variants[0].color || p.variants[0].title)); state.owned[ownKey(h, color)] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); toast('Marked as owned'); }, { anyColor: false, label: 'I own it' });
   app.querySelectorAll('[data-del]').forEach((b) => (b.onclick = () => { delete state.owned[b.dataset.del]; rebuildContext(); save(); }));
 }
@@ -439,7 +454,7 @@ function viewWishlist(app) {
     <p class="sub">Add what you want. It finds the cheapest mix of single items and bundles using today's sale tiers, tier-only prices and the free-gift line, or the most you can get for a budget.</p>
     <div class="sec panel"><h3>Add to wishlist</h3><div id="pick" style="margin-top:10px"></div></div>
     <div class="sec tablewrap"><table><tr><th>Item</th><th>Color</th><th class="num">Price</th><th>Leave out of budget</th><th></th></tr>
-      ${state.wishlist.map((w) => { const p = D.products[w.handle]; return `<tr><td>${p ? `<a href="#/p/${encodeURIComponent(w.handle)}">${esc(p.title)}</a>${p.discontinued ? ' <span class="badge b-red">gone</span>' : ''}` : esc(w.handle)}</td><td>${esc(w.color || (p && pref() && hasColor(p, pref()) ? pref() + ' (your color)' : 'Any'))}${!w.color && p && pref() && isMultiColor(p) && !hasColor(p, pref()) ? ` <span class="small muted">no ${esc(pref())}, any color</span>` : ''}${w.color && isOwned(w.handle, w.color) ? ' <span class="small red">owned</span>' : ''}</td><td class="num">${p ? money(productSummary(p).base) : '—'}</td>
+      ${state.wishlist.map((w) => { const p = D.products[w.handle]; return `<tr><td>${p ? `<a href="#/p/${encodeURIComponent(w.handle)}">${esc(p.title)}</a>${p.discontinued ? ' <span class="badge b-red">gone</span>' : ''}` : esc(w.handle)}</td><td>${esc(w.color || (p && pref() && hasColor(p, pref()) ? pref() + ' (your color)' : 'Any'))}${!w.color && p && pref() && isMultiColor(p) && !hasColor(p, pref()) ? ` <span class="small muted">no ${esc(pref())}, any color</span>` : ''}${w.color && ownsAny(w.handle, w.color) ? ` <span class="small red">owned${viaOf(w.handle, w.color) && !isOwned(w.handle, w.color) ? ' (in a bundle)' : ''}</span>` : ''}</td><td class="num">${p ? money(productSummary(p).base) : '—'}</td>
         <td><input type="checkbox" data-ex="${esc(w.id)}" ${state.exclude[w.id] ? 'checked' : ''} aria-label="Leave out of budget"></td><td><button class="btn sm" data-rm="${esc(w.id)}">Remove</button></td></tr>`; }).join('') || '<tr><td colspan="5" class="muted">Empty. Search above, or use "+ Wishlist" on any product.</td></tr>'}
     </table></div>
     <div class="sec row">

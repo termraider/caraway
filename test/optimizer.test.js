@@ -106,3 +106,11 @@ test('add-on deals: an item is cheaper when its host product is in the same cart
   assert.equal(both.subtotal, 170); // 125 + (55 - 10)
   assert.equal(both.total, 144.5); // 15% tier
 });
+
+test('owning a bundle means owning its parts in that color', () => {
+  const ctx = setup({ owned: { 'cookware-sets|sage': true } });
+  assert.equal(ctx.via['fry-pan|sage'][0].handle, 'cookware-sets');
+  assert.ok(!ctx.via['fry-pan|cream']);
+  const boosts = tierBoosts(cheapest([{ handle: 'tea-towels' }], ctx).solutions[0], ctx);
+  assert.ok(!boosts.some((b) => b.handle === 'fry-pan' && /sage/i.test(b.color || '')));
+});

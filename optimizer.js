@@ -93,11 +93,50 @@ function minPrice(o, pricing) {
   return m;
 }
 
+/**
+ * Items you own because you own a bundle that contains them.
+ * Returns { 'handle|color': [{ handle, title, color }] } naming the owned bundle(s) each part came in.
+ * A part's color is the bundle's color when the part comes in it, or its only variant.
+ */
+export function bundleOwnership(catalog, bundles, owned) {
+  const products = (catalog && catalog.products) || catalog || {};
+  const all = (bundles && bundles.bundles) || bundles || {};
+  const byVariant = new Map();
+  for (const p of Object.values(products)) for (const v of p.variants || []) byVariant.set(String(v.id), { handle: p.handle, color: v.color || v.title });
+  const out = {};
+  const visit = (handle, color, from, depth, seen) => {
+    const b = all[handle];
+    if (!b || depth > 3 || seen.has(handle)) return;
+    seen.add(handle);
+    for (const item of b.items || []) {
+      const cvs = item.variants || [];
+      const pick = cvs.find((cv) => lc(cv.color) === lc(color)) || (cvs.length === 1 ? cvs[0] : null);
+      const ref = pick && byVariant.get(String(pick.id));
+      if (!ref) continue;
+      const key = `${ref.handle}|${lc(ref.color)}`;
+      const list = out[key] || (out[key] = []);
+      if (!list.some((x) => x.handle === from.handle && lc(x.color) === lc(from.color))) list.push(from);
+      visit(ref.handle, ref.color, from, depth + 1, seen);
+    }
+  };
+  for (const k of Object.keys(owned || {})) {
+    const i = k.lastIndexOf('|'); const h = k.slice(0, i); const c = k.slice(i + 1);
+    if (!all[h]) continue;
+    const p = products[h];
+    const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c);
+    visit(h, c, { handle: h, title: (p && p.title) || all[h].title || h, color: v ? v.color || v.title : c }, 0, new Set());
+  }
+  return out;
+}
+
 const isOwned = (owned, handle, color) => !!(owned && (owned[`${handle}|${lc(color)}`] || owned[`${handle}|*`]));
 
 /** Everything the search needs: per-product live variants and every bundle-in-a-color with what it contains. */
 export function makeContext(catalog, bundles, promos, { group = 'control', owned = {}, includeUnavailable = false } = {}) {
   const products = (catalog && catalog.products) || catalog || {};
+  // Owning a bundle means owning its parts (in the bundle's color).
+  const via = bundleOwnership(products, bundles, owned);
+  owned = { ...Object.fromEntries(Object.entries(via).map(([k, v]) => [k, { via: v }])), ...owned };
   const pricing = makePricing(promos, group);
   const buyable = (p) => p && !p.discontinued && !p.isGiftCard;
   const liveVariants = (p) => (p.variants || []).filter((v) => v.live !== false && v.price != null && (includeUnavailable || v.available !== false));
@@ -120,7 +159,7 @@ export function makeContext(catalog, bundles, promos, { group = 'control', owned
       bundleOptions.push({ kind: 'bundle', handle: p.handle, title: p.title, variantId: String(v.id), color: v.color || v.title, base: v.price, compareAt: v.compareAt, tags: p.tags || [], contents, url: p.url });
     }
   }
-  return { products, pricing, owned, bundleOptions, liveVariants, buyable };
+  return { products, pricing, owned, via, bundleOptions, liveVariants, buyable };
 }
 
 const matches = (entry, handle, color) => entry.handle === handle && (!entry.color || lc(entry.color) === lc(color));

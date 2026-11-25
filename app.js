@@ -256,11 +256,34 @@ function addOnSection(p) {
     ${plain.map((o) => `<p class="small muted">Optional add-on: ${esc(o.label)} (${o.items.filter((i) => i.variantId).map((i) => `${esc(i.title)} ${money(i.price)}`).join(', ')}).</p>`).join('')}
     <p class="small muted">The wishlist planner applies these automatically when both items are in the order.</p></section>`;
 }
+let _vidx = null;
+const variantById = (id) => { if (!_vidx) { _vidx = new Map(); for (const p of Object.values(D.products)) for (const v of p.variants || []) _vidx.set(String(v.id), { p, v }); } return _vidx.get(String(id)); };
+// Which colors of a bundle part you already own (directly or through another bundle).
+function partOwnership(item, focus) {
+  const owned = [];
+  for (const cv of item.variants || []) {
+    const r = variantById(cv.id); if (!r) continue;
+    const c = colorOf(r.v);
+    if (ownsAny(r.p.handle, c) && !owned.some((x) => lc(x.c) === lc(c))) owned.push({ h: r.p.handle, c, via: isOwned(r.p.handle, c) ? null : viaOf(r.p.handle, c) });
+  }
+  const dup = focus ? owned.some((o) => lc(o.c) === lc(focus)) || (owned.length && (item.variants || []).length === 1) : owned.length > 0;
+  return { owned, dup };
+}
 function bundleTable(b, s) {
-  const rows = b.items.map((i) => `<tr><td>${i.handle ? `<a href="#/p/${encodeURIComponent(i.handle)}">${esc(i.name)}</a>` : esc(i.name)}</td><td class="num">${i.qty}</td><td class="num">${money(i.unitPrice)}</td><td class="num">${i.unitPrice != null ? money(i.unitPrice * i.qty) : '—'}</td></tr>`).join('');
+  const p = D.products[b.handle];
+  const focus = p && pref() && hasColor(p, pref()) ? pref() : null;
+  let ownedValue = 0, ownedCount = 0;
+  const rows = b.items.map((i) => {
+    const o = partOwnership(i, focus);
+    if (o.dup) { ownedCount++; ownedValue += i.unitPrice || 0; }
+    const note = o.owned.length ? `<div class="small ${o.dup ? 'green' : 'muted'}">✓ you own ${o.owned.map((x) => esc(x.c) + (x.via ? ' (in your ' + x.via.map((v) => esc(v.title)).join(', ') + ')' : '')).join(', ')}${i.qty > 1 && o.dup ? ' · 1 of ' + i.qty : ''}</div>` : '';
+    return `<tr class="${o.dup ? 'owned-row' : ''}"><td>${i.handle ? `<a href="#/p/${encodeURIComponent(i.handle)}">${esc(i.name)}</a>` : esc(i.name)}${note}</td><td class="num">${i.qty}</td><td class="num">${money(i.unitPrice)}</td><td class="num">${i.unitPrice != null ? money(i.unitPrice * i.qty) : '—'}</td></tr>`;
+  }).join('');
   const save1 = b.componentValue && s.base ? b.componentValue - s.base : null;
+  const newValue = b.componentValue - ownedValue;
+  const toYou = ownedCount ? `<div class="panel" style="margin:10px 0"><b>Worth to you:</b> ${money(newValue)} of new things${focus ? ` in ${esc(focus)}` : ''}. You already own ${ownedCount} part${ownedCount > 1 ? 's' : ''} (${money(ownedValue)}).${s.base ? ` ${newValue > s.base ? `<span class="gold">Still ${money(newValue - s.base)} more than the bundle price before sales.</span>` : `<span class="red">That's ${money(s.base - newValue)} less than the bundle price, so buying the parts you're missing may be cheaper.</span>`}` : ''}${!focus && pref() ? '' : !focus ? ' <span class="small muted">Pick your color in the header to compare one color.</span>' : ''}</div>` : '';
   return `<section class="sec"><h2>What's included</h2><p class="sub">Parts bought separately: ${money(b.componentValue)} · bundle price ${money(s.base)}${save1 > 0 ? ` · <span class="gold">saves ${money(save1)} before sales</span>` : ''}</p>
-    <div class="tablewrap"><table><tr><th>Item</th><th class="num">Qty</th><th class="num">Each</th><th class="num">Total</th></tr>${rows}</table></div></section>`;
+    ${toYou}<div class="tablewrap"><table><tr><th>Item</th><th class="num">Qty</th><th class="num">Each</th><th class="num">Total</th></tr>${rows}</table></div></section>`;
 }
 const SERIES_COLORS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)', 'var(--s6)'];
 function drawHistory(el, p) {

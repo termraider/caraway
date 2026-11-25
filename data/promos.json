@@ -528,6 +528,29 @@
    "Congrats! FREE Enameled Cast Iron Dutch Oven* has been added to your cart!",
    "Our Biggest Sale of the Year",
    "Save up to 25% off + unlock a Free Dutch Oven"
+  ],
+  "addOnDeals": [
+   {
+    "host": "utensil-set",
+    "handle": "kitchen-utensil-holder",
+    "type": "amount",
+    "value": 25,
+    "label": "Utensil Holder"
+   },
+   {
+    "host": "mini-utensil-set",
+    "handle": "kitchen-utensil-holder",
+    "type": "amount",
+    "value": 25,
+    "label": "Utensil Holder"
+   },
+   {
+    "host": "utensil-and-minis-set",
+    "handle": "kitchen-utensil-holder",
+    "type": "amount",
+    "value": 25,
+    "label": "Utensil Holder"
+   }
   ]
  },
  "log": [
@@ -799,6 +822,48 @@
    "kind": "banner",
    "key": "banner:save up to 25% off + unlock a free dutch oven",
    "title": "Save up to 25% off + unlock a Free Dutch Oven",
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "add-on",
+   "key": "add-on:kitchen-utensil-holder:utensil-set:amount:25",
+   "title": "kitchen-utensil-holder $25 off when added with utensil-set",
+   "detail": {
+    "host": "utensil-set",
+    "handle": "kitchen-utensil-holder",
+    "type": "amount",
+    "value": 25,
+    "label": "Utensil Holder"
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "add-on",
+   "key": "add-on:kitchen-utensil-holder:mini-utensil-set:amount:25",
+   "title": "kitchen-utensil-holder $25 off when added with mini-utensil-set",
+   "detail": {
+    "host": "mini-utensil-set",
+    "handle": "kitchen-utensil-holder",
+    "type": "amount",
+    "value": 25,
+    "label": "Utensil Holder"
+   },
+   "firstSeen": "2026-11-24",
+   "lastSeen": "2026-11-24"
+  },
+  {
+   "kind": "add-on",
+   "key": "add-on:kitchen-utensil-holder:utensil-and-minis-set:amount:25",
+   "title": "kitchen-utensil-holder $25 off when added with utensil-and-minis-set",
+   "detail": {
+    "host": "utensil-and-minis-set",
+    "handle": "kitchen-utensil-holder",
+    "type": "amount",
+    "value": 25,
+    "label": "Utensil Holder"
+   },
    "firstSeen": "2026-11-24",
    "lastSeen": "2026-11-24"
   }

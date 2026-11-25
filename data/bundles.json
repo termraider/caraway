@@ -1295,7 +1295,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -2099,7 +2099,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "squareware-set-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 100,
      "variants": [
       {
@@ -2187,17 +2187,17 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
-       "id": "42525914595410",
-       "color": "cream",
+       "id": "42525914628178",
+       "color": "charcoal",
        "handle": "cookware-set-pan-organizers"
       },
       {
-       "id": "42525914628178",
-       "color": "charcoal",
+       "id": "42525914595410",
+       "color": "cream",
        "handle": "cookware-set-pan-organizers"
       }
      ]
@@ -2208,23 +2208,23 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
-     "unitPrice": 35,
+     "matchedBy": "link",
+     "unitPrice": 50,
      "variants": [
-      {
-       "id": "42525914726482",
-       "color": "cream",
-       "handle": "cookware-set-hanging-lid-holder"
-      },
       {
        "id": "42525914759250",
        "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914726482",
+       "color": "cream",
        "handle": "cookware-set-hanging-lid-holder"
       }
      ]
     }
    ],
-   "componentValue": 985
+   "componentValue": 1000
   },
   "stainless-steel-minis-duo": {
    "handle": "stainless-steel-minis-duo",
@@ -2269,23 +2269,218 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
-     "matchedBy": "name",
-     "unitPrice": 30,
+     "matchedBy": "link",
+     "unitPrice": 45,
      "variants": [
-      {
-       "id": "42525914857554",
-       "color": "cream",
-       "handle": "minis-duo-pan-and-lid-organizer"
-      },
       {
        "id": "42525914890322",
        "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914857554",
+       "color": "cream",
        "handle": "minis-duo-pan-and-lid-organizer"
       }
      ]
     }
    ],
-   "componentValue": 300
+   "componentValue": 315
+  },
+  "glass-lid-set-of-3": {
+   "handle": "glass-lid-set-of-3",
+   "title": "Glass Lid Set of 3",
+   "discontinued": false,
+   "items": [
+    {
+     "name": "8” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 55,
+     "variants": [
+      {
+       "id": "40682867097682",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277739991122",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "10.5” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 60,
+     "variants": [
+      {
+       "id": "40682867130450",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277740023890",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "12” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 70,
+     "variants": [
+      {
+       "id": "40682867163218",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277740056658",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "Lid Organizer",
+     "qty": 1,
+     "type": "lid_organizer",
+     "match": "color",
+     "handle": "lid-organizer",
+     "matchedBy": "link",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "40671900532818",
+       "color": null,
+       "handle": "lid-organizer"
+      }
+     ]
+    }
+   ],
+   "componentValue": 250
+  },
+  "glass-lid-set-of-4": {
+   "handle": "glass-lid-set-of-4",
+   "title": "Glass Lid Set of 4",
+   "discontinued": false,
+   "items": [
+    {
+     "name": "7” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 45,
+     "variants": [
+      {
+       "id": "40682867064914",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277739958354",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "8” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 55,
+     "variants": [
+      {
+       "id": "40682867097682",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277739991122",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "10.5” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 60,
+     "variants": [
+      {
+       "id": "40682867130450",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277740023890",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "12” Glass Lid",
+     "qty": 1,
+     "type": "lid",
+     "match": "color",
+     "handle": "glass-lid",
+     "matchedBy": "link",
+     "unitPrice": 70,
+     "variants": [
+      {
+       "id": "40682867163218",
+       "color": "chrome",
+       "handle": "glass-lid"
+      },
+      {
+       "id": "41277740056658",
+       "color": "gold",
+       "handle": "glass-lid"
+      }
+     ]
+    },
+    {
+     "name": "Lid Organizer",
+     "qty": 1,
+     "type": "lid_organizer",
+     "match": "color",
+     "handle": "lid-organizer",
+     "matchedBy": "link",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "40671900532818",
+       "color": null,
+       "handle": "lid-organizer"
+      }
+     ]
+    }
+   ],
+   "componentValue": 295
   },
   "stainless-steel-kitchen-gadget-set": {
    "handle": "stainless-steel-kitchen-gadget-set",
@@ -2605,24 +2800,19 @@
      "qty": 1,
      "type": "storage_organizer",
      "match": "color",
-     "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
-     "unitPrice": 50,
+     "handle": "cookware-organizer",
+     "matchedBy": "link",
+     "unitPrice": 65,
      "variants": [
       {
-       "id": "42525914595410",
-       "color": "cream",
-       "handle": "cookware-set-pan-organizers"
-      },
-      {
-       "id": "42525914628178",
-       "color": "charcoal",
-       "handle": "cookware-set-pan-organizers"
+       "id": "42525914988626",
+       "color": null,
+       "handle": "cookware-organizer"
       }
      ]
     }
    ],
-   "componentValue": 700
+   "componentValue": 715
   },
   "deluxe-cookware-set": {
    "handle": "deluxe-cookware-set",
@@ -3076,17 +3266,17 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
-       "id": "42525914595410",
-       "color": "cream",
+       "id": "42525914628178",
+       "color": "charcoal",
        "handle": "cookware-set-pan-organizers"
       },
       {
-       "id": "42525914628178",
-       "color": "charcoal",
+       "id": "42525914595410",
+       "color": "cream",
        "handle": "cookware-set-pan-organizers"
       }
      ]
@@ -3097,17 +3287,17 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
-     "unitPrice": 35,
+     "matchedBy": "link",
+     "unitPrice": 50,
      "variants": [
-      {
-       "id": "42525914726482",
-       "color": "cream",
-       "handle": "cookware-set-hanging-lid-holder"
-      },
       {
        "id": "42525914759250",
        "color": "charcoal",
+       "handle": "cookware-set-hanging-lid-holder"
+      },
+      {
+       "id": "42525914726482",
+       "color": "cream",
        "handle": "cookware-set-hanging-lid-holder"
       }
      ]
@@ -3150,23 +3340,23 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
-     "matchedBy": "name",
-     "unitPrice": 30,
+     "matchedBy": "link",
+     "unitPrice": 45,
      "variants": [
-      {
-       "id": "42525914857554",
-       "color": "cream",
-       "handle": "minis-duo-pan-and-lid-organizer"
-      },
       {
        "id": "42525914890322",
        "color": "charcoal",
+       "handle": "minis-duo-pan-and-lid-organizer"
+      },
+      {
+       "id": "42525914857554",
+       "color": "cream",
        "handle": "minis-duo-pan-and-lid-organizer"
       }
      ]
     }
    ],
-   "componentValue": 1285
+   "componentValue": 1315
   },
   "4pc-fry-saute-set": {
    "handle": "4pc-fry-saute-set",
@@ -3675,7 +3865,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -3696,7 +3886,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -4264,7 +4454,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -5094,7 +5284,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -5115,7 +5305,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7504,7 +7694,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -7525,7 +7715,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -7750,7 +7940,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "squareware-set-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 100,
      "variants": [
       {
@@ -11444,7 +11634,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -11465,7 +11655,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -11588,7 +11778,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "minis-duo-pan-and-lid-organizer",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 30,
      "variants": [
       {
@@ -12313,6 +12503,404 @@
    ],
    "componentValue": 915
   },
+  "press-and-rest-bundle": {
+   "handle": "press-and-rest-bundle",
+   "title": "Press & Rest Bundle",
+   "discontinued": false,
+   "items": [
+    {
+     "name": "Spoon Rest Set of 2",
+     "qty": 2,
+     "type": null,
+     "match": "color",
+     "handle": "spoon-rest-set-of-2",
+     "matchedBy": "link",
+     "unitPrice": 40,
+     "variants": [
+      {
+       "id": "42248133607506",
+       "color": "cream",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133640274",
+       "color": "navy",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133673042",
+       "color": "gray",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133705810",
+       "color": "sage",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133738578",
+       "color": "perracotta",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133771346",
+       "color": "marigold",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133804114",
+       "color": "iconics black",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133836882",
+       "color": "iconics white",
+       "handle": "spoon-rest-set-of-2"
+      }
+     ]
+    },
+    {
+     "name": "Grill Press",
+     "qty": 1,
+     "type": null,
+     "match": "color",
+     "handle": "grill-press",
+     "matchedBy": "link",
+     "unitPrice": 85,
+     "variants": [
+      {
+       "id": "42248310816850",
+       "color": "cream",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310849618",
+       "color": "gray",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310882386",
+       "color": "marigold",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310915154",
+       "color": "perracotta",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310947922",
+       "color": "navy",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310980690",
+       "color": "sage",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248311013458",
+       "color": "gold",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248311046226",
+       "color": "stainless steel",
+       "handle": "grill-press"
+      }
+     ]
+    }
+   ],
+   "componentValue": 165
+  },
+  "bakeware-plus-set": {
+   "handle": "bakeware-plus-set",
+   "title": "Bakeware+ Set",
+   "discontinued": false,
+   "items": [
+    {
+     "name": "Cookie Sheet",
+     "qty": 1,
+     "type": "baking_sheet",
+     "match": "color",
+     "handle": "cookie-sheet",
+     "matchedBy": "link",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "42248968863826",
+       "color": "cream",
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968896594",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968929362",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968962130",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248968994898",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969027666",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969060434",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969093202",
+       "color": null,
+       "handle": "cookie-sheet"
+      },
+      {
+       "id": "42248969125970",
+       "color": null,
+       "handle": "cookie-sheet"
+      }
+     ]
+    },
+    {
+     "name": "24-Cup Mini Muffin Pan",
+     "qty": 1,
+     "type": "bakeware_pan",
+     "match": "color",
+     "handle": "24-cup-mini-muffin-pan",
+     "matchedBy": "link",
+     "unitPrice": 55,
+     "variants": [
+      {
+       "id": "42248968274002",
+       "color": "cream",
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968306770",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968339538",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968372306",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968405074",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968437842",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968470610",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968503378",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      },
+      {
+       "id": "42248968536146",
+       "color": null,
+       "handle": "24-cup-mini-muffin-pan"
+      }
+     ]
+    },
+    {
+     "name": "Pie Pan",
+     "qty": 1,
+     "type": "bakeware_pan",
+     "match": "color",
+     "handle": "pie-pan",
+     "matchedBy": "link",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "42248969158738",
+       "color": "cream",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969191506",
+       "color": "navy",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969224274",
+       "color": "slate",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969257042",
+       "color": "gray",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969289810",
+       "color": "perracotta",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969322578",
+       "color": "sage",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969355346",
+       "color": "marigold",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969388114",
+       "color": "iconics black",
+       "handle": "pie-pan"
+      },
+      {
+       "id": "42248969420882",
+       "color": "iconics white",
+       "handle": "pie-pan"
+      }
+     ]
+    },
+    {
+     "name": "Pizza Pan",
+     "qty": 1,
+     "type": "bakeware_pan",
+     "match": "color",
+     "handle": "pizza-pan",
+     "matchedBy": "link",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "42248969453650",
+       "color": "cream",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969486418",
+       "color": "navy",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969519186",
+       "color": "slate",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969551954",
+       "color": "gray",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969584722",
+       "color": "perracotta",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969617490",
+       "color": "sage",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969650258",
+       "color": "marigold",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969683026",
+       "color": "iconics black",
+       "handle": "pizza-pan"
+      },
+      {
+       "id": "42248969715794",
+       "color": "iconics white",
+       "handle": "pizza-pan"
+      }
+     ]
+    },
+    {
+     "name": "Fluted Cake Pan",
+     "qty": 1,
+     "type": "bakeware_pan",
+     "match": "color",
+     "handle": "fluted-cake-pan",
+     "matchedBy": "link",
+     "unitPrice": 65,
+     "variants": [
+      {
+       "id": "42248968568914",
+       "color": "cream",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968601682",
+       "color": "navy",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968634450",
+       "color": "slate",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968667218",
+       "color": "gray",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968699986",
+       "color": "perracotta",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968732754",
+       "color": "sage",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968765522",
+       "color": "marigold",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968798290",
+       "color": "iconics black",
+       "handle": "fluted-cake-pan"
+      },
+      {
+       "id": "42248968831058",
+       "color": "iconics white",
+       "handle": "fluted-cake-pan"
+      }
+     ]
+    }
+   ],
+   "componentValue": 315
+  },
   "complete-baking-sheet-bundle": {
    "handle": "complete-baking-sheet-bundle",
    "title": "Complete Baking Sheet Bundle",
@@ -12380,7 +12968,7 @@
      "type": "baking_sheet",
      "match": "color",
      "handle": "cookie-sheet",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 65,
      "variants": [
       {
@@ -12390,42 +12978,42 @@
       },
       {
        "id": "42248968896594",
-       "color": "navy",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248968929362",
-       "color": "slate",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248968962130",
-       "color": "gray",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248968994898",
-       "color": "perracotta",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248969027666",
-       "color": "sage",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248969060434",
-       "color": "marigold",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248969093202",
-       "color": "iconics black",
+       "color": null,
        "handle": "cookie-sheet"
       },
       {
        "id": "42248969125970",
-       "color": "iconics white",
+       "color": null,
        "handle": "cookie-sheet"
       }
      ]
@@ -12544,6 +13132,172 @@
     }
    ],
    "componentValue": 230
+  },
+  "clean-accessories-bundle": {
+   "handle": "clean-accessories-bundle",
+   "title": "Clean Accessories Bundle",
+   "discontinued": false,
+   "items": [
+    {
+     "name": "Spoon Rest Set of 2",
+     "qty": 2,
+     "type": null,
+     "match": "color",
+     "handle": "spoon-rest-set-of-2",
+     "matchedBy": "link",
+     "unitPrice": 40,
+     "variants": [
+      {
+       "id": "42248133607506",
+       "color": "cream",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133640274",
+       "color": "navy",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133673042",
+       "color": "gray",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133705810",
+       "color": "sage",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133738578",
+       "color": "perracotta",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133771346",
+       "color": "marigold",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133804114",
+       "color": "iconics black",
+       "handle": "spoon-rest-set-of-2"
+      },
+      {
+       "id": "42248133836882",
+       "color": "iconics white",
+       "handle": "spoon-rest-set-of-2"
+      }
+     ]
+    },
+    {
+     "name": "Grill Press",
+     "qty": 1,
+     "type": null,
+     "match": "color",
+     "handle": "grill-press",
+     "matchedBy": "link",
+     "unitPrice": 85,
+     "variants": [
+      {
+       "id": "42248310816850",
+       "color": "cream",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310849618",
+       "color": "gray",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310882386",
+       "color": "marigold",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310915154",
+       "color": "perracotta",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310947922",
+       "color": "navy",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248310980690",
+       "color": "sage",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248311013458",
+       "color": "gold",
+       "handle": "grill-press"
+      },
+      {
+       "id": "42248311046226",
+       "color": "stainless steel",
+       "handle": "grill-press"
+      }
+     ]
+    },
+    {
+     "name": "Mechanical Kitchen Timer",
+     "qty": 1,
+     "type": null,
+     "match": "color",
+     "handle": "mechanical-kitchen-timer",
+     "matchedBy": "link",
+     "unitPrice": 40,
+     "variants": [
+      {
+       "id": "42248318615634",
+       "color": "cream",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318648402",
+       "color": "navy",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318681170",
+       "color": "gray",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318713938",
+       "color": "sage",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318746706",
+       "color": "perracotta",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318779474",
+       "color": "marigold",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318812242",
+       "color": "iconics black",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42248318845010",
+       "color": "iconics white",
+       "handle": "mechanical-kitchen-timer"
+      },
+      {
+       "id": "42277573296210",
+       "color": "stainless steel",
+       "handle": "mechanical-kitchen-timer"
+      }
+     ]
+    }
+   ],
+   "componentValue": 205
   },
   "ultimate-holiday-bundle": {
    "handle": "ultimate-holiday-bundle",
@@ -12760,7 +13514,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -12781,7 +13535,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -15228,7 +15982,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -15249,7 +16003,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {
@@ -16698,7 +17452,7 @@
      "type": "lid",
      "match": "edition",
      "handle": "glass-lid",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 55,
      "variants": [
       {
@@ -16719,7 +17473,7 @@
      "type": "lid",
      "match": "edition",
      "handle": "glass-lid",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 60,
      "variants": [
       {
@@ -16740,7 +17494,7 @@
      "type": "lid",
      "match": "edition",
      "handle": "glass-lid",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 70,
      "variants": [
       {
@@ -17648,7 +18402,7 @@
      "type": "storage_organizer",
      "match": "color",
      "handle": "cookware-set-pan-organizers",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 50,
      "variants": [
       {
@@ -17669,7 +18423,7 @@
      "type": "canvas_lid_holder",
      "match": "color",
      "handle": "cookware-set-hanging-lid-holder",
-     "matchedBy": "name",
+     "matchedBy": "link",
      "unitPrice": 35,
      "variants": [
       {

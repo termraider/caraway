@@ -27,6 +27,7 @@ async function loadData() {
     loadJSON('products.json', { products: {} }), loadJSON('price-history.json', {}), loadJSON('promos.json', { log: [] }),
     loadJSON('bundles.json', { bundles: {} }), loadJSON('meta.json', {}), loadJSON('coupons.json', { coupons: [] }),
   ]);
+  for (const p of Object.values(catalog.products || {})) for (const v of p.variants || []) if (v.title === 'Default Title') v.title = 'Standard';
   D = { catalog, products: catalog.products || {}, history, promos, bundles, meta, coupons: coupons.coupons || [] };
   rebuildContext();
 }

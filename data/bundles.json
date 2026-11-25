@@ -18779,6 +18779,167 @@
    "discontinued": true,
    "items": [],
    "componentValue": 0
+  },
+  "mini-food-storage-bakeware-set": {
+   "handle": "mini-food-storage-bakeware-set",
+   "title": "Mini Food Storage & Bakeware Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "mini-microplastic-free-bundle": {
+   "handle": "mini-microplastic-free-bundle",
+   "title": "Mini Microplastic-Free Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "mini-square-container-duo": {
+   "handle": "mini-square-container-duo",
+   "title": "Mini Square Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "moms-mini-helpers-bundle": {
+   "handle": "moms-mini-helpers-bundle",
+   "title": "Mom’s Mini Helpers Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "new-year-celebration-bundle": {
+   "handle": "new-year-celebration-bundle",
+   "title": "New Year Celebration Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "pasta-night-bundle": {
+   "handle": "pasta-night-bundle",
+   "title": "Pasta Night Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "pizza-night-bundle": {
+   "handle": "pizza-night-bundle",
+   "title": "Pizza Night Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "prep-and-gather-bundle": {
+   "handle": "prep-and-gather-bundle",
+   "title": "Prep & Gather Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "prep-and-store-bundle": {
+   "handle": "prep-and-store-bundle",
+   "title": "Prep & Store Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "prep-and-store-bundle-walnut": {
+   "handle": "prep-and-store-bundle-walnut",
+   "title": "Prep & Store Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "prep-and-store-set": {
+   "handle": "prep-and-store-set",
+   "title": "Prep & Store Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "slice-and-sear-bundle": {
+   "handle": "slice-and-sear-bundle",
+   "title": "Slice & Sear Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "slice-and-serve-bundle": {
+   "handle": "slice-and-serve-bundle",
+   "title": "Slice & Serve Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "slice-and-serve-bundle-walnut": {
+   "handle": "slice-and-serve-bundle-walnut",
+   "title": "Slice & Serve Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "small-cutting-board-duo": {
+   "handle": "small-cutting-board-duo",
+   "title": "Small Cutting Board Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "small-glass-airtight-container-duo": {
+   "handle": "small-glass-airtight-container-duo",
+   "title": "Small Glass Airtight Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "small-storage-container-duo": {
+   "handle": "small-storage-container-duo",
+   "title": "Small Storage Container Duo",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "spoon-rest-set-of-4": {
+   "handle": "spoon-rest-set-of-4",
+   "title": "Spoon Rest Set of 4",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "stainless-steel-sizzle-and-steam-bundle": {
+   "handle": "stainless-steel-sizzle-and-steam-bundle",
+   "title": "Sizzle & Steam Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "summer-cookout-bundle": {
+   "handle": "summer-cookout-bundle",
+   "title": "Summer Cookout Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "sweetheart-brunch-bundle": {
+   "handle": "sweetheart-brunch-bundle",
+   "title": "Sweetheart Brunch Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "ultimate-microplastic-free-bundle": {
+   "handle": "ultimate-microplastic-free-bundle",
+   "title": "Ultimate Microplastic-Free Bundle",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
+  },
+  "whats-included-1234": {
+   "handle": "whats-included-1234",
+   "title": "Enameled Cast Iron Set",
+   "discontinued": true,
+   "items": [],
+   "componentValue": 0
   }
  }
 }

@@ -44,8 +44,19 @@ const days = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 86400000) + 
 const fmtDate = (d) => (d ? new Date(d + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—');
 const SWATCH = { cream: '#EDE4D3', navy: '#26324D', sage: '#A6B49D', gray: '#8D9294', grey: '#8D9294', perracotta: '#C8714E', marigold: '#E4A63A', black: '#1E1E1E', white: '#F7F6F2', mist: '#C9D3D6', charcoal: '#3B3D3F', blush: '#E8C3B9', emerald: '#2F6B4F', slate: '#5C6670', chrome: '#C9CCCF', gold: '#C9A55A', copper: '#B87333', stainless: '#B9BCBF', natural: '#D9C3A0' };
 const swatch = (c) => SWATCH[lc(c).split(/[\s/]+/)[0]] || `hsl(${[...lc(c)].reduce((h, ch) => h + ch.charCodeAt(0) * 7, 0) % 360} 25% 55%)`;
+// Caraway's own swatch picture for a color (per product, since cookware and bakeware swatches differ), else a guess.
+let _sw = null;
+function swatchUrl(c, p) {
+  const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === lc(c) && x.swatch);
+  if (v) return v.swatch;
+  if (!_sw) { _sw = {}; for (const q of Object.values(D.products)) for (const x of q.variants || []) if (x.swatch && x.color && !_sw[lc(x.color)]) _sw[lc(x.color)] = x.swatch; }
+  return _sw[lc(c)] || null;
+}
+const swatchCss = (c, p) => { const u = swatchUrl(c, p); return u ? `background:${swatch(c)} url('${esc(u)}') center/cover` : `background:${swatch(c)}`; };
+const variantOf = (p, c) => p && (p.variants || []).find((x) => lc(x.color || x.title) === lc(c));
 const ownKey = (h, c) => `${h}|${lc(c)}`;
 const isOwned = (h, c) => !!state.owned[ownKey(h, c)];
+const qtyOf = (h, c) => { const e = state.owned[ownKey(h, c)]; return e ? Math.max(1, Number(e && e.qty) || 1) : 0; };
 const viaOf = (h, c) => (ctx && ctx.via && ctx.via[ownKey(h, c)]) || null; // owned as part of a bundle you own
 const ownsAny = (h, c) => isOwned(h, c) || !!viaOf(h, c);
 const viaText = (list, same) => list.map((b) => `<a href="#/p/${encodeURIComponent(b.handle)}">${esc(b.title)}</a>${b.color && !/^standard$/i.test(b.color) && lc(b.color) !== lc(same) ? ' (' + esc(b.color) + ')' : ''}`).join(', ');
@@ -172,7 +183,7 @@ function card(p, s) {
     <div class="tb">
       <span class="tk">${esc(categoryOf(p))}</span>
       <a class="tn" href="#/p/${encodeURIComponent(p.handle)}">${esc(p.title)}</a>
-      ${colors.length > 1 || colors[0] && colors[0] !== 'Default Title' ? `<div class="dots" title="${esc(colors.join(', '))}">${colors.slice(0, 12).map((c) => `<i style="background:${swatch(c)}" class="${ownsAny(p.handle, c) ? 'own' : ''}" title="${esc(c)}${ownsAny(p.handle, c) ? ' (owned)' : ''}"></i>`).join('')}</div>` : ''}
+      ${colors.length > 1 || colors[0] && colors[0] !== 'Default Title' ? `<div class="dots" title="${esc(colors.join(', '))}">${colors.slice(0, 12).map((c) => `<i style="${swatchCss(c, p)}" class="${ownsAny(p.handle, c) ? 'own' : ''}" title="${esc(c)}${ownsAny(p.handle, c) ? ' (owned)' : ''}"></i>`).join('')}</div>` : ''}
       <div class="tp">
         ${s.sale != null && s.sale < s.base ? `<b>${money(s.sale)}</b><span class="strike">${money(s.base)}</span>` : `<b>${money(s.base)}</b>`}
         ${s.compareAt && s.compareAt > s.base ? `<span class="strike small">${money(s.compareAt)}</span>` : ''}
@@ -215,10 +226,10 @@ function viewProduct(app, handle) {
           const c = v.color || v.title;
           const alone = alonePrice(p, v);
           return `<div class="crow">
-            <span><i style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${swatch(c)};vertical-align:-1px;margin-right:8px"></i>${esc(c)}${lc(c) === lc(pref()) ? ' <span class="badge b-green">your color</span>' : ''}
+            <span class="cname">${v.image ? `<img class="vthumb" src="${esc(img(v.image, 160))}" alt="${esc(p.title + ' in ' + c)}" data-big="${esc(img(v.image, 900))}" loading="lazy">` : ''}<i class="sw" style="${swatchCss(c, p)}" title="${esc(c)}"></i>${esc(c)}${lc(c) === lc(pref()) ? ' <span class="badge b-green">your color</span>' : ''}
               <span class="small muted">${v.live === false ? (v.archived ? ' · old color' : ' · no longer sold') : v.available === false ? ' · sold out' : ''}${v.sku ? ' · ' + esc(v.sku) : ''}</span></span>
             <span class="small">${money(v.price)}${v.compareAt > v.price ? ` <span class="strike">${money(v.compareAt)}</span>` : ''}${alone != null && alone < v.price ? ` <span class="gold">→ ${money(alone)}</span>` : ''}</span>
-            ${!isOwned(handle, c) && viaOf(handle, c) ? `<span class="btn sm on" title="Comes in a bundle you own">✓ Owned via bundle</span>` : `<button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' : 'I own this'}</button>${ownedNote(handle, c)}`}
+            ${!isOwned(handle, c) && viaOf(handle, c) ? `<span class="btn sm on" title="Comes in a bundle you own">✓ Owned via bundle</span>` : `<button class="btn sm ${isOwned(handle, c) ? 'on' : ''}" data-own="${esc(c)}">${isOwned(handle, c) ? '✓ Owned' + (qtyOf(handle, c) > 1 ? ' ×' + qtyOf(handle, c) : '') : 'I own this'}</button>${ownedNote(handle, c)}`}
             <button class="btn sm" data-wish="${esc(c)}">+ Wishlist</button>
           </div>`;
         }).join('')}</div>
@@ -228,8 +239,9 @@ function viewProduct(app, handle) {
     ${addOnSection(p)}
     <section class="sec"><h2>Price history</h2><div id="hist"></div></section>
     ${inBundles.length ? `<section class="sec"><h2>Bundles that include it</h2><div class="tablewrap"><table><tr><th>Bundle</th><th class="num">Price</th><th class="num">Parts value</th><th></th></tr>${inBundles.map((b) => { const bp = D.products[b.handle]; const bs = bp ? productSummary(bp) : {}; return `<tr><td><a href="#/p/${encodeURIComponent(b.handle)}">${esc(b.title)}</a></td><td class="num">${money(bs.base)}</td><td class="num">${money(b.componentValue)}</td><td class="small muted">${bp && bp.discontinued ? 'discontinued' : ''}</td></tr>`; }).join('')}</table></div></section>` : ''}`;
-  app.querySelectorAll('[data-own]').forEach((b) => (b.onclick = () => { const k = ownKey(handle, b.dataset.own); if (state.owned[k]) delete state.owned[k]; else state.owned[k] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); }));
+  app.querySelectorAll('[data-own]').forEach((b) => (b.onclick = () => { const k = ownKey(handle, b.dataset.own); if (qtyOf(handle, b.dataset.own) > 1) { toast('You own ' + qtyOf(handle, b.dataset.own) + '. Change it in My kitchen'); return; } if (state.owned[k]) delete state.owned[k]; else state.owned[k] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); }));
   app.querySelectorAll('[data-wish]').forEach((b) => (b.onclick = () => addWish(handle, b.dataset.wish === '*' ? null : b.dataset.wish)));
+  app.querySelectorAll('.vthumb').forEach((t) => (t.onclick = () => { const m = $('.detail .pic img'); if (m) { m.src = t.dataset.big; m.alt = t.alt; m.scrollIntoView({ behavior: 'smooth', block: 'center' }); } }));
   drawHistory($('#hist'), p);
 }
 // Caraway's badges sometimes carry an unfilled template ("Save {{XXX}}"); fill it with the real list-price saving or drop it.
@@ -271,11 +283,14 @@ function partOwnership(item, focus, self) {
     const r = variantById(cv.id); if (!r) continue;
     const c = colorOf(r.v);
     const via = (viaOf(r.p.handle, c) || []).filter((v) => v.handle !== self); // ignore "owned because you own this very bundle"
-    if ((isOwned(r.p.handle, c) || via.length) && !owned.some((x) => lc(x.c) === lc(c))) owned.push({ h: r.p.handle, c, via: isOwned(r.p.handle, c) ? null : via });
+    const n = qtyOf(r.p.handle, c) + via.reduce((s, v) => s + (v.qty || 1), 0);
+    if (n && !owned.some((x) => lc(x.c) === lc(c))) owned.push({ h: r.p.handle, c, n, via: isOwned(r.p.handle, c) ? null : via });
   }
   const fc = focus ? colorCandidates(focus) : null;
-  const dup = fc ? owned.some((o) => fc.includes(lc(o.c))) || (owned.length > 0 && new Set((item.variants || []).map((v) => lc(v.color))).size <= 1) : owned.length > 0;
-  return { owned, dup };
+  const single = new Set((item.variants || []).map((v) => lc(v.color))).size <= 1;
+  const counted = fc && !single ? owned.filter((o) => fc.includes(lc(o.c))) : owned;
+  const units = Math.min(item.qty || 1, counted.reduce((s, o) => s + o.n, 0));
+  return { owned, dup: units > 0, units };
 }
 function bundleTable(b, s) {
   const p = D.products[b.handle];
@@ -283,8 +298,8 @@ function bundleTable(b, s) {
   let ownedValue = 0, ownedCount = 0;
   const rows = b.items.map((i) => {
     const o = partOwnership(i, focus, b.handle);
-    if (o.dup) { ownedCount++; ownedValue += i.unitPrice || 0; }
-    const note = o.owned.length ? `<div class="small ${o.dup ? 'green' : 'muted'}">✓ you own ${o.owned.map((x) => esc(x.c) + (x.via ? ' (in your ' + x.via.map((v) => esc(v.title)).join(', ') + ')' : '')).join(', ')}${i.qty > 1 && o.dup ? ' · 1 of ' + i.qty : ''}</div>` : '';
+    if (o.dup) { ownedCount += o.units; ownedValue += (i.unitPrice || 0) * o.units; }
+    const note = o.owned.length ? `<div class="small ${o.dup ? 'green' : 'muted'}">✓ you own ${o.owned.map((x) => (x.n > 1 ? x.n + '× ' : '') + esc(x.c) + (x.via ? ' (in your ' + x.via.map((v) => esc(v.title)).join(', ') + ')' : '')).join(', ')}${i.qty > 1 && o.dup ? ` · covers ${o.units} of ${i.qty}` : ''}</div>` : '';
     return `<tr class="${o.dup ? 'owned-row' : ''}"><td>${i.handle ? `<a href="#/p/${encodeURIComponent(i.handle)}">${esc(i.name)}</a>` : esc(i.name)}${note}</td><td class="num">${i.qty}</td><td class="num">${money(i.unitPrice)}</td><td class="num">${i.unitPrice != null ? money(i.unitPrice * i.qty) : '—'}</td></tr>`;
   }).join('');
   const save1 = b.componentValue && s.base ? b.componentValue - s.base : null;
@@ -416,8 +431,17 @@ function viewSales(app) {
 // ---------- picker (search a product, then a color) ----------
 function picker(el, onPick, { anyColor = true, label = 'Add' } = {}) {
   el.innerHTML = `<div class="row"><div class="picker" style="flex:1;min-width:220px"><input class="f" placeholder="Search products…" autocomplete="off"><div class="list" hidden></div></div>
-    <select style="max-width:200px" disabled><option>Color</option></select><button class="btn primary" disabled>${label}</button></div>`;
+    <select style="max-width:200px" disabled><option>Color</option></select><button class="btn primary" disabled>${label}</button></div><div class="pick-prev" hidden></div>`;
   const [input, list, sel, btn] = [$('input', el), $('.list', el), $('select', el), $('button.btn', el)];
+  const prev = $('.pick-prev', el);
+  const showPrev = () => {
+    if (!chosen) { prev.hidden = true; return; }
+    const shown = [...new Map((chosen.variants || []).filter((v) => v.live !== false).map((v) => [lc(colorOf(v)), colorOf(v)])).values()];
+    prev.innerHTML = shown.slice(0, 12).map((c) => { const v = variantOf(chosen, c); const pic = (v && v.image) || chosen.image; return `<button type="button" class="pv${sel.value && lc(sel.value) === lc(c) ? ' on' : ''}" data-c="${esc(c)}">${pic ? `<img src="${esc(img(pic, 220))}" alt="${esc(chosen.title + ' in ' + c)}" loading="lazy">` : ''}<span><i class="sw" style="${swatchCss(c, chosen)}"></i>${esc(c)}${ownsAny(chosen.handle, c) ? ' <span class="small green">✓ owned' + (qtyOf(chosen.handle, c) > 1 ? ' ×' + qtyOf(chosen.handle, c) : '') + '</span>' : ''}</span></button>`; }).join('');
+    prev.hidden = false;
+  };
+  prev.onclick = (e) => { const b = e.target.closest('[data-c]'); if (!b) return; sel.value = b.dataset.c; showPrev(); };
+  sel.onchange = showPrev;
   let chosen = null;
   const all = Object.values(D.products).filter((p) => !p.isGiftCard).sort((a, b) => a.discontinued - b.discontinued || a.title.localeCompare(b.title));
   input.oninput = () => {
@@ -431,44 +455,52 @@ function picker(el, onPick, { anyColor = true, label = 'Add' } = {}) {
     chosen = D.products[b.dataset.h]; input.value = chosen.title; list.hidden = true;
     const colors = [...new Map((chosen.variants || []).map((v) => [lc(v.color || v.title), v.color || v.title])).values()];
     sel.innerHTML = (anyColor && colors.length > 1 ? `<option value="">Any color${pref() && colors.some((c) => lc(c) === lc(pref())) ? ` (${esc(pref())} first)` : ''}</option>` : '') + colors.map((c) => `<option>${esc(c)}</option>`).join('');
-    sel.disabled = false; btn.disabled = false;
+    sel.disabled = false; btn.disabled = false; showPrev();
   };
-  btn.onclick = () => { if (chosen) { onPick(chosen.handle, sel.value || null); input.value = ''; sel.disabled = btn.disabled = true; chosen = null; } };
+  btn.onclick = () => { if (chosen) { onPick(chosen.handle, sel.value || null); input.value = ''; sel.disabled = btn.disabled = true; chosen = null; showPrev(); } };
 }
 
 // ---------- my kitchen ----------
 function viewKitchen(app) {
-  const rows = Object.keys(state.owned).map((k) => { const [h, c] = k.split('|'); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { k, h, c: v ? v.color || v.title : c, p, v }; })
+  const rows = Object.keys(state.owned).map((k) => { const [h, c] = k.split('|'); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { k, h, c: v ? v.color || v.title : c, p, v, q: Math.max(1, Number(state.owned[k] && state.owned[k].qty) || 1) }; })
     .sort((a, b) => String(a.p?.title || a.h).localeCompare(String(b.p?.title || b.h)));
-  const full = (r) => (r.v ? Math.max(r.v.price || 0, r.v.compareAt || 0) : 0);
+  const full = (r) => (r.v ? Math.max(r.v.price || 0, r.v.compareAt || 0) : 0) * (r.q || 1);
   const value = rows.reduce((s, r) => s + full(r), 0);
+  const count = rows.reduce((s, r) => s + r.q, 0);
+  const thumb = (r) => (r.v && r.v.image ? `<img class="othumb" src="${esc(img(r.v.image, 120))}" alt="" loading="lazy">` : r.p && r.p.image ? `<img class="othumb" src="${esc(img(r.p.image, 120))}" alt="" loading="lazy">` : '');
+  const swc = (r) => `<i class="sw" style="${swatchCss(r.c, r.p)}"></i>`;
   const ent = (r) => (typeof state.owned[r.k] === 'object' && state.owned[r.k]) || {};
   const known = rows.filter((r) => ent(r).gift || ent(r).paid != null);
   const paid = known.reduce((s, r) => s + (ent(r).gift ? 0 : Number(ent(r).paid) || 0), 0);
   const knownFull = known.reduce((s, r) => s + full(r), 0);
-  const gifts = rows.filter((r) => ent(r).gift).length;
+  const gifts = rows.filter((r) => ent(r).gift).reduce((s, r) => s + r.q, 0);
   const viaRows = Object.entries(ctx.via || {}).filter(([k]) => !state.owned[k]).map(([k, via]) => { const i = k.lastIndexOf('|'); const h = k.slice(0, i), c = k.slice(i + 1); const p = D.products[h]; const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c); return { h, c: v ? v.color || v.title : c, p, v, via }; })
     .sort((a, b) => String(a.p?.title || a.h).localeCompare(String(b.p?.title || b.h)));
   app.innerHTML = `<p class="eyebrow">Your shelf</p><h1>My kitchen</h1>
-    <p class="sub">${rows.length} items owned, about ${money(value)} at full price. ${viaRows.length ? ` Plus ${viaRows.length} more that came in your bundles.` : ''} Owned colors are flagged everywhere and left out of suggestions.</p>
-    ${known.length ? `<div class="kv sec"><div><span>You paid</span><b>${money(paid)}</b> <span class="small muted">for ${known.length} item${known.length > 1 ? 's' : ''}</span></div><div><span>Full price of those</span><b>${money(knownFull)}</b></div><div><span>You saved</span><b class="green">${money(Math.max(0, knownFull - paid))}</b> <span class="small muted">${knownFull ? Math.round((1 - paid / knownFull) * 100) + '%' : ''}</span></div>${gifts ? `<div><span>Free gifts</span><b>${gifts}</b></div>` : ''}</div>` : ''}
+    <p class="sub">${count} item${count === 1 ? '' : 's'} owned, about ${money(value)} at full price. ${viaRows.length ? ` Plus ${viaRows.length} more that came in your bundles.` : ''} Owned colors are flagged everywhere and left out of suggestions.</p>
+    ${known.length ? `<div class="kv sec"><div><span>You paid</span><b>${money(paid)}</b> <span class="small muted">for ${known.reduce((s, r) => s + r.q, 0)} item${known.reduce((s, r) => s + r.q, 0) > 1 ? 's' : ''}</span></div><div><span>Full price of those</span><b>${money(knownFull)}</b></div><div><span>You saved</span><b class="green">${money(Math.max(0, knownFull - paid))}</b> <span class="small muted">${knownFull ? Math.round((1 - paid / knownFull) * 100) + '%' : ''}</span></div>${gifts ? `<div><span>Free gifts</span><b>${gifts}</b></div>` : ''}</div>` : ''}
     <div class="sec panel"><h3>Add something you own</h3><div id="pick" style="margin-top:10px"></div></div>
-    <div class="sec tablewrap"><table class="owned-tbl"><tr><th>Product</th><th>Color</th><th>Got it</th><th>Paid</th><th>Free gift</th><th class="num">Price now</th><th></th></tr>
-    ${rows.map((r) => { const e = ent(r); return `<tr><td>${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td><i style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${swatch(r.c)};margin-right:6px"></i>${esc(r.c)}</td>
+    <div class="sec tablewrap"><table class="owned-tbl"><tr><th>Product</th><th>Color</th><th>Qty</th><th>Got it</th><th>Paid (total)</th><th>Free gift</th><th class="num">Price now</th><th></th></tr>
+    ${rows.map((r) => { const e = ent(r); return `<tr><td class="oprod">${thumb(r)}${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td>${swc(r)}${esc(r.c)}</td>
+      <td><label class="money-in">×<input type="number" inputmode="numeric" min="1" step="1" class="mini-in qty-in" data-qty="${esc(r.k)}" value="${r.q}" aria-label="How many you own"></label></td>
       <td><input type="date" class="mini-in" data-at="${esc(r.k)}" value="${esc(e.at || '')}"></td>
       <td><span class="money-in">$<input type="number" inputmode="decimal" min="0" step="0.01" class="mini-in" data-paid="${esc(r.k)}" value="${e.gift ? '' : e.paid ?? ''}" placeholder="—" ${e.gift ? 'disabled' : ''}></span></td>
       <td><label class="chk"><input type="checkbox" data-gift="${esc(r.k)}" ${e.gift ? 'checked' : ''}> 🎁 gift</label></td>
-      <td class="num">${money(r.v && r.v.price)}</td><td><button class="btn sm" data-del="${esc(r.k)}">Remove</button></td></tr>`; }).join('') || '<tr><td colspan="7" class="muted">Nothing marked yet. Open any product and press "I own this" next to a color.</td></tr>'}
+      <td class="num">${money(r.v && r.v.price)}</td><td><button class="btn sm" data-del="${esc(r.k)}">Remove</button></td></tr>`; }).join('') || '<tr><td colspan="8" class="muted">Nothing marked yet. Open any product and press "I own this" next to a color.</td></tr>'}
     </table></div>
     ${viaRows.length ? `<section class="sec"><h2>Included in your bundles</h2><p class="sub">You own these because they came in a bundle you own. To change them, change the bundle.</p>
     <div class="tablewrap"><table><tr><th>Product</th><th>Color</th><th>From</th><th class="num">Price now</th></tr>
-    ${viaRows.map((r) => `<tr><td>${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td><i style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${swatch(r.c)};margin-right:6px"></i>${esc(r.c)}</td><td>${viaText(r.via, r.c)}</td><td class="num">${money(r.v && r.v.price)}</td></tr>`).join('')}
+    ${viaRows.map((r) => `<tr><td class="oprod">${thumb(r)}${r.p ? `<a href="#/p/${encodeURIComponent(r.h)}">${esc(r.p.title)}</a>` : esc(r.h)}</td><td>${swc(r)}${esc(r.c)}</td><td>${viaText(r.via, r.c)}</td><td class="num">${money(r.v && r.v.price)}</td></tr>`).join('')}
     </table></div></section>` : ''}`;
-  picker($('#pick'), (h, c) => { const p = D.products[h]; const color = c || (p.variants[0] && (p.variants[0].color || p.variants[0].title)); state.owned[ownKey(h, color)] = { at: new Date().toISOString().slice(0, 10) }; rebuildContext(); save(); toast('Marked as owned'); }, { anyColor: false, label: 'I own it' });
+  picker($('#pick'), (h, c) => { const p = D.products[h]; const color = c || (p.variants[0] && (p.variants[0].color || p.variants[0].title)); const k = ownKey(h, color); const e = state.owned[k];
+    if (e) { state.owned[k] = { ...(typeof e === 'object' ? e : {}), qty: Math.max(1, Number(e.qty) || 1) + 1 }; toast('You now own ' + state.owned[k].qty); }
+    else { state.owned[k] = { at: new Date().toISOString().slice(0, 10) }; toast('Marked as owned'); }
+    rebuildContext(); save(); }, { anyColor: false, label: 'I own it' });
   app.querySelectorAll('[data-del]').forEach((b) => (b.onclick = () => { delete state.owned[b.dataset.del]; rebuildContext(); save(); }));
   const entry = (k) => (state.owned[k] = typeof state.owned[k] === 'object' && state.owned[k] ? state.owned[k] : {});
   app.querySelectorAll('[data-paid]').forEach((i) => (i.onchange = () => { const e = entry(i.dataset.paid); const n = parseFloat(i.value); if (i.value === '' || !isFinite(n)) delete e.paid; else e.paid = Math.round(n * 100) / 100; save(); }));
   app.querySelectorAll('[data-gift]').forEach((i) => (i.onchange = () => { const e = entry(i.dataset.gift); if (i.checked) { e.gift = true; delete e.paid; } else delete e.gift; save(); }));
+  app.querySelectorAll('[data-qty]').forEach((i) => (i.onchange = () => { const e = entry(i.dataset.qty); const n = Math.round(Number(i.value)); if (n > 1) e.qty = n; else delete e.qty; rebuildContext(); save(); }));
   app.querySelectorAll('[data-at]').forEach((i) => (i.onchange = () => { const e = entry(i.dataset.at); if (i.value) e.at = i.value; else delete e.at; save(); }));
 }
 

@@ -126,6 +126,17 @@ td.num,th.num{text-align:right}
 .mini-in{font:inherit;font-size:14px;padding:5px 7px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);max-width:9.5em}
 .money-in{display:inline-flex;align-items:center;gap:3px;color:var(--dim)}.money-in .mini-in{width:6.5em}
 .chk{display:inline-flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}
+.sw{display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid rgba(0,0,0,.18);vertical-align:-3px;margin-right:7px;flex:none}
+.dots i{background-size:cover!important}
+.cname{display:inline-flex;align-items:center;gap:2px}
+.vthumb{width:46px;height:46px;object-fit:contain;border-radius:10px;background:var(--tile-bg);margin-right:8px;cursor:zoom-in;flex:none}
+.othumb{width:40px;height:40px;object-fit:contain;border-radius:8px;background:var(--tile-bg);vertical-align:middle;margin-right:8px}
+.oprod{white-space:normal}
+.qty-in{width:4.2em}
+.pick-prev{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:12px}
+.pick-prev .pv{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:8px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--text);font:inherit;font-size:14px;cursor:pointer;text-align:left}
+.pick-prev .pv.on{border-color:var(--green);box-shadow:0 0 0 2px var(--green)}
+.pick-prev .pv img{width:100%;aspect-ratio:4/3;object-fit:contain;background:var(--tile-bg);border-radius:10px}
 select,input,textarea{max-width:100%}
 .detail>*,.detail .row{min-width:0}
 html,body{overflow-x:clip}
@@ -167,6 +178,6 @@ footer{border-top:1px solid var(--line);padding:18px 0 30px;color:var(--dim);fon
 </nav></div></header>
 <main class="wrap" id="app"><p class="empty">Loading…</p></main>
 <footer><div class="wrap">Prices scraped from carawayhome.com once a day. Sale math is an estimate of how Caraway's cart applies its tiers; check the cart before you buy. Not affiliated with Caraway. <span id="updated"></span></div></footer>
-<script type="module" src="app.js?v=9"></script>
+<script type="module" src="app.js?v=10"></script>
 </body>
 </html>

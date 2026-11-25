@@ -104,7 +104,7 @@ export function bundleOwnership(catalog, bundles, owned) {
   const byVariant = new Map();
   for (const p of Object.values(products)) for (const v of p.variants || []) byVariant.set(String(v.id), { handle: p.handle, color: v.color || v.title });
   const out = {};
-  const visit = (handle, color, from, depth, seen) => {
+  const visit = (handle, color, from, depth, seen, mult = 1) => {
     const b = all[handle];
     if (!b || depth > 3 || seen.has(handle)) return;
     seen.add(handle);
@@ -115,8 +115,10 @@ export function bundleOwnership(catalog, bundles, owned) {
       if (!ref) continue;
       const key = `${ref.handle}|${lc(ref.color)}`;
       const list = out[key] || (out[key] = []);
-      if (!list.some((x) => x.handle === from.handle && lc(x.color) === lc(from.color))) list.push(from);
-      visit(ref.handle, ref.color, from, depth + 1, seen);
+      const n = (item.qty || 1) * mult;
+      const hit = list.find((x) => x.handle === from.handle && lc(x.color) === lc(from.color));
+      if (hit) hit.qty += n; else list.push({ ...from, qty: n });
+      visit(ref.handle, ref.color, from, depth + 1, seen, n);
     }
   };
   for (const k of Object.keys(owned || {})) {
@@ -124,7 +126,9 @@ export function bundleOwnership(catalog, bundles, owned) {
     if (!all[h]) continue;
     const p = products[h];
     const v = p && (p.variants || []).find((x) => lc(x.color || x.title) === c);
-    visit(h, c, { handle: h, title: (p && p.title) || all[h].title || h, color: v ? v.color || v.title : c }, 0, new Set());
+    const e = owned[k];
+    const copies = Math.max(1, Number(e && typeof e === 'object' && e.qty) || 1);
+    visit(h, c, { handle: h, title: (p && p.title) || all[h].title || h, color: v ? v.color || v.title : c }, 0, new Set(), copies);
   }
   return out;
 }

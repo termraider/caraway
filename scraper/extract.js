@@ -87,6 +87,7 @@ export function extractProductInPage() {
   const id = (gid) => (gid ? String(gid).split('/').pop() : null);
   const pr = pd.product;
   const badgeNames = (r.state.loaderData.root && r.state.loaderData.root.badgeNamesById) || {};
+  const swatches = (r.state.loaderData.root && r.state.loaderData.root.swatchesById) || {};
   const badgeList = (val) => {
     let arr = val;
     if (typeof arr === 'string') { try { arr = JSON.parse(arr); } catch { arr = [arr]; } }
@@ -117,6 +118,7 @@ export function extractProductInPage() {
       shippingLabel: v.shippingLabel || null,
       byline: v.variantByline || null,
       image: (v.image && v.image.url) || null,
+      swatch: (v.swatch && swatches[v.swatch.value || (v.swatch.reference && v.swatch.reference.id)] && swatches[v.swatch.value || v.swatch.reference.id].image && swatches[v.swatch.value || v.swatch.reference.id].image.url) || null,
       badges: badgeList(v.badges),
     };
   });

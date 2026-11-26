@@ -1,10 +1,13 @@
 name: Scrape Caraway
 
 on:
-  # When it runs. To change the schedule, edit this one line (it is UTC: 11:17 UTC = 6:17 AM Eastern in winter).
+  # When it runs (UTC: 11:17 UTC = 6:17 AM Eastern in winter).
   # Examples: '17 11 * * *' daily · '17 11,23 * * *' twice a day · '17 11 * * 1' Mondays only.
+  # GitHub sometimes runs scheduled jobs hours late or skips them, so a backup run at 3:43 PM UTC
+  # (10:43 AM Eastern) catches a missed morning. A second run on the same day just refreshes that day.
   schedule:
     - cron: '17 11 * * *'
+    - cron: '43 15 * * *'
   # "Run workflow" button on the Actions tab.
   workflow_dispatch:
     inputs:

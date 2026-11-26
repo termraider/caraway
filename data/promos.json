@@ -523,6 +523,10 @@
   "cartDiscounts": "{\"enabled\":false}",
   "promoText": [
    "LIMITED TIME | Save $230 With Our Best-Selling Cookware Set | Shop Now →",
+   "47% off",
+   "43% off",
+   "45% off",
+   "48% off",
    "Carts $725*+ receive a FREE Enameled Cast Iron Dutch Oven",
    "25% Off + Free Cast Iron Dutch Oven",
    "Congrats! FREE Enameled Cast Iron Dutch Oven* has been added to your cart!",
@@ -554,6 +558,34 @@
   ]
  },
  "log": [
+  {
+   "kind": "banner",
+   "key": "banner:47% off",
+   "title": "47% off",
+   "firstSeen": "2026-11-26",
+   "lastSeen": "2026-11-26"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:43% off",
+   "title": "43% off",
+   "firstSeen": "2026-11-26",
+   "lastSeen": "2026-11-26"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:45% off",
+   "title": "45% off",
+   "firstSeen": "2026-11-26",
+   "lastSeen": "2026-11-26"
+  },
+  {
+   "kind": "banner",
+   "key": "banner:48% off",
+   "title": "48% off",
+   "firstSeen": "2026-11-26",
+   "lastSeen": "2026-11-26"
+  },
   {
    "kind": "tiers",
    "key": "tiers:15@85,20@425,25@525",

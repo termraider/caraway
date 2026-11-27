@@ -522,7 +522,7 @@
   },
   "cartDiscounts": "{\"enabled\":false}",
   "promoText": [
-   "LIMITED TIME | Save $230 With Our Best-Selling Cookware Set | Shop Now →",
+   "LIMITED TIME | Save 47% on Our Best-Selling Cookware Sets | Shop Now →",
    "47% off",
    "48% off",
    "45% off",
@@ -558,6 +558,13 @@
   ]
  },
  "log": [
+  {
+   "kind": "banner",
+   "key": "banner:limited time | save 47% on our best-selling cookware sets | shop now →",
+   "title": "LIMITED TIME | Save 47% on Our Best-Selling Cookware Sets | Shop Now →",
+   "firstSeen": "2026-11-27",
+   "lastSeen": "2026-11-27"
+  },
   {
    "kind": "banner",
    "key": "banner:47% off",

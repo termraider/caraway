@@ -76,7 +76,7 @@
     "🔥 SELLING FAST"
    ],
    "rating": 4.7,
-   "reviews": 87085,
+   "reviews": 87093,
    "options": [
     {
      "name": "Color",
@@ -874,7 +874,7 @@
     "🎁 Top Gift"
    ],
    "rating": 4.7,
-   "reviews": 68632,
+   "reviews": 68640,
    "options": [
     {
      "name": "Value",
@@ -3571,7 +3571,7 @@
     "💖 Most Loved"
    ],
    "rating": 4.9,
-   "reviews": 3018,
+   "reviews": 3019,
    "options": [
     {
      "name": "Color",
@@ -4024,7 +4024,7 @@
     "💖 Most Loved"
    ],
    "rating": 4.8,
-   "reviews": 21141,
+   "reviews": 21143,
    "options": [
     {
      "name": "Color",
@@ -5044,7 +5044,7 @@
     "🔥 SELLING FAST"
    ],
    "rating": 4.8,
-   "reviews": 12370,
+   "reviews": 12371,
    "options": [
     {
      "name": "Color",
@@ -9061,7 +9061,7 @@
      "sku": "BW-LOAF-SLA",
      "price": 45,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -9786,7 +9786,7 @@
     "CERAMIC COATING"
    ],
    "rating": 4.9,
-   "reviews": 1285,
+   "reviews": 1286,
    "options": [
     {
      "name": "Color",
@@ -9952,7 +9952,7 @@
      "sku": "BW-BRWN-SLA",
      "price": 65,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -10360,7 +10360,7 @@
      "sku": "BW-SQUR-SLA",
      "price": 45,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -11971,7 +11971,7 @@
     "Mini Size"
    ],
    "rating": 4.8,
-   "reviews": 21019,
+   "reviews": 21021,
    "options": [
     {
      "name": "Color",
@@ -16153,7 +16153,7 @@
     "🔥 SELLING FAST"
    ],
    "rating": 4.7,
-   "reviews": 4766,
+   "reviews": 4770,
    "options": [
     {
      "name": "Color",
@@ -17250,7 +17250,7 @@
     "Best Seller"
    ],
    "rating": 4.8,
-   "reviews": 424,
+   "reviews": 426,
    "options": [
     {
      "name": "Color",
@@ -18051,7 +18051,7 @@
     "CERAMIC COATING"
    ],
    "rating": 4.8,
-   "reviews": 640,
+   "reviews": 642,
    "options": [
     {
      "name": "Color",
@@ -20082,7 +20082,7 @@
     "Perfect Add-on"
    ],
    "rating": 4.8,
-   "reviews": 5230,
+   "reviews": 5231,
    "options": [
     {
      "name": "Size",
@@ -20366,7 +20366,7 @@
      "sku": "CW-GLID-204",
      "price": 80,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Iconics",
@@ -20534,7 +20534,7 @@
     "Bundle & Save"
    ],
    "rating": 4.8,
-   "reviews": 5326,
+   "reviews": 5327,
    "options": [
     {
      "name": "Color",
@@ -20578,7 +20578,7 @@
      "sku": null,
      "price": 225,
      "compareAt": 280,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Iconics",
@@ -20775,7 +20775,7 @@
     "Bundle & Save"
    ],
    "rating": 4.8,
-   "reviews": 5490,
+   "reviews": 5491,
    "options": [
     {
      "name": "Color",
@@ -20819,7 +20819,7 @@
      "sku": null,
      "price": 265,
      "compareAt": 340,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Iconics",
@@ -22306,7 +22306,7 @@
     "⚡ Trending"
    ],
    "rating": 4.8,
-   "reviews": 6401,
+   "reviews": 6402,
    "options": [
     {
      "name": "Color",
@@ -24806,7 +24806,7 @@
     "Limited Stock"
    ],
    "rating": 4.1,
-   "reviews": 122,
+   "reviews": 123,
    "options": [
     {
      "name": "Material",
@@ -26863,7 +26863,7 @@
     "Best Seller"
    ],
    "rating": 4.8,
-   "reviews": 109955,
+   "reviews": 109965,
    "options": [
     {
      "name": "Color",
@@ -29191,7 +29191,7 @@
     "⚡ Trending"
    ],
    "rating": 4.8,
-   "reviews": 53444,
+   "reviews": 53446,
    "options": [
     {
      "name": "Color",
@@ -30646,7 +30646,7 @@
     "Bundle & Save"
    ],
    "rating": 4.8,
-   "reviews": 116420,
+   "reviews": 116431,
    "options": [
     {
      "name": "Color",
@@ -31801,7 +31801,7 @@
     "Bundle & Save"
    ],
    "rating": 4.8,
-   "reviews": 85102,
+   "reviews": 85111,
    "options": [
     {
      "name": "Color",
@@ -36426,7 +36426,7 @@
     "Bundle & Save"
    ],
    "rating": 4.8,
-   "reviews": 121207,
+   "reviews": 121222,
    "options": [
     {
      "name": "Color",
@@ -37862,7 +37862,7 @@
     "Bundle & Save"
    ],
    "rating": 4.7,
-   "reviews": 91861,
+   "reviews": 91873,
    "options": [
     {
      "name": "Color",
@@ -39384,7 +39384,7 @@
     "Best Seller"
    ],
    "rating": 4.3,
-   "reviews": 216,
+   "reviews": 217,
    "options": [
     {
      "name": "Material",
@@ -39551,7 +39551,7 @@
     "🔥 SELLING FAST"
    ],
    "rating": 4.4,
-   "reviews": 271,
+   "reviews": 272,
    "options": [
     {
      "name": "Material",
@@ -39907,7 +39907,7 @@
      "sku": "BW-MNBS-107",
      "price": 45,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -40171,7 +40171,7 @@
     "Limited Stock"
    ],
    "rating": 4.8,
-   "reviews": 386,
+   "reviews": 387,
    "options": [
     {
      "name": "Color",
@@ -41986,7 +41986,7 @@
     "🎁 Top Gift"
    ],
    "rating": 4.8,
-   "reviews": 2730,
+   "reviews": 2731,
    "options": [
     {
      "name": "Color",
@@ -42687,7 +42687,7 @@
     "💖 Most Loved"
    ],
    "rating": 4.8,
-   "reviews": 1690,
+   "reviews": 1691,
    "options": [
     {
      "name": "Color",
@@ -43147,7 +43147,7 @@
     "🎁 Top Gift"
    ],
    "rating": 4.8,
-   "reviews": 1672,
+   "reviews": 1674,
    "options": [
     {
      "name": "Color",
@@ -43313,7 +43313,7 @@
      "sku": null,
      "price": 135,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -44308,7 +44308,7 @@
     "Best Seller"
    ],
    "rating": 4.7,
-   "reviews": 10362,
+   "reviews": 10363,
    "options": [
     {
      "name": "Color",
@@ -45138,7 +45138,7 @@
      "sku": null,
      "price": 165,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -45790,7 +45790,7 @@
      "sku": null,
      "price": 80,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -53530,7 +53530,7 @@
     "Best Seller"
    ],
    "rating": 4.7,
-   "reviews": 13047,
+   "reviews": 13048,
    "options": [
     {
      "name": "Color",
@@ -54360,7 +54360,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 114556,
+   "reviews": 114566,
    "options": [
     {
      "name": "Color",
@@ -57894,7 +57894,7 @@
     "Perfect Add-on"
    ],
    "rating": 4.9,
-   "reviews": 164,
+   "reviews": 165,
    "options": [
     {
      "name": "Color",
@@ -58677,7 +58677,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -58728,7 +58728,7 @@
      "sku": "KW-KITI-102",
      "price": 40,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -59530,7 +59530,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -59959,7 +59959,7 @@
     "🔥 SELLING FAST"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -60386,7 +60386,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -60817,7 +60817,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -61240,7 +61240,7 @@
     "CERAMIC COATING"
    ],
    "rating": 4.9,
-   "reviews": 277,
+   "reviews": 278,
    "options": [
     {
      "name": "Color",
@@ -62825,7 +62825,7 @@
      "sku": null,
      "price": 230,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -63342,7 +63342,7 @@
     "Best Seller"
    ],
    "rating": 4.7,
-   "reviews": 411,
+   "reviews": 412,
    "options": [
     {
      "name": "Color",
@@ -63461,7 +63461,7 @@
      "sku": null,
      "price": 165,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -64287,7 +64287,7 @@
     "🔥 Limited Edition"
    ],
    "rating": 4.7,
-   "reviews": 63050,
+   "reviews": 63058,
    "options": [
     {
      "name": "Color",
@@ -65663,7 +65663,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Color",
@@ -66139,7 +66139,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -66271,7 +66271,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -66403,7 +66403,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 24933,
+   "reviews": 24937,
    "options": [
     {
      "name": "Title",
@@ -66718,7 +66718,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 391,
+   "reviews": 392,
    "options": [
     {
      "name": "Color",
@@ -67158,7 +67158,7 @@
     "New"
    ],
    "rating": 4.7,
-   "reviews": 6482,
+   "reviews": 6483,
    "options": [
     {
      "name": "Color",
@@ -67722,7 +67722,7 @@
     "Bundle & Save"
    ],
    "rating": 4.8,
-   "reviews": 7333,
+   "reviews": 7335,
    "options": [
     {
      "name": "Color",
@@ -71012,7 +71012,7 @@
      "sku": null,
      "price": 190,
      "compareAt": null,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Standard",
@@ -71585,7 +71585,7 @@
     "New"
    ],
    "rating": 4.9,
-   "reviews": 283,
+   "reviews": 284,
    "options": [
     {
      "name": "Color",
@@ -72372,7 +72372,7 @@
     "Bundle & Save"
    ],
    "rating": 4.7,
-   "reviews": 62570,
+   "reviews": 62577,
    "options": [
     {
      "name": "Color",
@@ -73321,7 +73321,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 6920,
+   "reviews": 6921,
    "options": [
     {
      "name": "Color",
@@ -75063,7 +75063,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 32998,
+   "reviews": 33000,
    "options": [
     {
      "name": "Color",
@@ -75228,7 +75228,7 @@
      "sku": null,
      "price": 495,
      "compareAt": 620,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Iconics",
@@ -75251,7 +75251,7 @@
      "sku": null,
      "price": 495,
      "compareAt": 620,
-     "available": false,
+     "available": true,
      "availability": null,
      "discontinued": null,
      "edition": "Iconics",
@@ -75725,7 +75725,7 @@
     "Best Seller"
    ],
    "rating": 4.8,
-   "reviews": 35193,
+   "reviews": 35194,
    "options": [
     {
      "name": "Color",
@@ -76493,7 +76493,7 @@
     "🔥 SELLING FAST"
    ],
    "rating": 4.8,
-   "reviews": 23496,
+   "reviews": 23497,
    "options": [
     {
      "name": "Color",
@@ -77400,7 +77400,7 @@
     "New"
    ],
    "rating": 4.8,
-   "reviews": 27767,
+   "reviews": 27768,
    "options": [
     {
      "name": "Color",
